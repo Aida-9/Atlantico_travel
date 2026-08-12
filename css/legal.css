@@ -1,0 +1,559 @@
+/* =========================================
+   ATLÁNTICO TRAVEL - PÁXINAS LEGAIS
+   aviso-legal.html
+   privacidade.html
+   cookies.html
+========================================= */
+
+
+/* ---------- RESET BÁSICO ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fa;
+    color: #1f2933;
+    line-height: 1.7;
+}
+
+
+/* ---------- VARIABLES DE COR ---------- */
+
+:root {
+    --azul-atlantico: #0A4D68;
+    --azul-oceanico: #2E8BC0;
+    --verde-atlantico: #4CAF50;
+    --branco: #ffffff;
+    --fondo-claro: #f7f9fa;
+    --gris-claro: #e8edf0;
+    --gris-texto: #5f6b73;
+    --texto-escuro: #1f2933;
+}
+
+
+/* ---------- HEADER ---------- */
+
+body > header {
+    background-color: var(--branco);
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 6%;
+
+    border-bottom: 1px solid var(--gris-claro);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+
+/* NAVEGACIÓN */
+
+body > header nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+body > header nav a {
+    text-decoration: none;
+    color: var(--azul-atlantico);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+body > header nav a:hover {
+    color: var(--verde-atlantico);
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: 100%;
+}
+
+
+/* CONTEDOR PRINCIPAL */
+
+main > section {
+    width: min(1100px, 90%);
+
+    margin: 60px auto;
+
+    background-color: var(--branco);
+
+    padding: 60px 70px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 28px rgba(10, 77, 104, 0.08);
+}
+
+
+/* ---------- CABECEIRA DA PÁXINA ---------- */
+
+main > section > header {
+    margin-bottom: 50px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 2px solid var(--gris-claro);
+}
+
+main > section > header h1 {
+    color: var(--azul-atlantico);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+main > section > header p {
+    max-width: 750px;
+
+    color: var(--gris-texto);
+
+    font-size: 1.05rem;
+}
+
+
+/* ---------- SECCIÓNS INTERNAS ---------- */
+
+main section section {
+    margin-bottom: 42px;
+}
+
+main section section:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* ---------- TÍTULOS ---------- */
+
+h2 {
+    color: var(--azul-atlantico);
+
+    font-size: 1.55rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+
+    position: relative;
+
+    padding-left: 16px;
+}
+
+
+/* PEQUENA LIÑA VERDE AO LADO DOS H2 */
+
+h2::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    width: 4px;
+    height: 26px;
+
+    border-radius: 4px;
+
+    background-color: var(--verde-atlantico);
+}
+
+
+h3 {
+    color: var(--azul-oceanico);
+
+    font-size: 1.15rem;
+
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- PARÁGRAFOS ---------- */
+
+p {
+    margin-bottom: 16px;
+}
+
+main p {
+    color: var(--texto-escuro);
+}
+
+
+/* ---------- LISTAS ---------- */
+
+main ul {
+    margin: 18px 0 22px 24px;
+}
+
+main ul li {
+    margin-bottom: 9px;
+
+    padding-left: 5px;
+}
+
+main ul li::marker {
+    color: var(--verde-atlantico);
+}
+
+
+/* ---------- ENLACES ---------- */
+
+main a {
+    color: var(--azul-oceanico);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: var(--verde-atlantico);
+
+    text-decoration: underline;
+}
+
+
+/* ---------- TEXTO DESTACADO ---------- */
+
+strong {
+    color: var(--azul-atlantico);
+}
+
+
+/* ---------- TÁBOA DE COOKIES ---------- */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 25px 0;
+
+    background-color: var(--branco);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: var(--azul-atlantico);
+}
+
+thead th {
+    color: var(--branco);
+
+    text-align: left;
+
+    padding: 16px;
+
+    font-size: 0.95rem;
+}
+
+tbody td {
+    padding: 16px;
+
+    border-bottom: 1px solid var(--gris-claro);
+
+    vertical-align: top;
+
+    font-size: 0.95rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f2f8fa;
+}
+
+
+/* ---------- BOTÓN CONFIGURAR COOKIES ---------- */
+
+#configurar-cookies {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 13px 24px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: var(--verde-atlantico);
+
+    color: var(--branco);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#configurar-cookies:hover {
+    background-color: #3e9143;
+
+    transform: translateY(-2px);
+}
+
+
+/* ---------- ÚLTIMA ACTUALIZACIÓN ---------- */
+
+main > section > p:last-child {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--gris-claro);
+
+    color: var(--gris-texto);
+
+    font-size: 0.9rem;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: var(--azul-atlantico);
+
+    color: var(--branco);
+
+    padding: 45px 6%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+/* LOGO FOOTER */
+
+footer img {
+    width: 170px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO FOOTER */
+
+footer p {
+    color: rgba(255, 255, 255, 0.85);
+
+    margin-bottom: 0;
+}
+
+
+/* NAV FOOTER */
+
+footer nav {
+    justify-self: end;
+}
+
+footer nav ul {
+    list-style: none;
+
+    display: flex;
+
+    gap: 22px;
+
+    margin: 0;
+}
+
+footer nav a {
+    color: var(--branco);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+}
+
+footer nav a:hover {
+    color: #bce5c0;
+}
+
+
+/* COPYRIGHT */
+
+footer > p {
+    grid-column: 1 / -1;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    text-align: center;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    body > header {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 20px 5%;
+    }
+
+    body > header nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px 22px;
+    }
+
+    main > section {
+        width: 92%;
+
+        padding: 45px 35px;
+
+        margin: 40px auto;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    footer nav {
+        justify-self: center;
+    }
+
+    footer nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* ---------- MÓBIL ---------- */
+
+@media (max-width: 600px) {
+
+    body > header {
+        position: static;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    body > header nav ul {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    main > section {
+        width: 94%;
+
+        margin: 25px auto;
+
+        padding: 32px 20px;
+
+        border-radius: 10px;
+    }
+
+    main > section > header {
+        margin-bottom: 35px;
+    }
+
+    main > section > header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+
+    /* TÁBOA RESPONSIVE */
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 20px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}

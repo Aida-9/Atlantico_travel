@@ -1,0 +1,282 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--azul-atlantico);
+    color: var(--branco);
+
+    padding: 50px 6% 25px;
+}
+
+
+/* ---------- CONTIDO PRINCIPAL ---------- */
+
+.footer-contenido {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* ---------- MARCA ---------- */
+
+.footer-marca img {
+    width: 180px;
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+.footer-marca p {
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 0.95rem;
+}
+
+
+/* ---------- TÍTULOS FOOTER ---------- */
+
+.footer-contacto h2,
+.footer-redes h2 {
+    color: var(--branco);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 18px;
+
+    padding: 0;
+}
+
+
+/* Eliminamos a liña verde dos h2 do footer */
+
+.footer-contacto h2::before,
+.footer-redes h2::before {
+    display: none;
+}
+
+
+/* ---------- CONTACTO ---------- */
+
+.footer-contacto address {
+    font-style: normal;
+}
+
+.footer-contacto p {
+    color: rgba(255, 255, 255, 0.85);
+
+    margin-bottom: 9px;
+
+    font-size: 0.9rem;
+}
+
+.footer-contacto strong {
+    color: var(--branco);
+}
+
+.footer-contacto a {
+    color: rgba(255, 255, 255, 0.85);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-contacto a:hover {
+    color: var(--verde-atlantico);
+}
+
+
+/* ---------- REDES SOCIAIS ---------- */
+
+.footer-redes {
+    text-align: right;
+}
+
+.redes {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 14px;
+}
+
+.redes a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 50%;
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.redes a:hover {
+    background-color: var(--verde-atlantico);
+
+    border-color: var(--verde-atlantico);
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------- PARTE INFERIOR ---------- */
+
+.footer-inferior {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* ENLACES LEGAIS */
+
+.footer-inferior nav ul {
+    list-style: none;
+
+    display: flex;
+
+    gap: 22px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer-inferior nav a {
+    color: rgba(255, 255, 255, 0.85);
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+
+    transition: color 0.3s ease;
+}
+
+.footer-inferior nav a:hover {
+    color: var(--verde-atlantico);
+}
+
+
+/* COPYRIGHT */
+
+.footer-inferior p {
+    color: rgba(255, 255, 255, 0.7);
+
+    margin: 0;
+
+    font-size: 0.82rem;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .footer-contenido {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-redes {
+        grid-column: 1 / -1;
+
+        text-align: left;
+    }
+
+    .redes {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    footer {
+        padding: 40px 25px 25px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .footer-marca img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-redes {
+        grid-column: auto;
+
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 18px;
+    }
+
+    .footer-inferior nav ul {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .footer-inferior p {
+        text-align: center;
+    }
+
+}
