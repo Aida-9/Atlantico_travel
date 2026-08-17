@@ -102,4 +102,4 @@ Manter unha estructura clara entre destinos e experiencias
 Optimizar o rendemento e a accesibilidade con recursos limitados.
 Dependencia de imaxes de calidade para transmitir profesionalidade. 
 
-Tras facer o documento funcional, ter clara a idea comercial que se pedía, realizamos os bocetos de cada unha das páxinas que íamos facer na nosa web, un total de 6 páxinas, e subpáxinas que van surxindo a raíz das necesidades que van surxindo.
+Tras facer unha guía do proxecto e posteriormente o documento funcional, ter clara a idea comercial que se pedía, realizamos os bocetos de cada unha das páxinas que íamos facer na nosa web, un total de 6 páxinas, e subpáxinas que van surxindo a raíz das necesidades que van aparecendo.
