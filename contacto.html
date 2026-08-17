@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Atlantico Travel</title>
+</head>
+<body>
+  <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logotipo.png" alt="Logo Axencia">
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+
+                <li class="submenu">
+                    <a href="destinos.html">Destinos</a>
+                    <ul>
+                        <li><a href="#">Destino 1</a></li>
+                        <li><a href="#">Destino 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="experiencias.html">Experiencias</a>
+                    <ul>
+                        <li><a href="#">Experiencia 1</a></li>
+                        <li><a href="#">Experiencia 2</a></li>
+                    </ul>
+                </li>  
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto-formulario">
+
+                <form
+                    action="validacion.html"
+                    method="post"
+                    id="form-contacto"
+                >
+
+
+                    <!-- =========================
+                         DATOS PERSOAIS
+                    ========================== -->
+
+                    <fieldset>
+
+                        <legend>
+                            Datos persoais
+                        </legend>
+
+
+                        <!-- NOME -->
+
+                        <div class="campo-formulario">
+
+                            <label for="nome">
+                                Nome *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="O teu nome"
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                autocomplete="given-name"
+                            >
+
+                        </div>
+
+
+                        <!-- APELIDOS -->
+
+                        <div class="campo-formulario">
+
+                            <label for="apelidos">
+                                Apelidos *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="apelidos"
+                                name="apelidos"
+                                placeholder="Os teus apelidos"
+                                required
+                                minlength="2"
+                                maxlength="80"
+                                autocomplete="family-name"
+                            >
+
+                        </div>
+
+
+                        <!-- CORREO -->
+
+                        <div class="campo-formulario">
+
+                            <label for="email">
+                                Correo electrónico *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="exemplo@correo.com"
+                                required
+                                maxlength="120"
+                                autocomplete="email"
+                            >
+
+                        </div>
+
+
+                        <!-- TELÉFONO -->
+
+                        <div class="campo-formulario">
+
+                            <label for="telefono">
+                                Teléfono *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="600 000 000"
+                                required
+                                pattern="[0-9]{9}"
+                                maxlength="9"
+                                autocomplete="tel"
+                                inputmode="numeric"
+                            >
+
+                            <small>
+                                Introduce un número de teléfono de 9 cifras.
+                            </small>
+
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <!-- =========================
+                         INFORMACIÓN DA VIAXE
+                    ========================== -->
+
+                    <fieldset>
+
+                        <legend>
+                            Que experiencia buscas?
+                        </legend>
+
+
+                        <!-- TIPO -->
+
+                        <div class="campo-formulario">
+
+                            <label for="tipo-viaxe">
+                                Tipo de experiencia *
+                            </label>
+
+                            <select
+                                id="tipo-viaxe"
+                                name="tipo-viaxe"
+                                required
+                            >
+
+                                <option value="" selected disabled>
+                                    Selecciona unha opción
+                                </option>
+
+                                <option value="destino">
+                                    Destino
+                                </option>
+
+                                <option value="aventura">
+                                    Aventura
+                                </option>
+
+                                <option value="gastronomia">
+                                    Gastronomía
+                                </option>
+
+                                <option value="escapada">
+                                    Escapada
+                                </option>
+
+                                <option value="grupo">
+                                    Viaxe en grupo
+                                </option>
+
+                                <option value="personalizada">
+                                    Experiencia personalizada
+                                </option>
+
+                                <option value="outro">
+                                    Outro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DESTINO -->
+
+                        <div class="campo-formulario">
+
+                            <label for="destino">
+                                Destino de interese
+                            </label>
+
+                            <select
+                                id="destino"
+                                name="destino"
+                            >
+
+                                <option value="">
+                                    Aínda non o teño claro
+                                </option>
+
+                                <option value="rias-baixas">
+                                    Rías Baixas
+                                </option>
+
+                                <option value="costa-da-morte">
+                                    Costa da Morte
+                                </option>
+
+                                <option value="ribeira-sacra">
+                                    Ribeira Sacra
+                                </option>
+
+                                <option value="canons-sil">
+                                    Canóns do Sil
+                                </option>
+
+                                <option value="outro">
+                                    Outro destino
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DATA -->
+
+                        <div class="campo-formulario">
+
+                            <label for="data-viaxe">
+                                Data aproximada
+                            </label>
+
+                            <input
+                                type="date"
+                                id="data-viaxe"
+                                name="data-viaxe"
+                            >
+
+                        </div>
+
+
+                        <!-- NÚMERO DE PERSOAS -->
+
+                        <div class="campo-formulario">
+
+                            <label for="persoas">
+                                Número de persoas
+                            </label>
+
+                            <input
+                                type="number"
+                                id="persoas"
+                                name="persoas"
+                                min="1"
+                                max="50"
+                                placeholder="2"
+                            >
+
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <!-- =========================
+                         MENSAXE
+                    ========================== -->
+
+                    <fieldset>
+
+                        <legend>
+                            Cóntanos a túa idea
+                        </legend>
+
+
+                        <div class="campo-formulario">
+
+                            <label for="mensaxe">
+                                Mensaxe *
+                            </label>
+
+                            <textarea
+                                id="mensaxe"
+                                name="mensaxe"
+                                rows="7"
+                                minlength="10"
+                                maxlength="1000"
+                                placeholder="Cóntanos que tipo de viaxe ou experiencia estás buscando..."
+                                required
+                            ></textarea>
+
+                            <small>
+                                Máximo 1000 caracteres.
+                            </small>
+
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <!-- =========================
+                         PRIVACIDADE
+                    ========================== -->
+
+                    <div class="campo-privacidade">
+
+                        <input
+                            type="checkbox"
+                            id="privacidade"
+                            name="privacidade"
+                            required
+                        >
+
+                        <label for="privacidade">
+
+                            Lin e acepto a
+
+                            <a
+                                href="privacidade.html"
+                                target="_blank"
+                            >
+                                Política de privacidade
+                            </a>
+
+                            *
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         INFORMACIÓN CAMPOS
+                    ========================== -->
+
+                    <p class="campos-obrigatorios">
+                        * Campos obrigatorios
+                    </p>
+
+
+
+                    <!-- =========================
+                         BOTÓN
+                    ========================== -->
+
+                    <div class="formulario-accion">
+
+                        <button
+                            type="submit"
+                            class="boton-enviar"
+                        >
+                            Enviar solicitude
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    </main>
+</body>
+</html>
