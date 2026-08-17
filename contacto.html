@@ -45,19 +45,11 @@
                     id="form-contacto"
                 >
 
-
-                    <!-- =========================
-                         DATOS PERSOAIS
-                    ========================== -->
-
                     <fieldset>
 
                         <legend>
                             Datos persoais
                         </legend>
-
-
-                        <!-- NOME -->
 
                         <div class="campo-formulario">
 
@@ -78,9 +70,6 @@
 
                         </div>
 
-
-                        <!-- APELIDOS -->
-
                         <div class="campo-formulario">
 
                             <label for="apelidos">
@@ -100,9 +89,6 @@
 
                         </div>
 
-
-                        <!-- CORREO -->
-
                         <div class="campo-formulario">
 
                             <label for="email">
@@ -121,50 +107,13 @@
 
                         </div>
 
-
-                        <!-- TELÉFONO -->
-
-                        <div class="campo-formulario">
-
-                            <label for="telefono">
-                                Teléfono *
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="telefono"
-                                name="telefono"
-                                placeholder="600 000 000"
-                                required
-                                pattern="[0-9]{9}"
-                                maxlength="9"
-                                autocomplete="tel"
-                                inputmode="numeric"
-                            >
-
-                            <small>
-                                Introduce un número de teléfono de 9 cifras.
-                            </small>
-
-                        </div>
-
                     </fieldset>
-
-
-
-                    <!-- =========================
-                         INFORMACIÓN DA VIAXE
-                    ========================== -->
 
                     <fieldset>
 
                         <legend>
-                            Que experiencia buscas?
+                            Información sobre a viaxe ou experiencia
                         </legend>
-
-
-                        <!-- TIPO -->
-
                         <div class="campo-formulario">
 
                             <label for="tipo-viaxe">
@@ -186,131 +135,85 @@
                                 </option>
 
                                 <option value="aventura">
-                                    Aventura
+                                    Experiencia
                                 </option>
 
                                 <option value="gastronomia">
-                                    Gastronomía
+                                    Oferta
                                 </option>
 
                                 <option value="escapada">
-                                    Escapada
-                                </option>
-
-                                <option value="grupo">
-                                    Viaxe en grupo
-                                </option>
-
-                                <option value="personalizada">
-                                    Experiencia personalizada
-                                </option>
-
-                                <option value="outro">
-                                    Outro
+                                   Personalizable
                                 </option>
 
                             </select>
 
                         </div>
 
-
-                        <!-- DESTINO -->
-
                         <div class="campo-formulario">
 
-                            <label for="destino">
-                                Destino de interese
+                            <label for="mensaxe">
+                                Mensaxe ou petición: *
                             </label>
 
-                            <select
-                                id="destino"
-                                name="destino"
-                            >
+                     <div class="campo-formulario">
 
-                                <option value="">
-                                    Aínda non o teño claro
-                                </option>
+    <label for="mensaxe">
+        Mensaxe ou petición: *
+    </label>
 
-                                <option value="rias-baixas">
-                                    Rías Baixas
-                                </option>
+    <textarea
+        id="mensaxe"
+        name="mensaxe"
+        rows="7"
+        minlength="10"
+        maxlength="1000"
+        placeholder="Pregúntanos dúbidas, cantas persoas ides ser..."
+        required
+    ></textarea>
 
-                                <option value="costa-da-morte">
-                                    Costa da Morte
-                                </option>
+    <small>
+        Máximo 1000 caracteres.
+    </small>
 
-                                <option value="ribeira-sacra">
-                                    Ribeira Sacra
-                                </option>
-
-                                <option value="canons-sil">
-                                    Canóns do Sil
-                                </option>
-
-                                <option value="outro">
-                                    Outro destino
-                                </option>
-
-                            </select>
-
+</div>
                         </div>
 
+                    <div class="campo-formulario">
 
-                        <!-- DATA -->
-
-                        <div class="campo-formulario">
-
-                            <label for="data-viaxe">
-                                Data aproximada
+                            <label for="telefono">
+                                Teléfono *
                             </label>
 
                             <input
-                                type="date"
-                                id="data-viaxe"
-                                name="data-viaxe"
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="900 000 000"
+                                required
+                                pattern="[0-9]{9}"
+                                maxlength="9"
+                                autocomplete="tel"
+                                inputmode="numeric"
                             >
 
-                        </div>
-
-
-                        <!-- NÚMERO DE PERSOAS -->
-
-                        <div class="campo-formulario">
-
-                            <label for="persoas">
-                                Número de persoas
-                            </label>
-
-                            <input
-                                type="number"
-                                id="persoas"
-                                name="persoas"
-                                min="1"
-                                max="50"
-                                placeholder="2"
-                            >
+                            <small>
+                                Introduce un número de teléfono de 9 cifras.
+                            </small>
 
                         </div>
-
-                    </fieldset>
-
-
-
-                    <!-- =========================
-                         MENSAXE
-                    ========================== -->
-
+                        
                     <fieldset>
 
                         <legend>
-                            Cóntanos a túa idea
+                            Describe o teu viaxe soñado.
                         </legend>
 
 
                         <div class="campo-formulario">
 
                             <label for="mensaxe">
-                                Mensaxe *
+                                Describe brevemente o tipo de experiencia ou destino (personalizable):
                             </label>
 
                             <textarea
@@ -320,7 +223,7 @@
                                 minlength="10"
                                 maxlength="1000"
                                 placeholder="Cóntanos que tipo de viaxe ou experiencia estás buscando..."
-                                required
+                                
                             ></textarea>
 
                             <small>
@@ -331,11 +234,6 @@
 
                     </fieldset>
 
-
-
-                    <!-- =========================
-                         PRIVACIDADE
-                    ========================== -->
 
                     <div class="campo-privacidade">
 
@@ -365,27 +263,16 @@
 
 
 
-                    <!-- =========================
-                         INFORMACIÓN CAMPOS
-                    ========================== -->
-
                     <p class="campos-obrigatorios">
                         * Campos obrigatorios
                     </p>
-
-
-
-                    <!-- =========================
-                         BOTÓN
-                    ========================== -->
-
                     <div class="formulario-accion">
 
                         <button
                             type="submit"
                             class="boton-enviar"
                         >
-                            Enviar solicitude
+                            Enviar
                         </button>
 
                     </div>
@@ -398,8 +285,172 @@
         </div>
 
     </section>
+<aside class="contacto-info">
+    <adress>
+        <p> 
+            <strong>Tlf.:</strong>
+            <a href="tel:950 000 000">
+                950 000 000
+            </a>
+        </p>
 
+        <p>
+           <strong>Correo:</strong>
+            <a href="mailto:info@atlanticotravel.com">
+                info@atlanticotravel.com
+            </a>
+        </p>
+        <p>
+            <strong>Localización:</strong> <br>
+            Calle Doctor Fleming, nº71, Carballo, A Coruña
+        </p>
+
+    <div class="contacto-redes">
     
+        <div class="contacto-redes-iconos">
+        <a href="https://www.instagram.com/" 
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram de Atlántico Travel"
+        title="Instagram"
+        >
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        <a href="https://es-es.facebook.com/" 
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook de Atlántico Travel"
+        title="Facebook"
+        >
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        </div>
+    </div>
+    </adress>
+
+</aside>
+
     </main>
+<footer>
+
+    <div class="footer-contenido">
+
+        <!-- MARCA -->
+        <div class="footer-marca">
+
+            <a href="index.html">
+                <img
+                    src="assets/logotipo.png"
+                    alt="Logotipo de Atlántico Travel"
+                >
+            </a>
+
+            <p>
+                Galicia para vivila.
+            </p>
+
+        </div>
+
+        <div class="footer-contacto">
+
+            <h2>Contacta con nós</h2>
+
+        <div class="footer-contacto-info">
+                <p>
+                    <strong>Teléfono:</strong>
+                    <a href="tel:+34900000000">
+                        +34 900 000 000
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Correo:</strong>
+                    <a href="mailto:info@atlanticotravel.es">
+                        info@atlanticotravel.es
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Localización:</strong>
+                  Calle doctor flemming, nº71, Carballo, A Coruña
+                </p>
+
+          </div>
+
+        </div>
+
+        <div class="footer-redes">
+
+            <h2>Síguenos</h2>
+
+            <div class="redes">
+
+                
+                <a
+                    href="ENLACE_FACEBOOK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook de Atlántico Travel"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+
+             
+                <a
+                    href="ENLACE_INSTAGRAM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram de Atlántico Travel"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-inferior">
+
+        <nav aria-label="Información legal">
+
+            <ul>
+
+                <li>
+                    <a href="aviso-legal.html">
+                        Aviso legal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacidade.html">
+                        Política de privacidade
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cookies.html">
+                        Política de cookies
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <p>
+            &copy; 2026 Atlántico Travel.
+            Todos os dereitos reservados.
+        </p>
+
+    </div>
+
+</footer>
 </body>
 </html>
