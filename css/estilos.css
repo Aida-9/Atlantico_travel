@@ -217,3 +217,18 @@ header>nav {
     color: var(--texto-secundario);
     margin-bottom: 12px;
 }
+.boton-card{
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 20px;
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight:700;
+    text-decoration: none;
+    text-align: center;
+}
+.boton-card:hover{
+    background-color: var(--azul-oceanico);
+}
