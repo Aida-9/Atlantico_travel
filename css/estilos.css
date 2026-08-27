@@ -1,12 +1,12 @@
 /*Variables xerais*/
 :root {
--- azul-atlantico: #0A4D68; 
--- azul-oceanico: #2E8BC0;
--- complementaria: #4CAF50;
--- blanco: #FFFFFF;
--- fondo-secundario: #F5F7FA;
--- texto-secundario: #4A4A4A;
--- texto-principal: #1E1E1E;
+--azul-atlantico: #0A4D68; 
+--azul-oceanico: #2E8BC0;
+--complementaria: #4CAF50;
+--blanco: #FFFFFF;
+--fondo-secundario: #F5F7FA;
+--texto-secundario: #4A4A4A;
+--texto-principal: #1E1E1E;
 }
 
 /*Toda web*/
