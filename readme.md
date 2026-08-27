@@ -108,4 +108,5 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 12. Todas as páxinas legais están feitas todas con IA, non sabía o que realmente piden nestos casos e por iso aviso.legal,cookies e privacidade é producto de copia e pegue con opción a sustitución e corrección.
 
-13. 
+13. Empezamos coa creación de estilos de cada páxin acorde o deseño plantexado, como elexin a tipografía Lato, hai que importala a todas as páxinas mediante o enlace de google fonts. E indexar todas as páxinas á páxina de estilos que teñamos.
+
