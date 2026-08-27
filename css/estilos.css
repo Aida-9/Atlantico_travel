@@ -7,6 +7,17 @@
 -- fondo-secundario: #F5F7FA;
 -- texto-secundario: #4A4A4A;
 -- texto-principal: #1E1E1E;
-
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: var(--blanco);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    min-height: 100vh;
+}
