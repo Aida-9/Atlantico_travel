@@ -1,21 +1,22 @@
 /*Variables xerais*/
 :root {
---azul-atlantico: #0A4D68; 
---azul-oceanico: #2E8BC0;
---complementaria: #4CAF50;
---blanco: #FFFFFF;
---fondo-secundario: #F5F7FA;
---texto-secundario: #4A4A4A;
---texto-principal: #1E1E1E;
+    --azul-atlantico: #0A4D68;
+    --azul-oceanico: #2E8BC0;
+    --complementaria: #4CAF50;
+    --blanco: #FFFFFF;
+    --fondo-secundario: #F5F7FA;
+    --texto-secundario: #4A4A4A;
+    --texto-principal: #1E1E1E;
 }
 
 /*Toda web*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     background-color: var(--blanco);
     color: var(--texto-principal);
@@ -24,45 +25,51 @@ body{
 }
 
 /*Títulos*/
-h1{
+h1 {
     font-family: 'Lato', sans-serif;
     font-size: 64px;
     font-weight: 700;
 }
-h2{
+
+h2 {
     font-family: 'Lato', sans-serif;
     font-size: 40px;
     font-weight: 600;
 }
-h3{
+
+h3 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
-h4{
+
+h4 {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     font-weight: 600;
 }
+
 p,
-.corpo{
+.corpo {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
-.corpo-pequeno{
+
+.corpo-pequeno {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
 }
 
 /*header*/
-body > header {
+body>header {
     width: 100%;
     background-color: var(--fondo-secundario);
-    
+
 }
-header > nav{
+
+header>nav {
     width: 100%;
     height: 88px;
     display: flex;
@@ -72,39 +79,44 @@ header > nav{
     padding: 10px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
     height: auto;
 }
-.menu{
-    display:flex;
+
+.menu {
+    display: flex;
     align-items: center;
     gap: 40px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.menu a{
+
+.menu a {
     position: relative;
     color: var(--complementaria);
     font-size: 14px;
     text-decoration: none;
     font-weight: 700;
 }
-.menu a::after{
+
+.menu a::after {
     content: '';
     position: absolute;
     width: 0;
-    left:0;
+    left: 0;
     height: 2px;
     bottom: -6px;
     background-color: var(--azul-atlantico);
     transition: width 0.3s ease-in-out;
 }
-.menu a:hover::after{
+
+.menu a:hover::after {
     width: 100%;
 }
-.nav-cta{
+
+.nav-cta {
     background-color: var(--azul-atlantico);
     color: var(--blanco);
     padding: 12px 24px;
@@ -113,12 +125,13 @@ header > nav{
     font-weight: 700;
     text-decoration: none;
 }
-.nav-cta:hover{
+
+.nav-cta:hover {
     background-color: var(--azul-oceanico);
 }
 
 /*Hero*/
-.hero{
+.hero {
     widht: 100%;
     height: 600px;
     background-image: url(../assets/hero.avif);
@@ -129,19 +142,23 @@ header > nav{
     justify-content: center;
     text-align: center;
 }
+
 .hero-content {
     text-align: center;
     color: var(--blanco);
 }
+
 .hero-content h1 {
     margin-bottom: 16px;
     color: var(--blanco);
 }
-.hero-content h2{
+
+.hero-content h2 {
     margin-bottom: 32px;
     color: var(--blanco);
 }
-.hero-cta{
+
+.hero-cta {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--blanco);
@@ -152,7 +169,50 @@ header > nav{
     font-weight: 700;
     text-decoration: none;
 }
-.hero-cta:hover{
+
+.hero-cta:hover {
     background-color: var(--azul-atlantico);
-    color:var(--azul-oceanico);
+    color: var(--azul-oceanico);
+}
+
+/*Destinos - index */
+
+#destinos {
+    width: 100%;
+    padding: 40px 44px;
+    background-color: var(--fondo-secundario);
+}
+
+.destinos-lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.destino-card {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100px;
+    background-color: var(--blanco);
+    border: 2px solid var(--azul-atlantico);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.destino-card > img{
+    width:100%;
+    height: 210px;
+    object-fit: cover;
+}
+.destino-contenido{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.destino-contenido p{
+    font-size: 16px;
+    color: var(--texto-secundario);
+    margin-bottom: 12px;
 }
