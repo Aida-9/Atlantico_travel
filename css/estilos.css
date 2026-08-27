@@ -68,3 +68,7 @@ header > nav{
     background-color: var(--fondo-secundario);
 }
 
+.logo img{
+    width: 100px;
+    height: auto;
+}
