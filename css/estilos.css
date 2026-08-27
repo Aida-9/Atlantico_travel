@@ -232,3 +232,12 @@ header>nav {
 .boton-card:hover{
     background-color: var(--azul-oceanico);
 }
+.frase-marca{
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--blanco);
+    text-align: center;
+}
+.frase-marca h2{
+    color: var(--texto-principal)
+}
