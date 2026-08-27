@@ -101,3 +101,15 @@ header > nav{
 .menu a:hover::after{
     width: 100%;
 }
+.nav-cta{
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-cta:hover{
+    background-color: var(--azul-oceanico);
+}
