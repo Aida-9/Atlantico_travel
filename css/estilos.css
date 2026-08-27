@@ -60,7 +60,7 @@ p,
 body > header {
     width: 100%;
     background-color: var(--fondo-secundario);
-    height: 88px;
+    
 }
 header > nav{
     width: 100%;
@@ -98,7 +98,6 @@ header > nav{
     left:0;
     height: 2px;
     bottom: -6px;
-    left: 0;
     background-color: var(--azul-atlantico);
     transition: width 0.3s ease-in-out;
 }
@@ -141,4 +140,19 @@ header > nav{
 .hero-content h2{
     margin-bottom: 32px;
     color: var(--blanco);
+}
+.hero-cta{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--blanco);
+    color: var(--azul-atlantico);
+    border: 2px solid var(--azul-atlantico);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hero-cta:hover{
+    background-color: var(--azul-atlantico);
+    color:var(--azul-oceanico);
 }
