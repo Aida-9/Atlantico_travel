@@ -72,3 +72,32 @@ header > nav{
     width: 100px;
     height: auto;
 }
+.menu{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu a{
+    position: relative;
+    color: var(--complementaria);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    left:0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--azul-atlantico);
+    transition: width 0.3s ease-in-out;
+}
+.menu a:hover::after{
+    width: 100%;
+}
