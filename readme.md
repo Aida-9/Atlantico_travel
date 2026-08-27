@@ -109,4 +109,5 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 12. Todas as páxinas legais están feitas todas con IA, non sabía o que realmente piden nestos casos e por iso aviso.legal,cookies e privacidade é producto de copia e pegue con opción a sustitución e corrección.
 
 13. Empezamos coa creación de estilos de cada páxin acorde o deseño plantexado, como elexin a tipografía Lato, hai que importala a todas as páxinas mediante o enlace de google fonts. E indexar todas as páxinas á páxina de estilos que teñamos.
+13. Vou axustando o contido según me vaia mellor para os estilos aplicados. Estou rediseñando os tamaños, xa que no figma están moi grandes todos os elementos para unha web funcional. Estou indo sección por sección e vou dexar só dúas páxinas de exemplo tanto para a experiencia como para o destino. Como referencia destas páxinas, deberían ir todas as ofertas da web, pero por falta de tempo e dos meus coñecementos dunha función que o automatice, mellor deixamos esas catro como exemplos para todas.
 

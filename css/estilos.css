@@ -200,6 +200,7 @@ header>nav {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .destino-card > img{
     width:100%;
