@@ -722,3 +722,33 @@ footer {
 .boton-experiencia:hover {
     background-color: var(--azul-oceanico);
 }
+
+/* Parallax - experiencias */
+
+.experiencias-parallax {
+    width: 100%;
+    height: 575px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../assets/paradax.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.experiencias-parallax-contenido {
+    width: 100%;
+    padding: 0 40px;
+
+    text-align: center;
+}
+.experiencias-parallax-contenido p {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 900;
+
+    color: var(--texto-principal);
+}
