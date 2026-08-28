@@ -400,8 +400,7 @@ footer{
     width: 100%;
     display:flex;
     flex-direction: column;
-    gap: 80px;
-    padding: 40px 60px;
+    padding: 40px 60px 80px;
     background-color: var(--blanco);
 }
 .instalacions-galeria{
@@ -412,17 +411,28 @@ footer{
     align-items: center;
     gap: 100px;
 }
-.instalacions-cabecera{
-    order: 2;
-}
-.instalacion{
-    width: 45%;
-    max-width: 550px;
+.instalacion {
+    width: 48%;
     margin: 0;
 }
-.instalacion img{
+
+.instalacion img {
     width: 100%;
-    height: 550px;
+    height: 600px;
     display: block;
     object-fit: cover;
+}
+
+.instalacions-cabecera{
+    order: 2;
+    width: 100%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.instalacions-cabecera h2{
+    margin-bottom: 24px;
+}
+.instalacions-cabecera p{
+    margin-bottom:24px;
+    color: var(--texto-secundario)
 }
