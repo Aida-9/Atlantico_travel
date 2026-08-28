@@ -509,3 +509,28 @@ footer{
 
     object-fit: cover;
 }
+
+.destino-card-contenido {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.destino-card-info p {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: var(--texto-principal);
+}
+.destino-prezo {
+    margin-top: 8px;
+}
+
+.destino-prezo strong {
+    color: var(--azul-atlantico);
+}
