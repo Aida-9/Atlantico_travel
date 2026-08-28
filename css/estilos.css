@@ -459,4 +459,28 @@ footer{
     font-weight: 600;
     color: var(--texto-principal)
 }
+.destinos-principais{
+    width: 100%;
+    padding: 75px;
+    background-color: var(--blanco);
+}
+.destinos-grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 75px;
+}
+.destinos-grid article {
+    width: 100%;
+    max-width: 593px;
 
+    background-color: var(--fondo-secundario);
+
+    border: 3px solid var(--azul-atlantico);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
