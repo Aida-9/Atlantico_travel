@@ -192,7 +192,7 @@ header>nav {
     gap: 32px;
 }
 
-.destino-card, 
+.destino-card,
 .experiencia-card {
     width: 100%;
     max-width: 430px;
@@ -204,22 +204,26 @@ header>nav {
     flex-direction: column;
     text-align: center;
 }
-.destino-card > img{
-    width:100%;
+
+.destino-card>img {
+    width: 100%;
     height: 210px;
     object-fit: cover;
 }
-.destino-contenido{
+
+.destino-contenido {
     padding: 18px;
     display: flex;
     flex-direction: column;
 }
-.destino-contenido p{
+
+.destino-contenido p {
     font-size: 16px;
     color: var(--texto-secundario);
     margin-bottom: 12px;
 }
-.boton-card{
+
+.boton-card {
     display: inline-block;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -228,29 +232,32 @@ header>nav {
     color: var(--blanco);
     border-radius: 8px;
     font-size: 14px;
-    font-weight:700;
+    font-weight: 700;
     text-decoration: none;
     text-align: center;
 }
-.boton-card:hover{
+
+.boton-card:hover {
     background-color: var(--azul-oceanico);
 }
-.frase-marca{
+
+.frase-marca {
     width: 100%;
     padding: 60px 20px;
     background-color: var(--blanco);
     text-align: center;
 }
-.frase-marca h2{
+
+.frase-marca h2 {
     color: var(--texto-principal)
 }
 
 /*Footer*/
 
-footer{
+footer {
     width: 100%;
     min-height: 115px;
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto 1fr auto;
     align-items: center;
     gap: 60px;
@@ -258,118 +265,137 @@ footer{
     padding: 0 75px;
     margin-top: 50px;
 }
-.footer-contenido{
+
+.footer-contenido {
     display: contents;
 }
-.footer-marca{
+
+.footer-marca {
     grid-column: 1;
-    display:flex;
-    align-items:center;
-   flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.footer-marca img{
+
+.footer-marca img {
     width: 80px;
-    height:auto;
+    height: auto;
     display: block;
 }
-.footer-marca p{
+
+.footer-marca p {
     margin-top: 4px;
     font-size: 14px;
     font-weight: 700;
     color: var(--texto-secundario)
 }
 
-.footer-inferior{
+.footer-inferior {
     grid-column: 2;
     grid-row: 1;
 
 }
-.footer-inferior nav ul{
+
+.footer-inferior nav ul {
     display: flex;
     flex-direction: column;
     gap: 4px;
     margin: 0;
     padding: 0;
-    list-style:none;
+    list-style: none;
 }
-.footer-inferior nav a{
+
+.footer-inferior nav a {
     font-size: 14px;
     font-weight: 700;
     color: var(--texto-secundario);
     text-decoration: none;
 }
-.footer-inferior nav a:hover{
-    color:var(--complementaria);
+
+.footer-inferior nav a:hover {
+    color: var(--complementaria);
 }
 
 
-.footer-contacto{
+.footer-contacto {
     grid-column: 3;
     text-align: left;
 }
-.footer-contacto h2{
+
+.footer-contacto h2 {
     margin-bottom: 6px;
     font-size: 22px;
     font-weight: 600;
     color: var(--azul-atlantico);
 }
-.footer-contacto-info p{
+
+.footer-contacto-info p {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
     color: var(--texto-secundario);
 }
-.footer-contacto-info strong{
+
+.footer-contacto-info strong {
     color: var(--texto-principal);
 }
-.footer-contacto-info a{
+
+.footer-contacto-info a {
     color: var(--texto-secundario);
-    text-decoration:none;
+    text-decoration: none;
 }
-.footer-contacto-info a:hover{
+
+.footer-contacto-info a:hover {
     color: var(--complementaria);
 }
-.footer-redes{
+
+.footer-redes {
     grid-column: 4;
     text-align: center;
 }
-.footer-redes h2{
+
+.footer-redes h2 {
     margin-bottom: 8px;
     font-size: 22px;
-    font-weight:600;
-    color:var(--azul-atlantico);
+    font-weight: 600;
+    color: var(--azul-atlantico);
 }
-.redes{
+
+.redes {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px; 
+    gap: 16px;
 }
-.redes a{
+
+.redes a {
     color: var(--azul-atlantico);
     font-size: 22px;
     text-decoration: none;
 }
-.redes a:hover{
-    color:var(--complementaria);
+
+.redes a:hover {
+    color: var(--complementaria);
 }
 
 /* Sobre nós */
-.sobre-nos{
+.sobre-nos {
     width: 100%;
-    display:flex;
+    display: flex;
     padding: 40px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     background-color: var(--blanco);
 }
-.sobre-nos-contenido{
+
+.sobre-nos-contenido {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
+
 .sobre-nos-contenido h1 {
     margin-bottom: 24px;
     font-size: 24px;
@@ -387,23 +413,27 @@ footer{
 
     color: var(--texto-secundario);
 }
-.hero-sobre-nos{
+
+.hero-sobre-nos {
     width: 100%;
 }
-.hero-sobre-nos img{
+
+.hero-sobre-nos img {
     width: 100%;
     height: 680px;
     display: block;
     object-fit: cover;
 }
-.instalacions{
+
+.instalacions {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 40px 60px 80px;
     background-color: var(--blanco);
 }
-.instalacions-galeria{
+
+.instalacions-galeria {
     order: 1;
     width: 100%;
     display: flex;
@@ -411,6 +441,7 @@ footer{
     align-items: center;
     gap: 100px;
 }
+
 .instalacion {
     width: 48%;
     margin: 0;
@@ -423,112 +454,109 @@ footer{
     object-fit: cover;
 }
 
-.instalacions-cabecera{
+.instalacions-cabecera {
     order: 2;
     width: 100%;
     margin: 100px auto 0;
     text-align: center;
 }
-.instalacions-cabecera h2{
+
+.instalacions-cabecera h2 {
     margin-bottom: 24px;
 }
-.instalacions-cabecera p{
-    margin-bottom:24px;
+
+.instalacions-cabecera p {
+    margin-bottom: 24px;
     color: var(--texto-secundario)
 }
 
 /* Destinos */
 
-.destino-intro{
+.destino-intro {
     width: 100%;
-  
     padding: 40px 44px;
     background-color: var(--blanco);
 }
-.destinos-intro-contenido{
+
+.destinos-intro-contenido {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    text-align: center; 
+    text-align: center;
     margin-top: 50px;
 }
-.destinos-intro-contenido p{
+
+.destinos-intro-contenido p {
     font-size: 40px;
     font-weight: 600;
     color: var(--texto-principal)
 }
-.destinos-principais{
+
+.destinos-principais {
     width: 100%;
     padding: 75px;
     background-color: var(--blanco);
 }
-.destinos-grid{
+
+.destinos-grid {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 75px;
 }
+
 .destinos-grid article {
     width: 100%;
     max-width: 593px;
-
     background-color: var(--fondo-secundario);
-
     border: 3px solid var(--azul-atlantico);
-
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
 }
-.destinos-grid article > header {
-    min-height: 57px;
 
+.destinos-grid article>header {
+    min-height: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
 }
 
-.destinos-grid article > header h2 {
+.destinos-grid article>header h2 {
     font-size: 24px;
     font-weight: 600;
-
     color: var(--texto-principal);
 }
 
-.destinos-grid article > img {
+.destinos-grid article>img {
     width: 100%;
     height: 420px;
-
     display: block;
-
     object-fit: cover;
 }
 
 .destino-card-contenido {
     padding: 16px;
-
     display: flex;
     flex-direction: column;
-
     flex: 1;
 }
+
 .destino-card-info {
     text-align: center;
 }
+
 .destino-card-info p {
     margin-bottom: 8px;
-
     font-size: 14px;
     font-weight: 700;
-
     color: var(--texto-principal);
 }
+
 .destino-prezo {
     margin-top: 8px;
 }
@@ -536,19 +564,15 @@ footer{
 .destino-prezo strong {
     color: var(--azul-atlantico);
 }
+
 .boton {
     display: inline-block;
-
     padding: 14px 24px;
-
     background-color: var(--azul-atlantico);
     color: var(--blanco);
-
     border-radius: 16px;
-
     font-size: 20px;
     font-weight: 400;
-
     text-decoration: none;
     text-align: center;
 }
@@ -556,9 +580,9 @@ footer{
 .boton:hover {
     background-color: var(--azul-oceanico);
 }
+
 .destino-card-accion {
     margin-top: 16px;
-
     display: flex;
     justify-content: center;
 }
@@ -567,22 +591,19 @@ footer{
 .destinos-parallax {
     width: 100%;
     height: 700px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-image: url("../assets/parallax.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .destinos-parallax-contenido {
     width: 100%;
     max-width: 1165px;
-
     padding: 0 40px;
-
     text-align: center;
 }
 
@@ -591,6 +612,29 @@ footer{
 
     font-size: 48px;
     font-weight: 900;
-
     color: var(--blanco);
+}
+
+/* Experiencias */
+
+.experiencias-intro {
+    width: 100%;
+    padding: 40px 44px;
+    background-color: var(--blanco);
+}
+
+.experiencias-intro-contenido {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.experiencias-intro-contenido p {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--texto-principal);
 }
