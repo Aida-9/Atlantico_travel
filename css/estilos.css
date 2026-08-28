@@ -534,3 +534,23 @@ footer{
 .destino-prezo strong {
     color: var(--azul-atlantico);
 }
+.boton {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+
+    border-radius: 16px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: var(--azul-oceanico);
+}
