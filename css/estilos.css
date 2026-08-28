@@ -1020,3 +1020,33 @@ footer {
     color: var(--azul-oceanico);
     text-decoration: underline;
 }
+.campos-obrigatorios {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
+.formulario-accion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-enviar {
+    min-width: 225px;
+    min-height: 70px;
+    padding: 16px 28px;
+    background-color: transparent;
+    border: 1px solid var(--azul-atlantico);
+    border-radius: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--azul-atlantico);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.boton-enviar:hover {
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+}
