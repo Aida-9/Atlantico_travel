@@ -844,13 +844,11 @@ footer {
 .oferta-card-info {
     width: 100%;
     max-width: 1200px;
-
     text-align: center;
 }
 
 .oferta-card-info p {
     margin-bottom: 8px;
-
     font-size: 20px;
     font-weight: 400;
 
@@ -861,9 +859,7 @@ footer {
 
 .oferta-prezo-anterior {
     margin-right: 12px;
-
     color: var(--texto-secundario);
-
     text-decoration: line-through;
 }
 
@@ -879,17 +875,12 @@ footer {
 
 .oferta-card-boton {
     display: inline-block;
-
     padding: 16px 28px;
-
     background-color: var(--azul-atlantico);
     color: var(--blanco);
-
     border-radius: 16px;
-
     font-size: 20px;
     font-weight: 400;
-
     text-decoration: none;
     text-align: center;
 }
