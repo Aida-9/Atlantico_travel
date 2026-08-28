@@ -888,3 +888,32 @@ footer {
 .oferta-card-boton:hover {
     background-color: var(--azul-oceanico);
 }
+
+/* Efecto parallax de ofertas */
+
+.ofertas-paradax {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/cabazo.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ofertas-parallax-contenido {
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.ofertas-parallax-contenido p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--blanco);
+}
+
+/* Páxina de contacto / formulario */
+
