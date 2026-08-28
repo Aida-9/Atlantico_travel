@@ -396,4 +396,33 @@ footer{
     display: block;
     object-fit: cover;
 }
-.
+.instalacions{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px 60px;
+    background-color: var(--blanco);
+}
+.instalacions-galeria{
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.instalacions-cabecera{
+    order: 2;
+}
+.instalacion{
+    width: 45%;
+    max-width: 550px;
+    margin: 0;
+}
+.instalacion img{
+    width: 100%;
+    height: 550px;
+    display: block;
+    object-fit: cover;
+}
