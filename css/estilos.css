@@ -1050,3 +1050,35 @@ footer {
     background-color: var(--azul-atlantico);
     color: var(--blanco);
 }
+
+/* Aside do contacto */
+
+.contacto-info {
+    width: 100%;
+    max-width: 445px;
+    min-height: 634px;
+    padding: 75px;
+    background-color: var(--fondo-secundario);
+}
+.contacto-info address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    text-align: center;
+}
+.contacto-info p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--texto-principal);
+}
+.contacto-info p a {
+    color: var(--texto-principal);
+    text-decoration: none;
+}
+
+.contacto-info p a:hover {
+    color: var(--azul-atlantico);
+}
