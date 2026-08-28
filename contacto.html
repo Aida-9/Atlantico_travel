@@ -110,11 +110,11 @@
                                 Experiencia
                             </option>
 
-                            <option value="gastronomia">
+                            <option value="oferta">
                                 Oferta
                             </option>
 
-                            <option value="escapada">
+                            <option value="personalizable">
                                 Personalizable
                             </option>
 
@@ -127,18 +127,14 @@
                         <label for="mensaxe">
                             Mensaxe ou petición: *
                         </label>
+                        <textarea id="mensaxe" name="mensaxe" rows="7" minlength="10" maxlength="1000"
+                            placeholder="Pregúntanos dúbidas, cantas persoas ides ser..." required></textarea>
 
-                        <div class="campo-formulario">
+                        <small>
+                            Máximo 1000 caracteres.
+                        </small>
 
 
-                            <textarea id="mensaxe" name="mensaxe" rows="7" minlength="10" maxlength="1000"
-                                placeholder="Pregúntanos dúbidas, cantas persoas ides ser..." required></textarea>
-
-                            <small>
-                                Máximo 1000 caracteres.
-                            </small>
-
-                        </div>
                     </div>
 
                     <div class="campo-formulario">
@@ -155,74 +151,69 @@
                         </small>
 
                     </div>
- </fieldset>
-                    <fieldset>
+                </fieldset>
+                <fieldset>
 
-                        <legend>
-                            Describe o teu viaxe soñado.
-                        </legend>
-
-
-                        <div class="campo-formulario">
-
-                            <label for="mensaxe">
-                                Describe brevemente o tipo de experiencia ou destino (personalizable):
-                            </label>
-
-                            <textarea id="viaxe-personalizada" name="viaxe-personalizada" rows="7" minlength="10"
-                                maxlength="1000"
-                                placeholder="Cóntanos que tipo de viaxe ou experiencia estás buscando..."></textarea>
-
-                            <small>
-                                Máximo 1000 caracteres.
-                            </small>
-
-                        </div>
-
-                    </fieldset>
+                    <legend>
+                        Describe o teu viaxe soñado.
+                    </legend>
 
 
-                    <div class="campo-privacidade">
+                    <div class="campo-formulario">
 
-                        <input type="checkbox" id="privacidade" name="privacidade" required>
-
-                        <label for="privacidade">
-
-                            Lin e acepto a
-
-                            <a href="privacidade.html" target="_blank">
-                                Política de privacidade
-                            </a>
-
-                            *
-
+                        <label for="mensaxe">
+                            Describe brevemente o tipo de experiencia ou destino (personalizable):
                         </label>
 
-                    </div>
+                        <textarea id="viaxe-personalizada" name="viaxe-personalizada" rows="7" minlength="10"
+                            maxlength="1000"
+                            placeholder="Cóntanos que tipo de viaxe ou experiencia estás buscando..."></textarea>
 
-
-
-                    <p class="campos-obrigatorios">
-                        * Campos obrigatorios
-                    </p>
-                    <div class="formulario-accion">
-
-                        <button type="submit" class="boton-enviar">
-                            Enviar
-                        </button>
+                        <small>
+                            Máximo 1000 caracteres.
+                        </small>
 
                     </div>
+
+                </fieldset>
+
+
+                <div class="campo-privacidade">
+
+                    <input type="checkbox" id="privacidade" name="privacidade" required>
+
+                    <label for="privacidade">
+
+                        Lin e acepto a
+
+                        <a href="privacidade.html" target="_blank">
+                            Política de privacidade
+                        </a>
+
+                        *
+
+                    </label>
+
+                </div>
+
+                <p class="campos-obrigatorios">
+                    * Campos obrigatorios
+                </p>
+                <div class="formulario-accion">
+
+                    <button type="submit" class="boton-enviar">
+                        Enviar
+                    </button>
+
+                </div>
 
 
             </form>
-
         </div>
 
-        </div>
-
-        </section>
+       
         <aside class="contacto-info">
-            <adress>
+            <address>
                 <p>
                     <strong>Tlf.:</strong>
                     <a href="tel:950 000 000">
@@ -256,7 +247,7 @@
 
                     </div>
                 </div>
-            </adress>
+            </address>
 
         </aside>
 
