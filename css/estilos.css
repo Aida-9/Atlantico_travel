@@ -988,3 +988,35 @@ footer {
 #viaxe-personalizada {
     min-height: 300px;
 }
+.campo-formulario small {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
+.campo-privacidade {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+}
+.campo-privacidade input {
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    accent-color: var(--complementaria);
+    cursor: pointer;
+}
+.campo-privacidade label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--texto-principal);
+}
+.campo-privacidade a {
+    color: var(--azul-atlantico);
+    font-weight: 700;
+    text-decoration: none;
+}
+.campo-privacidade a:hover {
+    color: var(--azul-oceanico);
+    text-decoration: underline;
+}
