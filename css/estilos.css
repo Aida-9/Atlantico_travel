@@ -917,3 +917,11 @@ footer {
 
 /* Páxina de contacto / formulario */
 
+.contacto-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding:40px 50px 60px;
+}
