@@ -183,7 +183,8 @@ header>nav {
     background-color: var(--fondo-secundario);
 }
 
-.destinos-lista {
+.destinos-lista,
+.experiencias-lista {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -191,7 +192,8 @@ header>nav {
     gap: 32px;
 }
 
-.destino-card {
+.destino-card, 
+.experiencia-card {
     width: 100%;
     max-width: 430px;
     min-height: 100px;
@@ -241,3 +243,4 @@ header>nav {
 .frase-marca h2{
     color: var(--texto-principal)
 }
+
