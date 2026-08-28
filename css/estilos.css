@@ -77,6 +77,10 @@ header>nav {
     gap: 40px;
     justify-content: space-between;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--fondo-secundario);
 }
 
 .logo img {
