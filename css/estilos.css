@@ -518,7 +518,9 @@ footer{
 
     flex: 1;
 }
-
+.destino-card-info {
+    text-align: center;
+}
 .destino-card-info p {
     margin-bottom: 8px;
 
@@ -553,4 +555,10 @@ footer{
 
 .boton:hover {
     background-color: var(--azul-oceanico);
+}
+.destino-card-accion {
+    margin-top: 16px;
+
+    display: flex;
+    justify-content: center;
 }
