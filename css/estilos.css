@@ -775,3 +775,125 @@ footer {
     font-weight: 600;
     color: var(--texto-principal);
 }
+
+.ofertas-intro {
+    width: 100%;
+    padding: 40px 44px;
+    background-color: var(--blanco);
+}
+
+.ofertas-intro-contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.ofertas-intro-contenido p {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+.ofertas-principais {
+    width: 100%;
+    padding: 60px 50px;
+    background-color: var(--blanco);
+}
+
+.ofertas-grid {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.oferta-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blanco);
+}
+.oferta-card > header {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.oferta-card > header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+.oferta-card > img {
+    width: 100%;
+    height: 620px;
+    display: block;
+    object-fit: cover;
+}
+.oferta-card-contenido {
+    width: 100%;
+
+    padding: 60px 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oferta-card-info {
+    width: 100%;
+    max-width: 1200px;
+
+    text-align: center;
+}
+
+.oferta-card-info p {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: var(--texto-principal);
+}.oferta-prezo {
+    margin-top: 8px;
+}
+
+.oferta-prezo-anterior {
+    margin-right: 12px;
+
+    color: var(--texto-secundario);
+
+    text-decoration: line-through;
+}
+
+.oferta-prezo strong {
+    color: var(--azul-atlantico);
+}
+.oferta-card-accion {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.oferta-card-boton {
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+
+    border-radius: 16px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.oferta-card-boton:hover {
+    background-color: var(--azul-oceanico);
+}
