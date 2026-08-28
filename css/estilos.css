@@ -358,8 +358,42 @@ footer{
 .sobre-nos{
     width: 100%;
     display:flex;
+    padding: 40px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     background-color: var(--blanco);
 }
+.sobre-nos-contenido{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sobre-nos-contenido h1 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sobre-nos-contenido h2 {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sobre-nos-contenido p {
+    margin-bottom: 10px;
+
+    color: var(--texto-secundario);
+}
+.hero-sobre-nos{
+    width: 100%;
+}
+.hero-sobre-nos img{
+    width: 100%;
+    height: 680px;
+    display: block;
+    object-fit: cover;
+}
+.
