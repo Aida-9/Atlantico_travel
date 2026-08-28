@@ -977,3 +977,14 @@ footer {
     border: 2px solid transparent;
     outline: none;
 }
+.campo-formulario input,
+.campo-formulario select {
+    min-height: 48px;
+}
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 190px;
+}
+#viaxe-personalizada {
+    min-height: 300px;
+}
