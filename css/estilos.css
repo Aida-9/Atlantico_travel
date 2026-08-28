@@ -1082,3 +1082,22 @@ footer {
 .contacto-info p a:hover {
     color: var(--azul-atlantico);
 }
+.contacto-redes {
+    margin-top: 10px;
+}
+.contacto-redes-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contacto-redes-iconos a {
+    font-size: 48px;
+    color: var(--azul-atlantico);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contacto-redes-iconos a:hover {
+    color: var(--complementaria);
+}
+
