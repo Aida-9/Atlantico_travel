@@ -249,45 +249,77 @@ header>nav {
 
 footer{
     width: 100%;
+    min-height: 115px;
+    display:grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    gap: 60px;
     background-color: var(--fondo-secundario);
-    padding: 40px 44px 20px;
+    padding: 0 75px;
 }
 .footer-contenido{
-    width: 100%;
-    min-height: 115px;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    padding:0 75px;
-    gap: 40px;
+    display: contents;
 }
 .footer-marca{
+    grid-column: 1;
     display:flex;
     align-items:center;
-    gap:16px;
+   flex-direction: column;
 }
 .footer-marca img{
     width: 80px;
     height:auto;
+    display: block;
 }
 .footer-marca p{
+    margin-top: 4px;
     font-size: 14px;
     font-weight: 700;
     color: var(--texto-secundario)
 }
+
+.footer-inferior{
+    grid-column: 2;
+    grid-row: 1;
+
+}
+.footer-inferior nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.footer-inferior nav a{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--texto-secundario);
+    text-decoration: none;
+}
+.footer-inferior nav a:hover{
+    color:var(--complementaria);
+}
+
+
 .footer-contacto{
-    text-align: center;
+    grid-column: 3;
+    text-align: left;
 }
 .footer-contacto h2{
     margin-bottom: 6px;
-    font-size: 14px;
-    color: var(--texto-secundario);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--azul-atlantico);
 }
 .footer-contacto-info p{
     margin: 0;
     font-size: 14px;
+    font-weight: 400;
     color: var(--texto-secundario);
+}
+.footer-contacto-info strong{
+    color: var(--texto-principal);
 }
 .footer-contacto-info a{
     color: var(--texto-secundario);
@@ -297,22 +329,24 @@ footer{
     color: var(--complementaria);
 }
 .footer-redes{
+    grid-column: 4;
     text-align: center;
 }
 .footer-redes h2{
     margin-bottom: 8px;
     font-size: 22px;
-    font-weight:600px;
+    font-weight:600;
     color:var(--azul-atlantico);
 }
 .redes{
     display: flex;
     justify-content: center;
-    gap: 12px; 
+    align-items: center;
+    gap: 16px; 
 }
 .redes a{
     color: var(--azul-atlantico);
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
 }
 .redes a:hover{
