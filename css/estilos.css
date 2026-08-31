@@ -642,11 +642,13 @@ footer {
     font-weight: 600;
     color: var(--texto-principal);
 }
+
 .experiencias-principais {
     width: 100%;
     padding: 75px;
     background-color: var(--blanco);
 }
+
 .experiencias-grid {
     width: 100%;
     display: flex;
@@ -654,6 +656,7 @@ footer {
     align-items: flex-start;
     gap: 75px;
 }
+
 .experiencias-grid .experiencia-card {
     width: 100%;
     max-width: 593px;
@@ -663,6 +666,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .experiencia-card-header {
     min-height: 57px;
     display: flex;
@@ -677,18 +681,21 @@ footer {
 
     color: var(--texto-principal);
 }
-.experiencia-card > img {
+
+.experiencia-card>img {
     width: 100%;
     height: 420px;
     display: block;
     object-fit: cover;
 }
+
 .experiencia-card-contenido {
     padding: 16px;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
+
 .experiencia-card-info {
     text-align: center;
 }
@@ -699,6 +706,7 @@ footer {
     font-weight: 700;
     color: var(--texto-principal);
 }
+
 .experiencia-prezo {
     margin-top: 8px;
 }
@@ -706,11 +714,13 @@ footer {
 .experiencia-prezo strong {
     color: var(--azul-atlantico);
 }
+
 .experiencia-card-accion {
     margin-top: 16px;
     display: flex;
     justify-content: center;
 }
+
 .boton-experiencia {
     display: inline-block;
     padding: 14px 24px;
@@ -742,12 +752,14 @@ footer {
     background-position: center;
     background-attachment: fixed;
 }
+
 .experiencias-parallax-contenido {
     width: 100%;
     padding: 0 40px;
 
     text-align: center;
 }
+
 .experiencias-parallax-contenido p {
     margin: 0;
 
@@ -760,11 +772,12 @@ footer {
 
 /* Páxina - Ofertas */
 
-.ofertas-intro{
+.ofertas-intro {
     width: 100%;
     padding: 40px 44px;
     background-color: var(--blanco);
 }
+
 .ofertas-intro-contenido {
     width: 100%;
     display: flex;
@@ -800,6 +813,7 @@ footer {
     font-weight: 600;
     color: var(--texto-principal);
 }
+
 .ofertas-principais {
     width: 100%;
     padding: 60px 50px;
@@ -811,6 +825,7 @@ footer {
     max-width: 1340px;
     margin: 0 auto;
 }
+
 .oferta-card {
     width: 100%;
     display: flex;
@@ -818,23 +833,26 @@ footer {
     align-items: center;
     background-color: var(--blanco);
 }
-.oferta-card > header {
+
+.oferta-card>header {
     width: 100%;
     margin-bottom: 60px;
     text-align: center;
 }
 
-.oferta-card > header h2 {
+.oferta-card>header h2 {
     font-size: 24px;
     font-weight: 600;
     color: var(--texto-principal);
 }
-.oferta-card > img {
+
+.oferta-card>img {
     width: 100%;
     height: 620px;
     display: block;
     object-fit: cover;
 }
+
 .oferta-card-contenido {
     width: 100%;
 
@@ -857,7 +875,9 @@ footer {
     font-weight: 400;
 
     color: var(--texto-principal);
-}.oferta-prezo {
+}
+
+.oferta-prezo {
     margin-top: 8px;
 }
 
@@ -870,6 +890,7 @@ footer {
 .oferta-prezo strong {
     color: var(--azul-atlantico);
 }
+
 .oferta-card-accion {
     margin-top: 50px;
 
@@ -906,6 +927,7 @@ footer {
     background-position: center;
     background-attachment: fixed;
 }
+
 .ofertas-parallax-contenido {
     width: 100%;
     padding: 0 40px;
@@ -921,31 +943,35 @@ footer {
 
 /* Páxina de contacto / formulario */
 
-.contacto-main{
+.contacto-main {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 60px;
-    padding:40px 50px 60px;
+    padding: 40px 50px 60px;
 }
-.contacto-formulario{
+
+.contacto-formulario {
     width: 100%;
     max-width: 800px;
     padding: 60px;
-    background-color:var(--fondo-secundario);
+    background-color: var(--fondo-secundario);
 }
-#form-contacto{
+
+#form-contacto {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-#form-contacto fieldset{
-    border:none;
+
+#form-contacto fieldset {
+    border: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
+
 #form-contacto legend {
     position: absolute;
     width: 1px;
@@ -957,6 +983,7 @@ footer {
     white-space: nowrap;
     border: 0;
 }
+
 .campo-formulario {
     width: 100%;
     display: flex;
@@ -964,11 +991,13 @@ footer {
     gap: 10px;
     margin-bottom: 28px;
 }
+
 .campo-formulario label {
     font-size: 20px;
     font-weight: 400;
     color: var(--texto-principal);
 }
+
 .campo-formulario input,
 .campo-formulario select,
 .campo-formulario textarea {
@@ -981,28 +1010,34 @@ footer {
     border: 2px solid transparent;
     outline: none;
 }
+
 .campo-formulario input,
 .campo-formulario select {
     min-height: 48px;
 }
+
 .campo-formulario textarea {
     resize: vertical;
     min-height: 190px;
 }
+
 #viaxe-personalizada {
     min-height: 300px;
 }
+
 .campo-formulario small {
     font-size: 14px;
     font-weight: 400;
     color: var(--texto-secundario);
 }
+
 .campo-privacidade {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     margin-top: 10px;
 }
+
 .campo-privacidade input {
     width: 22px;
     height: 22px;
@@ -1010,26 +1045,31 @@ footer {
     accent-color: var(--complementaria);
     cursor: pointer;
 }
+
 .campo-privacidade label {
     font-size: 16px;
     font-weight: 400;
     color: var(--texto-principal);
 }
+
 .campo-privacidade a {
     color: var(--azul-atlantico);
     font-weight: 700;
     text-decoration: none;
 }
+
 .campo-privacidade a:hover {
     color: var(--azul-oceanico);
     text-decoration: underline;
 }
+
 .campos-obrigatorios {
     margin-top: 5px;
     font-size: 14px;
     font-weight: 400;
     color: var(--texto-secundario);
 }
+
 .formulario-accion {
     display: flex;
     justify-content: center;
@@ -1050,6 +1090,7 @@ footer {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .boton-enviar:hover {
     background-color: var(--azul-atlantico);
     color: var(--blanco);
@@ -1064,6 +1105,7 @@ footer {
     padding: 75px;
     background-color: var(--fondo-secundario);
 }
+
 .contacto-info address {
     font-style: normal;
     display: flex;
@@ -1072,12 +1114,14 @@ footer {
     gap: 45px;
     text-align: center;
 }
+
 .contacto-info p {
     margin: 0;
     font-size: 20px;
     font-weight: 400;
     color: var(--texto-principal);
 }
+
 .contacto-info p a {
     color: var(--texto-principal);
     text-decoration: none;
@@ -1086,28 +1130,32 @@ footer {
 .contacto-info p a:hover {
     color: var(--azul-atlantico);
 }
+
 .contacto-redes {
     margin-top: 10px;
 }
+
 .contacto-redes-iconos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
+
 .contacto-redes-iconos a {
     font-size: 48px;
     color: var(--azul-atlantico);
     text-decoration: none;
     transition: 0.3s;
 }
+
 .contacto-redes-iconos a:hover {
     color: var(--complementaria);
 }
 
 /* Páxina de validación */
 
-.validacion-main{
+.validacion-main {
     width: 100%;
     min-height: 650px;
     display: flex;
@@ -1118,6 +1166,7 @@ footer {
     padding: 80px 50px;
     background-color: var(--blanco);
 }
+
 .validacion-mensaxe {
     width: 100%;
     max-width: 850px;
@@ -1130,13 +1179,15 @@ footer {
 
     border-top: 5px solid var(--complementaria);
 }
-.validacion-mensaxe h1{
+
+.validacion-mensaxe h1 {
     margin-bottom: 25px;
     font-size: 40px;
     font-weight: 700;
     color: var(--azul-atlantico)
 }
-.validacion-mensaxe h2{
+
+.validacion-mensaxe h2 {
     margin-top: 40px;
     margin-bottom: 15px;
     font-size: 24px;
@@ -1144,3 +1195,63 @@ footer {
     color: var(--azul-atlantico);
 }
 
+.validacion-mensaxe p {
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--texto-principal);
+}
+.validacion-accions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.validacion-accions .boton-principal {
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+
+    border: 1px solid var(--azul-atlantico);
+    border-radius: 16px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+.validacion-accions .boton-principal:hover {
+    background-color: var(--azul-oceanico);
+    border-color: var(--azul-oceanico);
+}
+.validacion-accions .boton-secundario {
+    display: inline-block;
+
+    padding: 16px 28px;
+
+    background-color: transparent;
+    color: var(--azul-atlantico);
+
+    border: 1px solid var(--azul-atlantico);
+    border-radius: 16px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.validacion-accions .boton-secundario:hover {
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+}
