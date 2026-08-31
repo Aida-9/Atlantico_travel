@@ -21,6 +21,7 @@ body {
     background-color: var(--blanco);
     color: var(--texto-principal);
     line-height: 1.6;
+    padding-top: 60px ;
     min-height: 100vh;
    
 }
