@@ -1609,6 +1609,12 @@ footer {
     .destino-contenido, .experiencia-contenido{
         padding: 15px;
     }
+    .frase-marca{
+        padding: 50px 20px;
+    }
+    .frase-marca h2 {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 768px){
