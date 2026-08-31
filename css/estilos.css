@@ -1308,4 +1308,23 @@ footer {
 
     color: var(--blanco);
 }
+.detalle-subtitulo {
+    font-size: 24px;
+    font-weight: 400;
+}
 
+.detalle-hero-rias {
+    background-image: url("../assets/riasbaixas.avif");
+}
+
+.detalle-hero-costa {
+    background-image: url("../assets/costamorte.avif");
+}
+
+.detalle-hero-kayak {
+    background-image: url("../assets/kayak.avif");
+}
+
+.detalle-hero-cabalo {
+    background-image: url("../assets/cabalos.avif");
+}
