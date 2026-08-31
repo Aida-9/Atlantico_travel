@@ -1570,3 +1570,17 @@ footer {
     cursor: pointer;
     color:var(--azul-atlantico)
 }
+
+@media (max-width: 1024px){
+    nav{
+        padding: 0 30px;
+    }
+    .menu {
+        gap:20px;
+    }
+    .menu a {font-size:0.95rem;
+    }
+    .nav-cta{
+        padding:10px 18px;
+    }
+}
