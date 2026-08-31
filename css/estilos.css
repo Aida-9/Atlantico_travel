@@ -1558,3 +1558,15 @@ footer {
     background-color: var(--complementaria);
     color: var(--blanco);
 }
+
+
+/* Deseño responsive */
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:var(--azul-atlantico)
+}
