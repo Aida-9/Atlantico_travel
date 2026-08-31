@@ -1105,3 +1105,28 @@ footer {
     color: var(--complementaria);
 }
 
+/* Páxina de validación */
+
+.validacion-main{
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 50px;
+    background-color: var(--blanco);
+}
+.validacion-mensaxe {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 60px;
+
+    background-color: var(--fondo-secundario);
+
+    text-align: center;
+
+    border-top: 5px solid var(--complementaria);
+}
