@@ -112,3 +112,8 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 13. Vou axustando o contido según me vaia mellor para os estilos aplicados. Estou rediseñando os tamaños, xa que no figma están moi grandes todos os elementos para unha web funcional. Estou indo sección por sección e vou dexar só dúas páxinas de exemplo tanto para a experiencia como para o destino. Como referencia destas páxinas, deberían ir todas as ofertas da web, pero por falta de tempo e dos meus coñecementos dunha función que o automatice, mellor deixamos esas catro como exemplos para todas.
 14. Comezamos co estilo de todas as páxinas, pero co index e os elementos que se comparten xa feitos, reutilizaremos o header e o footer para todas as páxinas e o formato de card se é conveniente.
 15. Continuamos coas demais páxinas que son copiar e pegar, xa que se repite o efecto parallax e tamén as cards que comparten estructura. Empezamos co formulario que é o que máis laborioso está sendo. Na xornada da sesion 10 non me dá tempo a continuar creando as páxinas de exemplo de experiencias e destinos.
+
+16. Acabadas as páxinas principais faltaban as de validación que é unha estructura super sencilliña, despois continuo coas de exemplo de destino e de experiencia entón facemos unha estructura como se fose plantilla para calcar as outras e modificar só o contido. Asi tamén vale o mesmo código e clases de estilo para todas.
+
+17. Cando se dé por finalizada esta parte comezarei co diseño de móvil e tablet para crear un css responsive que valga para todos os dispositivos.
+
