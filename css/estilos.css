@@ -1328,3 +1328,38 @@ footer {
 .detalle-hero-cabalo {
     background-image: url("../assets/cabalos.avif");
 }
+.detalle-presentacion {
+    width: 100%;
+    max-width: 1340px;
+
+    margin: 0 auto;
+
+    padding: 80px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 80px;
+}
+
+
+.detalle-descricion {
+    flex: 1;
+}
+
+
+.detalle-descricion h2 {
+    margin-bottom: 25px;
+
+    color: var(--azul-atlantico);
+}
+
+.detalle-descricion p {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    color: var(--texto-principal);
+}
