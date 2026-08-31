@@ -1520,3 +1520,41 @@ footer {
     margin: 0;
     font-size: 16px;
 }
+.detalle-cta {
+    width: 100%;
+    padding: 80px 50px;
+    text-align: center;
+    background-color: var(--azul-atlantico);
+}
+
+
+.detalle-cta h2 {
+    margin-bottom: 15px;
+    color: var(--blanco);
+}
+
+
+.detalle-cta p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--blanco);
+}
+
+
+.detalle-cta-boton {
+    display: inline-block;
+    padding: 16px 30px;
+    background-color: var(--blanco);
+    border-radius: 16px;
+    color: var(--azul-atlantico);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.detalle-cta-boton:hover {
+    background-color: var(--complementaria);
+    color: var(--blanco);
+}
