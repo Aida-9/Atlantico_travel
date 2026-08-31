@@ -1211,20 +1211,14 @@ footer {
 }
 .validacion-accions .boton-principal {
     display: inline-block;
-
     padding: 16px 28px;
-
     background-color: var(--azul-atlantico);
     color: var(--blanco);
-
     border: 1px solid var(--azul-atlantico);
     border-radius: 16px;
-
     font-size: 18px;
     font-weight: 700;
-
     text-decoration: none;
-
     transition: 0.3s;
 }
 .validacion-accions .boton-principal:hover {
@@ -1233,20 +1227,14 @@ footer {
 }
 .validacion-accions .boton-secundario {
     display: inline-block;
-
     padding: 16px 28px;
-
     background-color: transparent;
     color: var(--azul-atlantico);
-
     border: 1px solid var(--azul-atlantico);
     border-radius: 16px;
-
     font-size: 18px;
     font-weight: 700;
-
     text-decoration: none;
-
     transition: 0.3s;
 }
 
@@ -1274,22 +1262,16 @@ footer {
 }
 .detalle-hero::before {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background-color: rgba(0, 0, 0, 0.35);
 }
 .detalle-hero-contenido {
     position: relative;
-
     width: 100%;
     max-width: 1100px;
-
     padding: 40px;
-
     text-align: center;
-
     color: var(--blanco);
 }
 .detalle-categoria {
@@ -1297,15 +1279,12 @@ footer {
 
     font-size: 18px;
     font-weight: 700;
-
     text-transform: uppercase;
 }
 .detalle-hero h1 {
     margin-bottom: 15px;
-
     font-size: 64px;
     font-weight: 700;
-
     color: var(--blanco);
 }
 .detalle-subtitulo {
@@ -1331,15 +1310,11 @@ footer {
 .detalle-presentacion {
     width: 100%;
     max-width: 1340px;
-
     margin: 0 auto;
-
     padding: 80px 50px;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     gap: 80px;
 }
 
@@ -1351,15 +1326,45 @@ footer {
 
 .detalle-descricion h2 {
     margin-bottom: 25px;
-
     color: var(--azul-atlantico);
 }
 
 .detalle-descricion p {
     margin-bottom: 20px;
-
     font-size: 20px;
     line-height: 1.7;
-
     color: var(--texto-principal);
+}
+.detalle-resumo {
+    width: 360px;
+    padding: 35px;
+    background-color: var(--fondo-secundario);
+    border-top: 5px solid var(--azul-atlantico);
+}
+.detalle-resumo h3 {
+    margin-bottom: 30px;
+    color: var(--azul-atlantico);
+}
+.detalle-resumo-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+.detalle-resumo-item i {
+    width: 30px;
+    font-size: 24px;
+    color: var(--complementaria);
+}
+.detalle-resumo-item strong {
+    font-size: 16px;
+}
+
+
+.detalle-resumo-item p {
+    margin: 3px 0 0;
+
+    font-size: 16px;
+
+    color: var(--texto-secundario);
 }
