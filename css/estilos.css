@@ -1381,3 +1381,55 @@ footer {
 .detalle-boton:hover {
     background-color: var(--azul-oceanico);
 }
+
+.detalle-inclue {
+    width: 100%;
+
+    padding: 70px 50px;
+
+    background-color: var(--fondo-secundario);
+
+    text-align: center;
+}
+
+
+.detalle-inclue h2 {
+    margin-bottom: 45px;
+
+    color: var(--azul-atlantico);
+}
+
+
+.detalle-inclue-grid {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.detalle-inclue-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--blanco);
+    text-align: left;
+}
+
+
+.detalle-inclue-item i {
+    color: var(--complementaria);
+    font-size: 22px;
+}
+
+
+.detalle-inclue-item p {
+    margin: 0;
+    font-size: 18px;
+}
