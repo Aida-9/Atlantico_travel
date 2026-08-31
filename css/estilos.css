@@ -1359,12 +1359,25 @@ footer {
 .detalle-resumo-item strong {
     font-size: 16px;
 }
-
-
 .detalle-resumo-item p {
     margin: 3px 0 0;
-
     font-size: 16px;
-
     color: var(--texto-secundario);
+}
+.detalle-boton {
+    display: block;
+    margin-top: 30px;
+    padding: 14px 20px;
+    background-color: var(--azul-atlantico);
+    border-radius: 16px;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.detalle-boton:hover {
+    background-color: var(--azul-oceanico);
 }
