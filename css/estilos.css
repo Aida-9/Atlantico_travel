@@ -1828,5 +1828,14 @@ footer {
         width: 100%;
         font-size: 17px;
     }
+    .destinos-parallax, .experiencias-parallax{
+        height: 350px;
+        background-attachment: scroll;
+    }
+    .destinos-parallax-contenido, .experiencias-parallax-contenido{
+        padding: 0 20px;
+    }
+        .destinos-parallax-contenido p, .experiencias-parallax-contenido p{
+        font-size: 30px;
 
 }
