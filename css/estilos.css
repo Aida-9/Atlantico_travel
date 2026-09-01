@@ -1678,7 +1678,15 @@ footer {
         font-size: 18px;
         padding: 12px 20px;
     }
-    
+    .destinos-parallax{
+        height: 500px;
+    }
+    .experiencias-parallax{
+        height: 500px;
+    }
+    .destinos-parallax-contenido p, .experiencias-parallax-contenido p{
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 768px){
