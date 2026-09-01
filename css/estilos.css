@@ -1565,12 +1565,22 @@ footer {
 /* Deseño responsive */
 
 .menu-toggle{
-    display: none;
+   display: none;
+    width: 34px;
+    height: 28px;
+    padding: 0;
     background: none;
     border: none;
-    font-size: 2rem;
     cursor: pointer;
-    color:var(--azul-atlantico)
+}
+.menu-toggle span{
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin-bottom: 6px 0;
+    background-color: var(--azul-atlantico);
+    transition: 3px;
+    border-radius: 3px;
 }
 
 @media (max-width: 1024px){
