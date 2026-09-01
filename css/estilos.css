@@ -2721,4 +2721,70 @@ footer {
         height: 260px;
     }
 
+    .destino-intro,
+    .experiencias-intro {
+        padding: 25px 15px;
+    }
+
+    .destinos-intro-contenido p,
+    .experiencias-intro-contenido p {
+        font-size: 23px;
+    }
+
+    .destinos-principais,
+    .experiencias-principais {
+        padding: 30px 15px;
+    }
+
+    .destinos-grid article>img,
+    .experiencias-grid .experiencia-card>img {
+        height: 220px;
+    }
+
+    .destinos-parallax,
+    .experiencias-parallax {
+        height: 300px;
+    }
+
+    .destinos-parallax-contenido p,
+    .experiencias-parallax-contenido p {
+        font-size: 25px;
+    }
+
+    .ofertas-intro {
+        padding: 25px 15px;
+    }
+
+    .ofertas-intro-contenido p {
+        font-size: 23px;
+    }
+
+    .ofertas-principais {
+        padding: 30px 15px;
+    }
+
+    .oferta-card>img {
+        height: 250px;
+    }
+
+    .ofertas-paradax {
+        height: 320px;
+    }
+
+    .ofertas-parallax-contenido p {
+        font-size: 25px;
+    }
+      .contacto-main {
+        padding: 25px 15px 40px;
+    }
+
+    .contacto-formulario {
+        padding: 25px 15px;
+    }
+
+    .contacto-info {
+        padding: 30px 15px;
+    }
+
+
 }
