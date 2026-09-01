@@ -2785,6 +2785,17 @@ footer {
     .contacto-info {
         padding: 30px 15px;
     }
+     .validacion-main {
+        padding: 40px 15px;
+    }
+
+    .validacion-mensaxe {
+        padding: 25px 15px;
+    }
+
+    .validacion-mensaxe h1 {
+        font-size: 28px;
+    }
 
 
 }
