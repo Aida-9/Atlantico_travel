@@ -1794,5 +1794,39 @@ footer {
     .instalacions-cabecera p{
         font-size: 16px;
     }
+    .destinos-intro, .experiencias-intro{
+        padding: 30px 20px;
+    }
+    .destinos-intro-contenido, .experiencias-intro-contenido{
+        gap: 20px;
+    }
+    .destino-intro-contenido p, .experiencias-intro-contenido p{
+        font-size: 26px;
+    }
+    .destinos-principais, .experiencias-principais{
+        padding: 35px 20px;
+    }
+    .destinos-grid, .experiencias-grid{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .destinos-grid article, .experiencias-grid .experiencia-card{
+        max-width: 500px;
+        width: 100%;
+    }
+    .destinos-grid article>img, .experiencia-card>img{
+        height: 260px;
+    }
+    .destino-card-contenido, .experiencia-card-contenido{
+        padding: 20px;
+    }
+    .destino-card-info p, .experiencia-card-info p{
+        font-size: 16px;
+    }
+    .boton, .boton-experiencia{
+        width: 100%;
+        font-size: 17px;
+    }
 
 }
