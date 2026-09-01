@@ -1726,7 +1726,7 @@ footer {
     }
 
     .instalacions-cabecera {
-        margin: 70px;
+        margin-top: 70px;
     }
 
     .destino-intro,
@@ -1745,7 +1745,7 @@ footer {
     }
 
     .destinos-principais,
-    .experiencias-grid {
+    .experiencias-principais {
         padding: 50px 30px;
     }
 
@@ -1833,7 +1833,7 @@ footer {
         font-size: 18px;
     }
 
-    .ofertas-parallax {
+    .ofertas-paradax {
         height: 500px;
     }
 
@@ -1982,6 +1982,7 @@ footer {
     .detalle-cta {
         padding: 65px 30px;
     }
+
     footer {
         grid-template-columns: auto 1fr auto;
         gap: 35px;
@@ -2016,6 +2017,7 @@ footer {
         height: auto;
         padding: 15px 20px;
         flex-wrap: wrap;
+        left: 0;
     }
 
     .logo img {
@@ -2562,7 +2564,8 @@ footer {
         padding: 14px 20px;
         font-size: 17px;
     }
- footer {
+
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2637,4 +2640,85 @@ footer {
     .footer-inferior nav a {
         font-size: 14px;
     }
+}
+
+@media (max-width: 480px) {
+    header>nav {
+        height: 75px;
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .menu {
+        top: 75px;
+        padding: 20px 15px;
+        gap: 18px;
+        margin-top: 0;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 380px;
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    #destinos,
+    #experiencias {
+        padding: 30px 15px;
+    }
+
+    .destino-card>img,
+    .experiencia-card>img {
+        height: 210px;
+    }
+
+    .frase-marca {
+        padding: 35px 15px;
+    }
+
+    .frase-marca h2 {
+        font-size: 23px;
+    }
+
+    .sobre-nos {
+        padding: 25px 15px;
+    }
+
+    .sobre-nos-contenido h1 {
+        font-size: 27px;
+    }
+
+    .sobre-nos-contenido h2 {
+        font-size: 19px;
+    }
+
+    .hero-sobre-nos img {
+        height: 280px;
+    }
+
+    .instalacions {
+        padding: 25px 15px 45px;
+    }
+
+    .instalacion img {
+        height: 260px;
+    }
+
 }
