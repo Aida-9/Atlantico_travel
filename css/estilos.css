@@ -1593,6 +1593,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .menu-toggle span {
@@ -1608,6 +1609,7 @@ footer {
 @media (max-width: 1024px) {
     header>nav {
         padding: 0 30px;
+        gap: 20px;
     }
 
     .menu {
@@ -1615,11 +1617,12 @@ footer {
     }
 
     .menu a {
-        font-size: 0.95rem;
+        font-size: 13px;
     }
 
     .nav-cta {
         padding: 10px 18px;
+        font-size: 13px;
     }
 
     .hero {
@@ -1770,7 +1773,60 @@ footer {
     .experiencias-parallax-contenido p {
         font-size: 38px;
     }
+     .ofertas-intro {
+        padding: 35px 30px;
+    }
+
+    .ofertas-intro-contenido {
+        gap: 25px;
+    }
+
+    .ofertas-intro-contenido p {
+        font-size: 32px;
+    }
+
+    .ofertas-principais {
+        padding: 50px 30px;
+    }
+
+    .oferta-card > header {
+        margin-bottom: 40px;
+    }
+
+    .oferta-card > header h2 {
+        font-size: 24px;
+    }
+
+    .oferta-card > img {
+        height: 500px;
+    }
+
+    .oferta-card-contenido {
+        padding: 45px 30px 0;
+    }
+
+    .oferta-card-info p {
+        font-size: 18px;
+    }
+
+    .oferta-card-accion {
+        margin-top: 35px;
+    }
+
+    .oferta-card-boton {
+        padding: 14px 25px;
+        font-size: 18px;
+    }
+
+    .ofertas-paradax {
+        height: 500px;
+    }
+
+    .ofertas-parallax-contenido p {
+        font-size: 38px;
+    }
 }
+
 
 @media (max-width: 768px) {
     header>nav {
@@ -1993,4 +2049,74 @@ footer {
         font-size: 30px;
 
     }
-}
+     .ofertas-intro {
+        padding: 30px 20px;
+    }
+
+    .ofertas-intro-contenido {
+        gap: 20px;
+    }
+
+    .ofertas-intro-contenido p {
+        font-size: 26px;
+    }
+
+    .ofertas-principais {
+        padding: 35px 20px;
+    }
+
+    .oferta-card > header {
+        margin-bottom: 25px;
+    }
+
+    .oferta-card > header h2 {
+        font-size: 22px;
+    }
+
+    .oferta-card > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .oferta-card-contenido {
+        padding: 30px 0 0;
+    }
+
+    .oferta-card-info {
+        width: 100%;
+    }
+
+    .oferta-card-info p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .oferta-prezo {
+        margin-top: 15px;
+    }
+
+    .oferta-card-accion {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .oferta-card-boton {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 17px;
+    }
+
+    .ofertas-paradax {
+        height: 380px;
+        background-attachment: scroll;
+    }
+
+    .ofertas-parallax-contenido {
+        padding: 0 20px;
+    }
+
+    .ofertas-parallax-contenido p {
+        font-size: 30px;
+    }
+} 
