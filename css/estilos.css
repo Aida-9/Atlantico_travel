@@ -1740,7 +1740,22 @@ footer {
         font-size: 16px;
         line-height: 1.7;
     }
-    
-
+    .instalacion{
+        width: 100%;
+    }
+    .instalacion img{
+        height: 320px;
+        width: 100%;
+    }
+    .instalacions-cabecera{
+        margin-top: 50px;
+    }
+    .instalacions-cabecera h2{
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .instalacions-cabecera p{
+        font-size: 16px;
+    }
 
 }
