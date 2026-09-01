@@ -1604,7 +1604,21 @@ footer {
     background-color: var(--azul-atlantico);
     transition: 3px;
     border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+.menu-toggle.activo span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.activo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.activo span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 
 @media (max-width: 1024px) {
     header>nav {
@@ -1915,8 +1929,9 @@ footer {
         text-align: center;
         margin-top: 20px;
         background-color: var(--fondo-secundario);
-        border-top: 1px solid #dddddd;
+        
     }
+
 
     .menu a {
         font-size: 16px;
@@ -2184,41 +2199,51 @@ footer {
         gap: 30px;
         padding: 30px 20px 50px;
     }
+
     .contacto-formulario,
     .contacto-info {
         width: 100%;
         max-width: none;
     }
+
     .contacto-formulario {
         padding: 30px 20px;
     }
+
     #form-contacto {
         gap: 20px;
     }
+
     .campo-formulario {
         margin-bottom: 20px;
     }
+
     .campo-formulario label {
         font-size: 16px;
     }
+
     .campo-formulario input,
     .campo-formulario select,
     .campo-formulario textarea {
         font-size: 16px;
     }
-     .campo-formulario textarea {
+
+    .campo-formulario textarea {
         min-height: 160px;
     }
+
     #viaxe-personalizada {
         min-height: 200px;
     }
-     .campo-privacidade {
+
+    .campo-privacidade {
         gap: 10px;
     }
 
     .campo-privacidade label {
         font-size: 14px;
     }
+
     .formulario-accion {
         width: 100%;
     }
@@ -2229,7 +2254,8 @@ footer {
         min-height: 58px;
         font-size: 17px;
     }
-     .contacto-info {
+
+    .contacto-info {
         min-height: auto;
         padding: 35px 20px;
     }
@@ -2241,11 +2267,13 @@ footer {
     .contacto-info p {
         font-size: 16px;
     }
+
     .contacto-redes-iconos {
         flex-direction: row;
         justify-content: center;
         gap: 30px;
     }
+
     .contacto-redes-iconos a {
         font-size: 38px;
     }
