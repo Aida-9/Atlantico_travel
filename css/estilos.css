@@ -2774,7 +2774,8 @@ footer {
     .ofertas-parallax-contenido p {
         font-size: 25px;
     }
-      .contacto-main {
+
+    .contacto-main {
         padding: 25px 15px 40px;
     }
 
@@ -2785,7 +2786,8 @@ footer {
     .contacto-info {
         padding: 30px 15px;
     }
-     .validacion-main {
+
+    .validacion-main {
         padding: 40px 15px;
     }
 
@@ -2797,7 +2799,7 @@ footer {
         font-size: 28px;
     }
 
-       .detalle-hero {
+    .detalle-hero {
         height: 350px;
     }
 
@@ -2825,6 +2827,9 @@ footer {
         padding: 50px 15px;
     }
 
+    footer {
+        padding: 35px 15px;
+    }
 
 
 }
