@@ -1721,5 +1721,26 @@ footer {
     .frase-marca h2{
         font-size: 26px;
     }
+    .sobre-nos{
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    .sobre-nos-contenido{
+        max-width: 100%;
+    }
+    .sobre-nos-contenido h1{
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    .sobre-nos-contenido h2{
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .sobre-nos-contenido p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+
 
 }
