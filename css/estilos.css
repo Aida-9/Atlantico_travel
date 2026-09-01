@@ -1913,9 +1913,76 @@ footer {
     .validacion-accions {
         gap: 20px;
     }
+    .detalle-hero {
+    height: 480px;
 }
 
+.detalle-hero-contenido {
+    padding: 30px;
 }
+
+.detalle-hero h1 {
+    font-size: 52px;
+}
+
+.detalle-subtitulo {
+    font-size: 22px;
+}
+
+.detalle-presentacion {
+    padding: 60px 30px;
+    gap: 40px;
+}
+
+.detalle-descricion p {
+    font-size: 18px;
+}
+
+.detalle-resumo {
+    width: 320px;
+    padding: 30px;
+}
+
+.detalle-inclue {
+    padding: 60px 30px;
+}
+
+.detalle-inclue-grid {
+    gap: 25px;
+}
+
+.detalle-descubre {
+    padding: 60px 30px;
+    gap: 40px;
+}
+
+.detalle-descubre-imaxe {
+    width: 50%;
+}
+
+.detalle-descubre-imaxe img {
+    height: 420px;
+}
+
+.detalle-descubre-texto p {
+    font-size: 18px;
+}
+
+.detalle-datos {
+    padding: 60px 30px;
+}
+
+.detalle-datos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.detalle-cta {
+    padding: 65px 30px;
+}
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -2301,5 +2368,41 @@ footer {
 
     .contacto-redes-iconos a {
         font-size: 38px;
+    }
+    .validacion-main {
+        min-height: auto;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .validacion-mensaxe {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .validacion-mensaxe h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .validacion-mensaxe h2 {
+        font-size: 21px;
+        margin-top: 30px;
+    }
+
+    .validacion-mensaxe p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .validacion-accions {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .validacion-accions .boton {
+        width: 100%;
+        max-width: 350px;
     }
 }
