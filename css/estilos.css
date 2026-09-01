@@ -1818,13 +1818,14 @@ footer {
         font-size: 18px;
     }
 
-    .ofertas-paradax {
+    .ofertas-parallax {
         height: 500px;
     }
 
     .ofertas-parallax-contenido p {
         font-size: 38px;
     }
+    
 }
 
 
