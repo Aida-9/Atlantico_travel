@@ -1650,6 +1650,35 @@ footer {
     .instalacions-cabecera{
         margin: 70px;
     }
+    .destino-intro, .experiencias-intro{
+        padding: 35px 30px;
+    }
+    .destinos-intro-contenido, .experiencias-intro-contenido {
+        gap: 25px;
+    }
+    .destinos-intro-contenido p, .experiencias-intro-contenido p{
+        font-size: 32px;
+    }
+    .destinos-principais, .experienicas-grid{
+        padding: 50px 30px;
+    }
+    .destinos-grid, .experiencias-grid{
+        gap: 35px;
+    }
+    .destinos-grid article, .experienicas-grid .experiencia-card{
+        max-width: 48%;
+    }
+    .destinos-grid article>img, .experiencia-card>img{
+        height: 320px;
+    }
+    .destino-card-info p, .experiencia-card-info p {
+        font-size: 14px;
+    }
+    .boton, .boton-experiencia{
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+    
 }
 
 @media (max-width: 768px){

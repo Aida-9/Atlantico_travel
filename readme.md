@@ -117,3 +117,4 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 17. Cando se dé por finalizada esta parte comezarei co diseño de móvil e tablet para crear un css responsive que valga para todos os dispositivos.
 
+18. Seguinte paso é mirar sección por sección de cada páxina como adaptar o deseño que temos de móvil con css, e tamén a tablet.
