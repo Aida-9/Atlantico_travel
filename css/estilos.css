@@ -1982,6 +1982,30 @@ footer {
     .detalle-cta {
         padding: 65px 30px;
     }
+    footer {
+        grid-template-columns: auto 1fr auto;
+        gap: 35px;
+        padding: 25px 35px;
+    }
+
+    .footer-marca {
+        grid-column: 1;
+    }
+
+    .footer-inferior {
+        grid-column: 2;
+    }
+
+    .footer-contacto {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .footer-redes {
+        grid-column: 3;
+        grid-row: 1 / 3;
+    }
+
 }
 
 
