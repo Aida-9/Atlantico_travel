@@ -2562,5 +2562,79 @@ footer {
         padding: 14px 20px;
         font-size: 17px;
     }
+ footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
 
+        padding: 40px 20px;
+
+        text-align: center;
+    }
+
+    .footer-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        width: 100%;
+    }
+
+    .footer-marca {
+        width: 100%;
+    }
+
+    .footer-marca img {
+        width: 75px;
+    }
+
+    .footer-contacto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-contacto h2 {
+        font-size: 20px;
+    }
+
+    .footer-contacto-info p {
+        font-size: 14px;
+    }
+
+    .footer-redes {
+        width: 100%;
+    }
+
+    .footer-redes h2 {
+        font-size: 20px;
+    }
+
+    .redes {
+        gap: 22px;
+    }
+
+    .redes a {
+        font-size: 24px;
+    }
+
+    .footer-inferior {
+        width: 100%;
+    }
+
+    .footer-inferior nav {
+        width: 100%;
+    }
+
+    .footer-inferior nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-inferior nav a {
+        font-size: 14px;
+    }
 }
