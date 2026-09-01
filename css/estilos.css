@@ -1888,7 +1888,32 @@ footer {
     .contacto-redes-iconos a {
         font-size: 42px;
     }
+.validacion-main {
+        min-height: 550px;
+        padding: 60px 30px;
+    }
 
+    .validacion-mensaxe {
+        max-width: 750px;
+        padding: 45px 35px;
+    }
+
+    .validacion-mensaxe h1 {
+        font-size: 36px;
+    }
+
+    .validacion-mensaxe h2 {
+        font-size: 22px;
+    }
+
+    .validacion-mensaxe p {
+        font-size: 18px;
+    }
+
+    .validacion-accions {
+        gap: 20px;
+    }
+}
 
 }
 
