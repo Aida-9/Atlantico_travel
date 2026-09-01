@@ -2502,5 +2502,41 @@ footer {
         font-size: 16px;
     }
 
+    .detalle-datos {
+        padding: 50px 20px;
+    }
+
+    .detalle-datos h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .detalle-datos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .detalle-datos-grid article {
+        padding: 25px 20px;
+    }
+
+    .detalle-cta {
+        padding: 60px 20px;
+    }
+
+    .detalle-cta h2 {
+        font-size: 28px;
+    }
+
+    .detalle-cta p {
+        font-size: 17px;
+    }
+
+    .detalle-cta-boton {
+        width: 100%;
+        max-width: 350px;
+        padding: 14px 20px;
+        font-size: 17px;
+    }
 
 }
