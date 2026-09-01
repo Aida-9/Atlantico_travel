@@ -21,9 +21,9 @@ body {
     background-color: var(--blanco);
     color: var(--texto-principal);
     line-height: 1.6;
-    padding-top: 60px ;
+    padding-top: 88px;
     min-height: 100vh;
-   
+
 }
 
 /*Títulos*/
@@ -1205,12 +1205,14 @@ footer {
     line-height: 1.6;
     color: var(--texto-principal);
 }
+
 .validacion-accions {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
+
 .validacion-accions .boton-principal {
     display: inline-block;
     padding: 16px 28px;
@@ -1223,10 +1225,12 @@ footer {
     text-decoration: none;
     transition: 0.3s;
 }
+
 .validacion-accions .boton-principal:hover {
     background-color: var(--azul-oceanico);
     border-color: var(--azul-oceanico);
 }
+
 .validacion-accions .boton-secundario {
     display: inline-block;
     padding: 16px 28px;
@@ -1252,6 +1256,7 @@ footer {
     width: 100%;
     background-color: var(--blanco);
 }
+
 .detalle-hero {
     width: 100%;
     height: 560px;
@@ -1262,12 +1267,14 @@ footer {
     background-position: center;
     position: relative;
 }
+
 .detalle-hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.35);
 }
+
 .detalle-hero-contenido {
     position: relative;
     width: 100%;
@@ -1276,6 +1283,7 @@ footer {
     text-align: center;
     color: var(--blanco);
 }
+
 .detalle-categoria {
     margin-bottom: 10px;
 
@@ -1283,12 +1291,14 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .detalle-hero h1 {
     margin-bottom: 15px;
     font-size: 64px;
     font-weight: 700;
     color: var(--blanco);
 }
+
 .detalle-subtitulo {
     font-size: 24px;
     font-weight: 400;
@@ -1309,6 +1319,7 @@ footer {
 .detalle-hero-cabalo {
     background-image: url("../assets/cabalos.avif");
 }
+
 .detalle-presentacion {
     width: 100%;
     max-width: 1340px;
@@ -1337,35 +1348,42 @@ footer {
     line-height: 1.7;
     color: var(--texto-principal);
 }
+
 .detalle-resumo {
     width: 360px;
     padding: 35px;
     background-color: var(--fondo-secundario);
     border-top: 5px solid var(--azul-atlantico);
 }
+
 .detalle-resumo h3 {
     margin-bottom: 30px;
     color: var(--azul-atlantico);
 }
+
 .detalle-resumo-item {
     display: flex;
     align-items: center;
     gap: 18px;
     margin-bottom: 25px;
 }
+
 .detalle-resumo-item i {
     width: 30px;
     font-size: 24px;
     color: var(--complementaria);
 }
+
 .detalle-resumo-item strong {
     font-size: 16px;
 }
+
 .detalle-resumo-item p {
     margin: 3px 0 0;
     font-size: 16px;
     color: var(--texto-secundario);
 }
+
 .detalle-boton {
     display: block;
     margin-top: 30px;
@@ -1435,6 +1453,7 @@ footer {
     margin: 0;
     font-size: 18px;
 }
+
 .detalle-descubre {
     width: 100%;
     max-width: 1340px;
@@ -1475,6 +1494,7 @@ footer {
     font-size: 20px;
     line-height: 1.7;
 }
+
 .detalle-datos {
     width: 100%;
     padding: 70px 50px;
@@ -1522,6 +1542,7 @@ footer {
     margin: 0;
     font-size: 16px;
 }
+
 .detalle-cta {
     width: 100%;
     padding: 80px 50px;
@@ -1564,8 +1585,8 @@ footer {
 
 /* Deseño responsive */
 
-.menu-toggle{
-   display: none;
+.menu-toggle {
+    display: none;
     width: 34px;
     height: 28px;
     padding: 0;
@@ -1573,280 +1594,403 @@ footer {
     border: none;
     cursor: pointer;
 }
-.menu-toggle span{
+
+.menu-toggle span {
     display: block;
-    width: 34px;
+    width: 20px;
     height: 3px;
-    margin-bottom: 6px 0;
+    margin: 6px;
     background-color: var(--azul-atlantico);
     transition: 3px;
     border-radius: 3px;
 }
 
-@media (max-width: 1024px){
-    nav{
+@media (max-width: 1024px) {
+    header>nav {
         padding: 0 30px;
     }
+
     .menu {
-        gap:20px;
-    }
-    .menu a {font-size:0.95rem;
-    }
-    .nav-cta{
-        padding:10px 18px;
+        gap: 20px;
     }
 
-    .hero{
+    .menu a {
+        font-size: 0.95rem;
+    }
+
+    .nav-cta {
+        padding: 10px 18px;
+    }
+
+    .hero {
         height: 500px;
     }
-    .hero-content h1{
+
+    .hero-content h1 {
         font-size: 52px;
     }
-    .hero-content h2{
+
+    .hero-content h2 {
         font-size: 32px;
     }
-    #destinos, #experiencias{
+
+    #destinos,
+    #experiencias {
         padding: 40px 30px;
     }
-    .destinos-lista, .experiencias-lista{
+
+    .destinos-lista,
+    .experiencias-lista {
         gap: 25px;
     }
-    .destino-card, .experiencia-card{
+
+    .destino-card,
+    .experiencia-card {
         max-width: none;
     }
-    .destino-card > img, .experiencia-card > img{
+
+    .destino-card>img,
+    .experiencia-card>img {
         height: 190px;
     }
-    .destino-contenido, .experiencia-contenido{
+
+    .destino-contenido,
+    .experiencia-contenido {
         padding: 15px;
     }
-    .frase-marca{
+
+    .frase-marca {
         padding: 50px 20px;
     }
+
     .frase-marca h2 {
         font-size: 32px;
     }
-    .sobre-nos{
+
+    .sobre-nos {
         padding: 35px 30px;
         gap: 30px;
     }
+
     .sobre-nos-contenido {
         max-width: 900px;
     }
-    .sobre-nos-contenido h1{
+
+    .sobre-nos-contenido h1 {
         font-size: 34px;
     }
-    .sobre-nos-contenido h2{
+
+    .sobre-nos-contenido h2 {
         font-size: 24px;
     }
-    .sobre-nos-contenido p{
+
+    .sobre-nos-contenido p {
         font-size: 18px;
     }
-    .hero-sobre-nos img{
+
+    .hero-sobre-nos img {
         height: 500px;
     }
-    .instalacions{
+
+    .instalacions {
         padding: 35px 30px 70px;
     }
-    .instalacions-galeria{
+
+    .instalacions-galeria {
         gap: 40px;
     }
-    .instalacion{
+
+    .instalacion {
         width: 48%;
     }
-    .instalacion img{
+
+    .instalacion img {
         height: 430px;
     }
-    .instalacions-cabecera{
+
+    .instalacions-cabecera {
         margin: 70px;
     }
-    .destino-intro, .experiencias-intro{
+
+    .destino-intro,
+    .experiencias-intro {
         padding: 35px 30px;
     }
-    .destinos-intro-contenido, .experiencias-intro-contenido {
+
+    .destinos-intro-contenido,
+    .experiencias-intro-contenido {
         gap: 25px;
     }
-    .destinos-intro-contenido p, .experiencias-intro-contenido p{
+
+    .destinos-intro-contenido p,
+    .experiencias-intro-contenido p {
         font-size: 32px;
     }
-    .destinos-principais, .experienicas-grid{
+
+    .destinos-principais,
+    .experiencias-grid {
         padding: 50px 30px;
     }
-    .destinos-grid, .experiencias-grid{
+
+    .destinos-grid,
+    .experiencias-grid {
         gap: 35px;
     }
-    .destinos-grid article, .experienicas-grid .experiencia-card{
+
+    .destinos-grid article,
+    .experiencias-grid .experiencia-card {
         max-width: 48%;
     }
-    .destinos-grid article>img, .experiencia-card>img{
+
+    .destinos-grid article>img,
+    .experiencia-card>img {
         height: 320px;
     }
-    .destino-card-info p, .experiencia-card-info p {
+
+    .destino-card-info p,
+    .experiencia-card-info p {
         font-size: 14px;
     }
-    .boton, .boton-experiencia{
+
+    .boton,
+    .boton-experiencia {
         font-size: 18px;
         padding: 12px 20px;
     }
-    .destinos-parallax{
+
+    .destinos-parallax {
         height: 500px;
     }
-    .experiencias-parallax{
+
+    .experiencias-parallax {
         height: 500px;
     }
-    .destinos-parallax-contenido p, .experiencias-parallax-contenido p{
+
+    .destinos-parallax-contenido p,
+    .experiencias-parallax-contenido p {
         font-size: 38px;
     }
 }
 
-@media (max-width: 768px){
-    nav{
+@media (max-width: 768px) {
+    header>nav {
         height: auto;
         padding: 15px 20px;
         flex-wrap: wrap;
     }
+    .logo img{
+        width: 85px;
+        height: auto;
+    }
+    .nav-cta {
+        display: none;
+    }
     .menu-toggle{
         display: block;
+        flex-shrink: 0;
     }
-    .menu{
+
+
+    .menu {
         display: none;
+        position: absolute;
+        top: 88px;
+        left: 0;
         width: 100%;
-        flex-direction:column;
+        margin: 0;
+        padding: 25px 20px;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
         text-align: center;
         margin-top: 20px;
+        background-color: var(--fondo-secundario);
+        border-top: 1px solid #dddddd;
     }
-    .menu.activo{
-        display:flex;
+    .menu a{
+        font-size: 16px;
     }
-    .nav-cta{
-        display:none
+    .menu.activo {
+        display: flex;
     }
-    .logo img{
+    .logo img {
         height: 55px;
     }
-    .hero{
-        height:450px;
+
+    .hero {
+        height: 450px;
         padding: 0 20px;
     }
-    .hero-content h1{
+
+    .hero-content h1 {
         font-size: 42px;
     }
-    .hero-content h2{
+
+    .hero-content h2 {
         font-size: 26px;
         margin-bottom: 25px;
     }
-    .hero-cta{
+
+    .hero-cta {
         padding: 12px 20px;
     }
-    #destinos, #experiencias{
+
+    #destinos,
+    #experiencias {
         padding: 35px 20px;
     }
-    .destinos-lista, .experiencias-lista{
+
+    .destinos-lista,
+    .experiencias-lista {
         flex-direction: column;
         align-items: center;
         gap: 30px
     }
-    .destino-card, .experiencia-card{
+
+    .destino-card,
+    .experiencia-card {
         width: 100%;
-        max-width:500px;
+        max-width: 500px;
     }
-    .destino-card > img, .experiencia-card > img{
+
+    .destino-card>img,
+    .experiencia-card>img {
         width: 100%;
         height: 240px;
     }
-    .destino-contenido, .experiencia-contenido{
-        padding:20px;
+
+    .destino-contenido,
+    .experiencia-contenido {
+        padding: 20px;
     }
-    .boton-card{
+
+    .boton-card {
         width: 100%;
         margin-top: 15px;
     }
-    .frase marca{
+
+    .frase-marca {
         padding: 45px 20px;
     }
-    .frase-marca h2{
+
+    .frase-marca h2 {
         font-size: 26px;
     }
-    .sobre-nos{
+
+    .sobre-nos {
         padding: 30px 20px;
         gap: 25px;
     }
-    .sobre-nos-contenido{
+
+    .sobre-nos-contenido {
         max-width: 100%;
     }
-    .sobre-nos-contenido h1{
+
+    .sobre-nos-contenido h1 {
         font-size: 30px;
         margin-bottom: 18px;
     }
-    .sobre-nos-contenido h2{
+
+    .sobre-nos-contenido h2 {
         font-size: 20px;
         margin-bottom: 18px;
     }
-    .sobre-nos-contenido p{
+
+    .sobre-nos-contenido p {
         font-size: 16px;
         line-height: 1.7;
     }
-    .instalacion{
+
+    .instalacion {
         width: 100%;
     }
-    .instalacion img{
+
+    .instalacion img {
         height: 320px;
         width: 100%;
     }
-    .instalacions-cabecera{
+
+    .instalacions-cabecera {
         margin-top: 50px;
     }
-    .instalacions-cabecera h2{
+
+    .instalacions-cabecera h2 {
         font-size: 28px;
         margin-bottom: 18px;
     }
-    .instalacions-cabecera p{
+
+    .instalacions-cabecera p {
         font-size: 16px;
     }
-    .destinos-intro, .experiencias-intro{
+
+    .destinos-intro,
+    .experiencias-intro {
         padding: 30px 20px;
     }
-    .destinos-intro-contenido, .experiencias-intro-contenido{
+
+    .destinos-intro-contenido,
+    .experiencias-intro-contenido {
         gap: 20px;
     }
-    .destino-intro-contenido p, .experiencias-intro-contenido p{
+
+    .destinos-intro-contenido p,
+    .experiencias-intro-contenido p {
         font-size: 26px;
     }
-    .destinos-principais, .experiencias-principais{
+
+    .destinos-principais,
+    .experiencias-principais {
         padding: 35px 20px;
     }
-    .destinos-grid, .experiencias-grid{
+
+    .destinos-grid,
+    .experiencias-grid {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .destinos-grid article, .experiencias-grid .experiencia-card{
+
+    .destinos-grid article,
+    .experiencias-grid .experiencia-card {
         max-width: 500px;
         width: 100%;
     }
-    .destinos-grid article>img, .experiencia-card>img{
+
+    .destinos-grid article>img,
+    .experiencia-card>img {
         height: 260px;
     }
-    .destino-card-contenido, .experiencia-card-contenido{
+
+    .destino-card-contenido,
+    .experiencia-card-contenido {
         padding: 20px;
     }
-    .destino-card-info p, .experiencia-card-info p{
+
+    .destino-card-info p,
+    .experiencia-card-info p {
         font-size: 16px;
     }
-    .boton, .boton-experiencia{
+
+    .boton,
+    .boton-experiencia {
         width: 100%;
         font-size: 17px;
     }
-    .destinos-parallax, .experiencias-parallax{
+
+    .destinos-parallax,
+    .experiencias-parallax {
         height: 350px;
         background-attachment: scroll;
     }
-    .destinos-parallax-contenido, .experiencias-parallax-contenido{
+
+    .destinos-parallax-contenido,
+    .experiencias-parallax-contenido {
         padding: 0 20px;
     }
-        .destinos-parallax-contenido p, .experiencias-parallax-contenido p{
+
+    .destinos-parallax-contenido p,
+    .experiencias-parallax-contenido p {
         font-size: 30px;
 
+    }
 }
- }
