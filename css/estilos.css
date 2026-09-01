@@ -758,17 +758,14 @@ footer {
 .experiencias-parallax-contenido {
     width: 100%;
     padding: 0 40px;
-
     text-align: center;
 }
 
 .experiencias-parallax-contenido p {
     margin: 0;
-
     font-size: 48px;
     font-weight: 900;
-
-    color: var(--texto-principal);
+    color: var(--blanco);
 }
 
 
@@ -2830,6 +2827,8 @@ footer {
     footer {
         padding: 35px 15px;
     }
-
+    body{
+        padding-top: 75px;
+    }
 
 }
