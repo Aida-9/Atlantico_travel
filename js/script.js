@@ -1,10 +1,13 @@
-<script>
+const botonMenu = document.querySelector("header .menu-toggle");
+const menu = document.querySelector("header .menu");
 
-const boton = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
+if (botonMenu && menu) {
 
-boton.addEventListener("click", () => {
-    menu.classList.toggle("activo");
-});
+    botonMenu.addEventListener("click", function () {
 
-</script>
+        menu.classList.toggle("activo");
+        botonMenu.classList.toggle("activo");
+
+    });
+
+}

@@ -1773,7 +1773,8 @@ footer {
     .experiencias-parallax-contenido p {
         font-size: 38px;
     }
-     .ofertas-intro {
+
+    .ofertas-intro {
         padding: 35px 30px;
     }
 
@@ -1789,15 +1790,15 @@ footer {
         padding: 50px 30px;
     }
 
-    .oferta-card > header {
+    .oferta-card>header {
         margin-bottom: 40px;
     }
 
-    .oferta-card > header h2 {
+    .oferta-card>header h2 {
         font-size: 24px;
     }
 
-    .oferta-card > img {
+    .oferta-card>img {
         height: 500px;
     }
 
@@ -1825,7 +1826,56 @@ footer {
     .ofertas-parallax-contenido p {
         font-size: 38px;
     }
-    
+
+    .contacto-main {
+        gap: 30px;
+        padding: 40px 30px 60px;
+    }
+
+    .contacto-formulario {
+        padding: 40px;
+    }
+
+    #form-contacto {
+        gap: 25px;
+    }
+
+    .campo-formulario {
+        margin-bottom: 22px;
+    }
+
+    .campo-formulario label {
+        font-size: 18px;
+    }
+
+    .campo-formulario input,
+    .campo-formulario select,
+    .campo-formulario textarea {
+        font-size: 16px;
+    }
+
+    #viaxe-personalizada {
+        min-height: 240px;
+    }
+
+    .contacto-info {
+        max-width: 360px;
+        padding: 45px 30px;
+    }
+
+    .contacto-info address {
+        gap: 35px;
+    }
+
+    .contacto-info p {
+        font-size: 18px;
+    }
+
+    .contacto-redes-iconos a {
+        font-size: 42px;
+    }
+
+
 }
 
 
@@ -1835,14 +1885,17 @@ footer {
         padding: 15px 20px;
         flex-wrap: wrap;
     }
-    .logo img{
+
+    .logo img {
         width: 85px;
         height: auto;
     }
+
     .nav-cta {
         display: none;
     }
-    .menu-toggle{
+
+    .menu-toggle {
         display: block;
         flex-shrink: 0;
     }
@@ -1864,12 +1917,15 @@ footer {
         background-color: var(--fondo-secundario);
         border-top: 1px solid #dddddd;
     }
-    .menu a{
+
+    .menu a {
         font-size: 16px;
     }
+
     .menu.activo {
         display: flex;
     }
+
     .logo img {
         height: 55px;
     }
@@ -2050,7 +2106,8 @@ footer {
         font-size: 30px;
 
     }
-     .ofertas-intro {
+
+    .ofertas-intro {
         padding: 30px 20px;
     }
 
@@ -2066,15 +2123,15 @@ footer {
         padding: 35px 20px;
     }
 
-    .oferta-card > header {
+    .oferta-card>header {
         margin-bottom: 25px;
     }
 
-    .oferta-card > header h2 {
+    .oferta-card>header h2 {
         font-size: 22px;
     }
 
-    .oferta-card > img {
+    .oferta-card>img {
         width: 100%;
         height: 300px;
         object-fit: cover;
@@ -2120,4 +2177,76 @@ footer {
     .ofertas-parallax-contenido p {
         font-size: 30px;
     }
-} 
+
+    .contacto-main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        padding: 30px 20px 50px;
+    }
+    .contacto-formulario,
+    .contacto-info {
+        width: 100%;
+        max-width: none;
+    }
+    .contacto-formulario {
+        padding: 30px 20px;
+    }
+    #form-contacto {
+        gap: 20px;
+    }
+    .campo-formulario {
+        margin-bottom: 20px;
+    }
+    .campo-formulario label {
+        font-size: 16px;
+    }
+    .campo-formulario input,
+    .campo-formulario select,
+    .campo-formulario textarea {
+        font-size: 16px;
+    }
+     .campo-formulario textarea {
+        min-height: 160px;
+    }
+    #viaxe-personalizada {
+        min-height: 200px;
+    }
+     .campo-privacidade {
+        gap: 10px;
+    }
+
+    .campo-privacidade label {
+        font-size: 14px;
+    }
+    .formulario-accion {
+        width: 100%;
+    }
+
+    .boton-enviar {
+        width: 100%;
+        min-width: 0;
+        min-height: 58px;
+        font-size: 17px;
+    }
+     .contacto-info {
+        min-height: auto;
+        padding: 35px 20px;
+    }
+
+    .contacto-info address {
+        gap: 25px;
+    }
+
+    .contacto-info p {
+        font-size: 16px;
+    }
+    .contacto-redes-iconos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    .contacto-redes-iconos a {
+        font-size: 38px;
+    }
+}
