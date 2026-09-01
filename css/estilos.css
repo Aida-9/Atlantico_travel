@@ -1632,7 +1632,24 @@ footer {
     .sobre-nos-contenido p{
         font-size: 18px;
     }
-    
+    .hero-sobre-nos img{
+        height: 500px;
+    }
+    .instalacions{
+        padding: 35px 30px 70px;
+    }
+    .instalacions-galeria{
+        gap: 40px;
+    }
+    .instalacion{
+        width: 48%;
+    }
+    .instalacion img{
+        height: 430px;
+    }
+    .instalacions-cabecera{
+        margin: 70px;
+    }
 }
 
 @media (max-width: 768px){
