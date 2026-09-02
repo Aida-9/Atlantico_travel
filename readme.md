@@ -118,3 +118,7 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 17. Cando se dé por finalizada esta parte comezarei co diseño de móvil e tablet para crear un css responsive que valga para todos os dispositivos.
 
 18. Seguinte paso é mirar sección por sección de cada páxina como adaptar o deseño que temos de móvil con css, e tamén a tablet.
+
+19. Comezamos oficialmente coa funcionalidade JavaScript ainda que xa a usei para o menú hamburguesa do deseño responsive do móvil.
+
+20. A idea que a priori non puxen pero que agora estaría ben implementala sería o cambio de idioma para que a web fose accesible a máis xente.
