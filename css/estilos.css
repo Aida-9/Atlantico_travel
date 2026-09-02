@@ -136,8 +136,9 @@ header>nav {
     background-color: var(--azul-oceanico);
 }
 
-.selector-idioma select {
+#idioma {
     padding: 8px 10px;
+
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -149,6 +150,17 @@ header>nav {
     border-radius: 8px;
 
     cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+#idioma:hover {
+    border-color: var(--complementaria);
+}
+
+#idioma:focus {
+    outline: 2px solid var(--complementaria);
+    outline-offset: 2px;
 }
 
 /*Hero*/

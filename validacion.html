@@ -4,124 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Páxina de validación">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
+
     <title>Solicitude enviada</title>
 </head>
 
 <body>
+
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
 
+
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">
+                        Sobre nós
+                    </a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">
+                        Destinos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">
+                        Experiencias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
-            <button class="menu-toggle" aria-label="Abrir menú">
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+
+                Solicita información
+
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
+            <button class="menu-toggle"
+                aria-label="Abrir menú">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
         </nav>
 
     </header>
+
+
+
     <main class="validacion-main">
 
         <div class="validacion-mensaxe">
-            <h1>Solicitude enviada</h1>
-            <p>Gracias por enviar a súa solicitude. Contactaremos convosco en breve.</p>
-            <h2>Que acontece agora?</h2>
-            <p>O noso equipo revisará a información que nos enviou e responderemos a través do correo electrónico ou
-                teléfono indicado por vostede no formulario.</p>
+
+            <h1 data-i18n="validacionTitulo">
+                Solicitude enviada
+            </h1>
+
+
+            <p data-i18n="validacionGracias">
+                Gracias por enviar a súa solicitude.
+                Contactaremos convosco en breve.
+            </p>
+
+
+            <h2 data-i18n="validacionAgora">
+                Que acontece agora?
+            </h2>
+
+
+            <p data-i18n="validacionExplicacion">
+                O noso equipo revisará a información que nos enviou
+                e responderemos a través do correo electrónico ou
+                teléfono indicado por vostede no formulario.
+            </p>
+
         </div>
+
+
         <div class="validacion-accions">
-            <a href="index.html" class="boton-principal">Volver á páxina principal</a>
-            <a href="experiencias.html" class="boton-secundario">Ver experiencias</a>
+
+            <a href="index.html"
+                class="boton-principal"
+                data-i18n="volverInicio">
+
+                Volver á páxina principal
+
+            </a>
+
+
+            <a href="experiencias.html"
+                class="boton-secundario"
+                data-i18n="verExperiencias">
+
+                Ver experiencias
+
+            </a>
+
         </div>
 
     </main>
+
+
 
     <footer>
 
         <div class="footer-contenido">
 
-            <!-- MARCA -->
+
             <div class="footer-marca">
 
                 <a href="index.html">
-                    <img src="assets/logotipo.png" alt="Logotipo de Atlántico Travel">
+
+                    <img src="assets/logotipo.png"
+                        alt="Logotipo de Atlántico Travel">
+
                 </a>
 
-                <p>
+
+                <p data-i18n="lema">
                     Galicia para vivila.
                 </p>
 
             </div>
 
+
             <div class="footer-contacto">
 
-                <h2>Contacta con nós</h2>
+                <h2 data-i18n="contactar">
+                    Contacta con nós
+                </h2>
+
 
                 <div class="footer-contacto-info">
+
                     <p>
-                        <strong>Teléfono:</strong>
+
+                        <strong data-i18n="footerTelefono">
+                            Teléfono:
+                        </strong>
+
                         <a href="tel:+34900000000">
                             +34 900 000 000
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Correo:</strong>
+
+                        <strong data-i18n="footerCorreo">
+                            Correo:
+                        </strong>
+
                         <a href="mailto:info@atlanticotravel.es">
                             info@atlanticotravel.es
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Localización:</strong>
-                        Calle doctor flemming, nº71, Carballo, A Coruña
+
+                        <strong data-i18n="footerLocalizacion">
+                            Localización:
+                        </strong>
+
+                        Calle doctor flemming, nº71,
+                        Carballo, A Coruña
+
                     </p>
 
                 </div>
 
             </div>
 
+
             <div class="footer-redes">
 
-                <h2>Síguenos</h2>
+                <h2 data-i18n="siguenos">
+                    Síguenos
+                </h2>
+
 
                 <div class="redes">
 
 
-                    <a href="ENLACE_FACEBOOK" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_FACEBOOK"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Facebook de Atlántico Travel">
+
                         <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
 
 
-
-                    <a href="ENLACE_INSTAGRAM" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_INSTAGRAM"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Instagram de Atlántico Travel">
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                 </div>
@@ -129,6 +269,7 @@
             </div>
 
         </div>
+
 
 
         <div class="footer-inferior">
@@ -138,21 +279,38 @@
                 <ul>
 
                     <li>
-                        <a href="aviso-legal.html">
+
+                        <a href="aviso-legal.html"
+                            data-i18n="avisoLegal">
+
                             Aviso legal
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="privacidade.html">
+
+                        <a href="privacidade.html"
+                            data-i18n="privacidade">
+
                             Política de privacidade
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="cookies.html">
+
+                        <a href="cookies.html"
+                            data-i18n="cookies">
+
                             Política de cookies
+
                         </a>
+
                     </li>
 
                 </ul>
@@ -168,7 +326,10 @@
         </div>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
