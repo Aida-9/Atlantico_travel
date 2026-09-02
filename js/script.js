@@ -12,22 +12,11 @@ if (botonMenu && menu) {
 
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const selectorIdioma = document.querySelector("#idioma");
+const selectorIdioma = document.querySelector("#idioma");
 
     const traduccions = {
-        gl: {
-            "Inicio": "Inicio",
-            "Sobre nós": "Sobre nós",
-            "Destinos": "Destinos",
-            "Experiencias": "Experiencias",
-            "Ofertas": "Ofertas",
-            "Contacto": "Contacto",
-            "Solicita información": "Solicita información",
-            "Preparados para a aventura?": "Preparados para a aventura?"
-        },
-      es: {
+
+        es: {
             "Inicio": "Inicio",
             "Sobre nós": "Sobre nosotros",
             "Destinos": "Destinos",
@@ -37,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
             "Solicita información": "Solicita información",
             "Preparados para a aventura?": "¿Preparados para la aventura?"
         },
-    en: {
+
+        en: {
             "Inicio": "Home",
             "Sobre nós": "About us",
             "Destinos": "Destinations",
@@ -49,36 +39,65 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     };
-    function cambiarIdioma(idioma) {
 
-        const elementos = document.querySelectorAll(
-            "a, h1, h2, h3, p, button"
-        );
+
+    /* Collemos os elementos que queremos poder traducir */
+
+    const elementos = document.querySelectorAll(
+        "a, h1, h2, h3, p, button"
+    );
+
+
+    /* Gardamos automaticamente o texto galego orixinal */
+
+    elementos.forEach(function (elemento) {
+
+        elemento.dataset.textoOriginal =
+            elemento.textContent.trim();
+
+    });
+
+
+    function cambiarIdioma(idioma) {
 
         elementos.forEach(function (elemento) {
 
-            const texto = elemento.textContent.trim();
+            const textoOriginal =
+                elemento.dataset.textoOriginal;
 
-            for (const idiomaBase in traduccions) {
 
-                if (traduccions[idiomaBase][texto]) {
+            /* GALEGO */
 
-                    elemento.textContent =
-                        traduccions[idioma][texto];
+            if (idioma === "gl") {
 
-                    break;
-                }
+                elemento.textContent =
+                    textoOriginal;
+
+            }
+
+
+            /* CASTELÁN OU INGLÉS */
+
+            else if (
+                traduccions[idioma] &&
+                traduccions[idioma][textoOriginal]
+            ) {
+
+                elemento.textContent =
+                    traduccions[idioma][textoOriginal];
 
             }
 
         });
 
-document.documentElement.lang = idioma;
+
+        document.documentElement.lang = idioma;
 
         localStorage.setItem(
             "idiomaAtlanticoTravel",
             idioma
         );
+
     }
 
 
@@ -89,9 +108,14 @@ document.documentElement.lang = idioma;
                 "idiomaAtlanticoTravel"
             ) || "gl";
 
-        selectorIdioma.value = idiomaGardado;
 
-        cambiarIdioma(idiomaGardado);
+        selectorIdioma.value =
+            idiomaGardado;
+
+
+        cambiarIdioma(
+            idiomaGardado
+        );
 
 
         selectorIdioma.addEventListener(
@@ -104,4 +128,7 @@ document.documentElement.lang = idioma;
 
             }
         );
+
     }
+
+});
