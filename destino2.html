@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -15,53 +16,114 @@
 </head>
 
 <body>
+
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
 
+
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">
+                        Sobre nós
+                    </a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">
+                        Destinos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">
+                        Experiencias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+
+                Solicita información
+
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
             <button class="menu-toggle" aria-label="Abrir menú">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
         </nav>
 
     </header>
 
+
     <main class="detalle-main">
+
 
         <section class="detalle-hero detalle-hero-costa">
 
             <div class="detalle-hero-contenido">
 
-                <p class="detalle-categoria">
+                <p class="detalle-categoria"
+                    data-i18n="detalleDestino">
                     Destino
                 </p>
 
-                <h1>
+
+                <h1 data-i18n="detalleCostaTitulo">
                     Costa da Morte
                 </h1>
 
-                <p class="detalle-subtitulo">
+
+                <p class="detalle-subtitulo"
+                    data-i18n="detalleCostaSubtitulo">
                     Natureza salvaxe, mar e tradición no corazón da costa galega.
                 </p>
 
@@ -74,17 +136,19 @@
 
             <div class="detalle-descricion">
 
-                <h2>
+                <h2 data-i18n="detalleCostaPresentacionTitulo">
                     Descubre a Costa da Morte
                 </h2>
 
-                <p>
+
+                <p data-i18n="detalleCostaPresentacion1">
                     O Atlántico, os faros, as praias e as vilas mariñeiras
                     converten a Costa da Morte nun dos destinos máis especiais
                     de Galicia.
                 </p>
 
-                <p>
+
+                <p data-i18n="detalleCostaPresentacion2">
                     Descubre paisaxes únicas, tradicións e recunchos cheos de
                     historia nunha ruta pensada para coñecer unha Galicia
                     auténtica e inesquecible.
@@ -95,9 +159,10 @@
 
             <aside class="detalle-resumo">
 
-                <h3>
+                <h3 data-i18n="detalleInformacion">
                     Información
                 </h3>
+
 
                 <div class="detalle-resumo-item">
 
@@ -105,7 +170,7 @@
 
                     <div>
 
-                        <strong>
+                        <strong data-i18n="localizacion">
                             Localización
                         </strong>
 
@@ -124,12 +189,15 @@
 
                     <div>
 
-                        <strong>
+                        <strong data-i18n="desde">
                             Desde
                         </strong>
 
                         <p>
-                            85 € / persoa
+                            85 €
+                            <span data-i18n="porPersoa">
+                                / persoa
+                            </span>
                         </p>
 
                     </div>
@@ -137,8 +205,12 @@
                 </div>
 
 
-                <a href="contacto.html" class="detalle-boton">
+                <a href="contacto.html"
+                    class="detalle-boton"
+                    data-i18n="solicitar">
+
                     Solicitar información
+
                 </a>
 
             </aside>
@@ -148,9 +220,10 @@
 
         <section class="detalle-inclue">
 
-            <h2>
+            <h2 data-i18n="detalleInclueTitulo">
                 Que inclúe?
             </h2>
+
 
             <div class="detalle-inclue-grid">
 
@@ -158,7 +231,7 @@
 
                     <i class="fa-solid fa-check"></i>
 
-                    <p>
+                    <p data-i18n="detalleCostaInclue1">
                         Ruta pola Costa da Morte
                     </p>
 
@@ -169,7 +242,7 @@
 
                     <i class="fa-solid fa-check"></i>
 
-                    <p>
+                    <p data-i18n="detalleCostaInclue2">
                         Visita a faros e miradoiros
                     </p>
 
@@ -180,7 +253,7 @@
 
                     <i class="fa-solid fa-check"></i>
 
-                    <p>
+                    <p data-i18n="detalleCostaInclue3">
                         Recomendacións gastronómicas
                     </p>
 
@@ -191,7 +264,7 @@
 
                     <i class="fa-solid fa-check"></i>
 
-                    <p>
+                    <p data-i18n="detalleCostaInclue4">
                         Ruta adaptada ao grupo
                     </p>
 
@@ -206,24 +279,27 @@
 
             <div class="detalle-descubre-imaxe">
 
-                <img src="assets/costamorte.avif" alt="Paisaxe da Costa da Morte">
+                <img src="assets/costamorte.avif"
+                    alt="Paisaxe da Costa da Morte">
 
             </div>
 
 
             <div class="detalle-descubre-texto">
 
-                <h2>
+                <h2 data-i18n="detalleCostaHistoriaTitulo">
                     Unha costa chea de historia
                 </h2>
 
-                <p>
+
+                <p data-i18n="detalleCostaHistoria1">
                     Percorre algúns dos lugares máis emblemáticos da Costa
                     da Morte, entre faros, praias, acantilados e pequenas
                     vilas mariñeiras.
                 </p>
 
-                <p>
+
+                <p data-i18n="detalleCostaHistoria2">
                     Cada ruta pode adaptarse ao ritmo e ás preferencias
                     das persoas que realizan a viaxe para descubrir esta
                     parte de Galicia dunha maneira diferente.
@@ -236,21 +312,23 @@
 
         <section class="detalle-datos">
 
-            <h2>
+            <h2 data-i18n="detalleInformacionPractica">
                 Información práctica
             </h2>
 
+
             <div class="detalle-datos-grid">
+
 
                 <article>
 
                     <i class="fa-regular fa-clock"></i>
 
-                    <h3>
+                    <h3 data-i18n="duracion">
                         Duración
                     </h3>
 
-                    <p>
+                    <p data-i18n="detalleCostaDuracion">
                         Día completo
                     </p>
 
@@ -261,11 +339,11 @@
 
                     <i class="fa-solid fa-users"></i>
 
-                    <h3>
+                    <h3 data-i18n="detalleParaQuen">
                         Para quen?
                     </h3>
 
-                    <p>
+                    <p data-i18n="detalleCostaPublico">
                         Parellas, familias e grupos
                     </p>
 
@@ -276,7 +354,7 @@
 
                     <i class="fa-solid fa-location-dot"></i>
 
-                    <h3>
+                    <h3 data-i18n="zona">
                         Zona
                     </h3>
 
@@ -291,12 +369,15 @@
 
                     <i class="fa-solid fa-euro-sign"></i>
 
-                    <h3>
+                    <h3 data-i18n="prezo">
                         Prezo
                     </h3>
 
                     <p>
-                        Desde 85 €
+                        <span data-i18n="desde">
+                            Desde
+                        </span>
+                        85 €
                     </p>
 
                 </article>
@@ -308,21 +389,29 @@
 
         <section class="detalle-cta">
 
-            <h2>
+            <h2 data-i18n="detalleCostaCtaTitulo">
                 Preparado para descubrir Galicia?
             </h2>
 
-            <p>
+
+            <p data-i18n="detalleCostaCtaTexto">
                 Cóntanos que estás buscando e crearemos unha experiencia para ti.
             </p>
 
-            <a href="contacto.html" class="detalle-cta-boton">
+
+            <a href="contacto.html"
+                class="detalle-cta-boton"
+                data-i18n="solicitar">
+
                 Solicitar información
+
             </a>
 
         </section>
 
     </main>
+
+
     <footer>
 
         <div class="footer-contenido">
@@ -331,60 +420,96 @@
             <div class="footer-marca">
 
                 <a href="index.html">
-                    <img src="assets/logotipo.png" alt="Logotipo de Atlántico Travel">
+
+                    <img src="assets/logotipo.png"
+                        alt="Logotipo de Atlántico Travel">
+
                 </a>
 
-                <p>
+
+                <p data-i18n="lema">
                     Galicia para vivila.
                 </p>
 
             </div>
 
+
             <div class="footer-contacto">
 
-                <h2>Contacta con nós</h2>
+                <h2 data-i18n="contactar">
+                    Contacta con nós
+                </h2>
+
 
                 <div class="footer-contacto-info">
+
                     <p>
-                        <strong>Teléfono:</strong>
+
+                        <strong data-i18n="footerTelefono">
+                            Teléfono:
+                        </strong>
+
                         <a href="tel:+34900000000">
                             +34 900 000 000
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Correo:</strong>
+
+                        <strong data-i18n="footerCorreo">
+                            Correo:
+                        </strong>
+
                         <a href="mailto:info@atlanticotravel.es">
                             info@atlanticotravel.es
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Localización:</strong>
+
+                        <strong data-i18n="footerLocalizacion">
+                            Localización:
+                        </strong>
+
                         Calle doctor flemming, nº71, Carballo, A Coruña
+
                     </p>
 
                 </div>
 
             </div>
 
+
             <div class="footer-redes">
 
-                <h2>Síguenos</h2>
+                <h2 data-i18n="siguenos">
+                    Síguenos
+                </h2>
+
 
                 <div class="redes">
 
-
-                    <a href="ENLACE_FACEBOOK" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_FACEBOOK"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Facebook de Atlántico Travel">
+
                         <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
 
 
-
-                    <a href="ENLACE_INSTAGRAM" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_INSTAGRAM"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Instagram de Atlántico Travel">
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                 </div>
@@ -401,33 +526,51 @@
                 <ul>
 
                     <li>
-                        <a href="aviso-legal.html">
+
+                        <a href="aviso-legal.html"
+                            data-i18n="avisoLegal">
+
                             Aviso legal
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="privacidade.html">
+
+                        <a href="privacidade.html"
+                            data-i18n="privacidade">
+
                             Política de privacidade
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="cookies.html">
+
+                        <a href="cookies.html"
+                            data-i18n="cookies">
+
                             Política de cookies
+
                         </a>
+
                     </li>
 
                 </ul>
-                <button class="menu-toggle" aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+
             </nav>
 
         </div>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
