@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -15,53 +16,112 @@
 </head>
 
 <body>
+
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
 
+
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">
+                        Sobre nós
+                    </a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">
+                        Destinos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">
+                        Experiencias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+
+                Solicita información
+
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
             <button class="menu-toggle" aria-label="Abrir menú">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
         </nav>
 
     </header>
 
+
     <main class="detalle-main">
+
 
         <section class="detalle-hero detalle-hero-cabalo">
 
             <div class="detalle-hero-contenido">
 
-                <p class="detalle-categoria">
+                <p class="detalle-categoria"
+                    data-i18n="detalleExperiencia">
                     Experiencia
                 </p>
 
-                <h1>
+                <h1 data-i18n="detalleCabaloTitulo">
                     Ruta Cabalar
                 </h1>
 
-                <p class="detalle-subtitulo">
+                <p class="detalle-subtitulo"
+                    data-i18n="detalleCabaloSubtitulo">
                     Descubre Galicia ao ritmo da natureza.
                 </p>
 
@@ -74,16 +134,16 @@
 
             <div class="detalle-descricion">
 
-                <h2>
+                <h2 data-i18n="detalleCabaloPresentacionTitulo">
                     Galicia a cabalo
                 </h2>
 
-                <p>
+                <p data-i18n="detalleCabaloPresentacion1">
                     Descubre algunhas das paisaxes máis especiais de Galicia
                     nunha ruta a cabalo rodeada de natureza e tranquilidade.
                 </p>
 
-                <p>
+                <p data-i18n="detalleCabaloPresentacion2">
                     Unha experiencia diferente para desconectar, gozar do
                     entorno e percorrer camiños e paisaxes galegas dunha
                     maneira única.
@@ -94,17 +154,25 @@
 
             <aside class="detalle-resumo">
 
-                <h3>
+                <h3 data-i18n="detalleInformacion">
                     Información
                 </h3>
+
 
                 <div class="detalle-resumo-item">
 
                     <i class="fa-regular fa-clock"></i>
 
                     <div>
-                        <strong>Duración</strong>
-                        <p>3 horas</p>
+
+                        <strong data-i18n="duracion">
+                            Duración
+                        </strong>
+
+                        <p data-i18n="detalleCabaloDuracion">
+                            3 horas
+                        </p>
+
                     </div>
 
                 </div>
@@ -115,8 +183,15 @@
                     <i class="fa-solid fa-location-dot"></i>
 
                     <div>
-                        <strong>Localización</strong>
-                        <p>Costa da Morte, Galicia</p>
+
+                        <strong data-i18n="localizacion">
+                            Localización
+                        </strong>
+
+                        <p>
+                            Costa da Morte, Galicia
+                        </p>
+
                     </div>
 
                 </div>
@@ -127,15 +202,29 @@
                     <i class="fa-solid fa-euro-sign"></i>
 
                     <div>
-                        <strong>Desde</strong>
-                        <p>25 € / persoa</p>
+
+                        <strong data-i18n="desde">
+                            Desde
+                        </strong>
+
+                        <p>
+                            25 €
+                            <span data-i18n="porPersoa">
+                                / persoa
+                            </span>
+                        </p>
+
                     </div>
 
                 </div>
 
 
-                <a href="contacto.html" class="detalle-boton">
+                <a href="contacto.html"
+                    class="detalle-boton"
+                    data-i18n="solicitar">
+
                     Solicitar información
+
                 </a>
 
             </aside>
@@ -145,30 +234,54 @@
 
         <section class="detalle-inclue">
 
-            <h2>
+            <h2 data-i18n="detalleInclueTitulo">
                 Que inclúe?
             </h2>
+
 
             <div class="detalle-inclue-grid">
 
                 <div class="detalle-inclue-item">
+
                     <i class="fa-solid fa-check"></i>
-                    <p>Cabalo adaptado ao nivel</p>
+
+                    <p data-i18n="detalleCabaloInclue1">
+                        Cabalo adaptado ao nivel
+                    </p>
+
                 </div>
 
-                <div class="detalle-inclue-item">
-                    <i class="fa-solid fa-check"></i>
-                    <p>Casco de protección</p>
-                </div>
 
                 <div class="detalle-inclue-item">
+
                     <i class="fa-solid fa-check"></i>
-                    <p>Acompañamento durante a ruta</p>
+
+                    <p data-i18n="detalleCabaloInclue2">
+                        Casco de protección
+                    </p>
+
                 </div>
 
+
                 <div class="detalle-inclue-item">
+
                     <i class="fa-solid fa-check"></i>
-                    <p>Comida incluída</p>
+
+                    <p data-i18n="detalleCabaloInclue3">
+                        Acompañamento durante a ruta
+                    </p>
+
+                </div>
+
+
+                <div class="detalle-inclue-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    <p data-i18n="detalleCabaloInclue4">
+                        Comida incluída
+                    </p>
+
                 </div>
 
             </div>
@@ -180,24 +293,25 @@
 
             <div class="detalle-descubre-imaxe">
 
-                <img src="assets/cabalos.avif" alt="Grupo realizando unha ruta a cabalo por Galicia">
+                <img src="assets/cabalos.avif"
+                    alt="Grupo realizando unha ruta a cabalo por Galicia">
 
             </div>
 
 
             <div class="detalle-descubre-texto">
 
-                <h2>
+                <h2 data-i18n="detalleCabaloDescubreTitulo">
                     Natureza a outro ritmo
                 </h2>
 
-                <p>
+                <p data-i18n="detalleCabaloDescubre1">
                     Percorre camiños rodeados de natureza e descubre
                     paisaxes da Costa da Morte desde unha perspectiva
                     completamente diferente.
                 </p>
 
-                <p>
+                <p data-i18n="detalleCabaloDescubre2">
                     A ruta permite gozar da tranquilidade do entorno e
                     achegarse á paisaxe galega nunha experiencia pensada
                     para desconectar e vivir o momento.
@@ -210,21 +324,23 @@
 
         <section class="detalle-datos">
 
-            <h2>
+            <h2 data-i18n="detalleInformacionPractica">
                 Información práctica
             </h2>
 
+
             <div class="detalle-datos-grid">
+
 
                 <article>
 
                     <i class="fa-regular fa-clock"></i>
 
-                    <h3>
+                    <h3 data-i18n="duracion">
                         Duración
                     </h3>
 
-                    <p>
+                    <p data-i18n="detalleCabaloDuracion">
                         3 horas
                     </p>
 
@@ -235,11 +351,11 @@
 
                     <i class="fa-solid fa-users"></i>
 
-                    <h3>
+                    <h3 data-i18n="detalleParaQuen">
                         Para quen?
                     </h3>
 
-                    <p>
+                    <p data-i18n="detalleCabaloPublico">
                         Parellas, amigos e grupos
                     </p>
 
@@ -250,7 +366,7 @@
 
                     <i class="fa-solid fa-location-dot"></i>
 
-                    <h3>
+                    <h3 data-i18n="zona">
                         Zona
                     </h3>
 
@@ -265,12 +381,15 @@
 
                     <i class="fa-solid fa-euro-sign"></i>
 
-                    <h3>
+                    <h3 data-i18n="prezo">
                         Prezo
                     </h3>
 
                     <p>
-                        Desde 25 €
+                        <span data-i18n="desde">
+                            Desde
+                        </span>
+                        25 €
                     </p>
 
                 </article>
@@ -282,21 +401,27 @@
 
         <section class="detalle-cta">
 
-            <h2>
+            <h2 data-i18n="detalleCabaloCtaTitulo">
                 Preparado para vivir a experiencia?
             </h2>
 
-            <p>
+            <p data-i18n="detalleCabaloCtaTexto">
                 Cóntanos que estás buscando e axudarémosche a preparar a túa experiencia.
             </p>
 
-            <a href="contacto.html" class="detalle-cta-boton">
+            <a href="contacto.html"
+                class="detalle-cta-boton"
+                data-i18n="solicitar">
+
                 Solicitar información
+
             </a>
 
         </section>
 
     </main>
+
+
     <footer>
 
         <div class="footer-contenido">
@@ -305,60 +430,95 @@
             <div class="footer-marca">
 
                 <a href="index.html">
-                    <img src="assets/logotipo.png" alt="Logotipo de Atlántico Travel">
+
+                    <img src="assets/logotipo.png"
+                        alt="Logotipo de Atlántico Travel">
+
                 </a>
 
-                <p>
+                <p data-i18n="lema">
                     Galicia para vivila.
                 </p>
 
             </div>
 
+
             <div class="footer-contacto">
 
-                <h2>Contacta con nós</h2>
+                <h2 data-i18n="contactar">
+                    Contacta con nós
+                </h2>
+
 
                 <div class="footer-contacto-info">
+
                     <p>
-                        <strong>Teléfono:</strong>
+
+                        <strong data-i18n="footerTelefono">
+                            Teléfono:
+                        </strong>
+
                         <a href="tel:+34900000000">
                             +34 900 000 000
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Correo:</strong>
+
+                        <strong data-i18n="footerCorreo">
+                            Correo:
+                        </strong>
+
                         <a href="mailto:info@atlanticotravel.es">
                             info@atlanticotravel.es
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Localización:</strong>
+
+                        <strong data-i18n="footerLocalizacion">
+                            Localización:
+                        </strong>
+
                         Calle doctor flemming, nº71, Carballo, A Coruña
+
                     </p>
 
                 </div>
 
             </div>
 
+
             <div class="footer-redes">
 
-                <h2>Síguenos</h2>
+                <h2 data-i18n="siguenos">
+                    Síguenos
+                </h2>
+
 
                 <div class="redes">
 
-
-                    <a href="ENLACE_FACEBOOK" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_FACEBOOK"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Facebook de Atlántico Travel">
+
                         <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
 
 
-
-                    <a href="ENLACE_INSTAGRAM" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_INSTAGRAM"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Instagram de Atlántico Travel">
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                 </div>
@@ -375,33 +535,51 @@
                 <ul>
 
                     <li>
-                        <a href="aviso-legal.html">
+
+                        <a href="aviso-legal.html"
+                            data-i18n="avisoLegal">
+
                             Aviso legal
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="privacidade.html">
+
+                        <a href="privacidade.html"
+                            data-i18n="privacidade">
+
                             Política de privacidade
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="cookies.html">
+
+                        <a href="cookies.html"
+                            data-i18n="cookies">
+
                             Política de cookies
+
                         </a>
+
                     </li>
 
                 </ul>
-                <button class="menu-toggle" aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+
             </nav>
 
         </div>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
