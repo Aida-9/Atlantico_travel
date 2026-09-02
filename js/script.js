@@ -3597,3 +3597,67 @@ if (menu && botonMenu) {
     });
 
 }
+
+const imaxesZoom = document.querySelectorAll(".imaxe-zoom");
+
+const modalImaxe = document.querySelector("#modal-imaxe");
+
+const imaxeModal = document.querySelector("#modal-contenido");
+
+const botonPecharModal = document.querySelector(".modal-pechar");
+
+
+imaxesZoom.forEach(function (imaxe) {
+
+    imaxe.addEventListener("click", function () {
+
+        imaxeModal.src = imaxe.src;
+
+        imaxeModal.alt = imaxe.alt;
+
+        modalImaxe.classList.add("activo");
+
+    });
+
+});
+
+
+if (botonPecharModal) {
+
+    botonPecharModal.addEventListener("click", function () {
+
+        modalImaxe.classList.remove("activo");
+
+    });
+
+}
+
+
+/* Pechar facendo clic no fondo */
+
+if (modalImaxe) {
+
+    modalImaxe.addEventListener("click", function (evento) {
+
+        if (evento.target === modalImaxe) {
+
+            modalImaxe.classList.remove("activo");
+
+        }
+
+    });
+
+}
+
+
+/* Pechar coa tecla ESC */
+
+document.addEventListener("keydown", function (evento) {
+
+    if (evento.key === "Escape" && modalImaxe) {
+
+        modalImaxe.classList.remove("activo");
+
+    }
+
+});
