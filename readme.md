@@ -122,4 +122,9 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 19. Comezamos oficialmente coa funcionalidade JavaScript ainda que xa a usei para o menú hamburguesa do deseño responsive do móvil.
 
 20. A idea que a priori non puxen pero que agora estaría ben implementala sería o cambio de idioma para que a web fose accesible a máis xente.
+
 21. Empecei co diccionario automático pero está sendo engorroso e laborioso, o código foi xerado por IA e implementado finalmente co diccionario automático, pero hai que cambiarlle a cada texto do contido a clase para que se cambie automáticamente. 
+
+22. Creación dunhas ventás modais para as imaxes principais das cards de destinos e experiencias, asi co efecto de zoom que lle proporciona o css fai que parezca clicable, entón o pinchar saltaría unha ventá emerxente para que se poida ver a imaxe a maior tamaño e cerrase a través dunha x.
+
+23. 
