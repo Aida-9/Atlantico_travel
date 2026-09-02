@@ -49,4 +49,59 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     };
-    
+    function cambiarIdioma(idioma) {
+
+        const elementos = document.querySelectorAll(
+            "a, h1, h2, h3, p, button"
+        );
+
+        elementos.forEach(function (elemento) {
+
+            const texto = elemento.textContent.trim();
+
+            for (const idiomaBase in traduccions) {
+
+                if (traduccions[idiomaBase][texto]) {
+
+                    elemento.textContent =
+                        traduccions[idioma][texto];
+
+                    break;
+                }
+
+            }
+
+        });
+
+document.documentElement.lang = idioma;
+
+        localStorage.setItem(
+            "idiomaAtlanticoTravel",
+            idioma
+        );
+    }
+
+
+    if (selectorIdioma) {
+
+        const idiomaGardado =
+            localStorage.getItem(
+                "idiomaAtlanticoTravel"
+            ) || "gl";
+
+        selectorIdioma.value = idiomaGardado;
+
+        cambiarIdioma(idiomaGardado);
+
+
+        selectorIdioma.addEventListener(
+            "change",
+            function () {
+
+                cambiarIdioma(
+                    selectorIdioma.value
+                );
+
+            }
+        );
+    }
