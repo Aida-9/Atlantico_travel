@@ -1651,6 +1651,7 @@ footer {
     transform: scale(1.03);
     transition: transform 0.3s ease;
 }
+
 .modal-imaxe {
     display: none;
     position: fixed;
@@ -1686,6 +1687,75 @@ footer {
     color: white;
 
     cursor: pointer;
+}
+
+.aviso-cookies {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+
+    max-width: 430px;
+    padding: 18px;
+
+    background-color: var(--blanco);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    z-index: 3000;
+}
+
+.aviso-cookies-contenido {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cookie-icono {
+    font-size: 35px;
+}
+
+.aviso-cookies p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.aviso-cookies a {
+    color: var(--azul-atlantico);
+    font-weight: 700;
+}
+
+#pechar-cookies {
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    color: var(--texto-secundario);
+
+    cursor: pointer;
+}
+
+
+.boton-cookie {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-atlantico);
+    border-radius: 50%;
+    font-size: 27px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 3000;
+    transition: transform 0.3s ease;
+}
+
+.boton-cookie:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
@@ -2900,7 +2970,8 @@ footer {
     footer {
         padding: 35px 15px;
     }
-    body{
+
+    body {
         padding-top: 75px;
     }
 
