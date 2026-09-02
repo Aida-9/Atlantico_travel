@@ -12,123 +12,25 @@ if (botonMenu && menu) {
 
 }
 
-const selectorIdioma = document.querySelector("#idioma");
+const idioma = document.querySelector("#idioma");
 
-    const traduccions = {
+idioma.addEventListener("change", function () {
 
-        es: {
-            "Inicio": "Inicio",
-            "Sobre nós": "Sobre nosotros",
-            "Destinos": "Destinos",
-            "Experiencias": "Experiencias",
-            "Ofertas": "Ofertas",
-            "Contacto": "Contacto",
-            "Solicita información": "Solicita información",
-            "Preparados para a aventura?": "¿Preparados para la aventura?"
-        },
+    const opcion = idioma.value;
 
-        en: {
-            "Inicio": "Home",
-            "Sobre nós": "About us",
-            "Destinos": "Destinations",
-            "Experiencias": "Experiences",
-            "Ofertas": "Offers",
-            "Contacto": "Contact",
-            "Solicita información": "Request information",
-            "Preparados para a aventura?": "Ready for the adventure?"
-        }
-
-    };
-
-
-    /* Collemos os elementos que queremos poder traducir */
-
-    const elementos = document.querySelectorAll(
-        "a, h1, h2, h3, p, button"
-    );
-
-
-    /* Gardamos automaticamente o texto galego orixinal */
-
-    elementos.forEach(function (elemento) {
-
-        elemento.dataset.textoOriginal =
-            elemento.textContent.trim();
-
-    });
-
-
-    function cambiarIdioma(idioma) {
-
-        elementos.forEach(function (elemento) {
-
-            const textoOriginal =
-                elemento.dataset.textoOriginal;
-
-
-            /* GALEGO */
-
-            if (idioma === "gl") {
-
-                elemento.textContent =
-                    textoOriginal;
-
-            }
-
-
-            /* CASTELÁN OU INGLÉS */
-
-            else if (
-                traduccions[idioma] &&
-                traduccions[idioma][textoOriginal]
-            ) {
-
-                elemento.textContent =
-                    traduccions[idioma][textoOriginal];
-
-            }
-
-        });
-
-
-        document.documentElement.lang = idioma;
-
-        localStorage.setItem(
-            "idiomaAtlanticoTravel",
-            idioma
-        );
-
+    if (opcion === "gl") {
+        document.querySelector(".hero-content h2").textContent =
+            "Preparados para a aventura?";
     }
 
+    if (opcion === "es") {
+        document.querySelector(".hero-content h2").textContent =
+            "¿Preparados para la aventura?";
+    }
 
-    if (selectorIdioma) {
-
-        const idiomaGardado =
-            localStorage.getItem(
-                "idiomaAtlanticoTravel"
-            ) || "gl";
-
-
-        selectorIdioma.value =
-            idiomaGardado;
-
-
-        cambiarIdioma(
-            idiomaGardado
-        );
-
-
-        selectorIdioma.addEventListener(
-            "change",
-            function () {
-
-                cambiarIdioma(
-                    selectorIdioma.value
-                );
-
-            }
-        );
-
+    if (opcion === "en") {
+        document.querySelector(".hero-content h2").textContent =
+            "Ready for the adventure?";
     }
 
 });
