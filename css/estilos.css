@@ -1758,6 +1758,33 @@ footer {
     transform: scale(1.1);
 }
 
+.volver-arriba {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--azul-atlantico);
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 2500;
+    transition: transform 0.3s ease;
+}
+
+.volver-arriba:hover {
+    transform: scale(1.1);
+}
+
+.volver-arriba.visible {
+    display: block;
+}
+
 @media (max-width: 1024px) {
     header>nav {
         padding: 0 30px;
