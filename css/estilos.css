@@ -2780,6 +2780,22 @@ footer {
     .footer-inferior nav a {
         font-size: 14px;
     }
+
+@media (max-width: 600px) {
+
+    .aviso-cookies {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        max-width: none;
+    }
+
+    .boton-cookie {
+        left: 15px;
+        bottom: 15px;
+    }
+
+}
 }
 
 @media (max-width: 480px) {
