@@ -3675,4 +3675,30 @@ if (avisoCookies && pecharCookies && botonCookie) {
         botonCookie.style.display = "flex";
 
     });
+
+const botonArriba = document.querySelector("#volver-arriba");
+
+if (botonArriba) {
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 300) {
+            botonArriba.classList.add("visible");
+        } else {
+            botonArriba.classList.remove("visible");
+        }
+
+    });
+
+
+    botonArriba.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
 }
