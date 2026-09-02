@@ -11,266 +11,291 @@ if (botonMenu && menu) {
     });
 
 }
-const botonMenu = document.querySelector("header .menu-toggle");
-const menu = document.querySelector("header .menu");
 
-if (botonMenu && menu) {
-
-    botonMenu.addEventListener("click", function () {
-
-        menu.classList.toggle("activo");
-        botonMenu.classList.toggle("activo");
-
-    });
-
-}
 
 
 const selectorIdioma = document.querySelector("#idioma");
 
 
-const traduccions = {
+if (selectorIdioma) {
 
-    es: {
+    selectorIdioma.addEventListener("change", function () {
 
-        "Inicio": "Inicio",
-        "Sobre nós": "Sobre nosotros",
-        "Destinos": "Destinos",
-        "Experiencias": "Experiencias",
-        "Ofertas": "Ofertas",
-        "Contacto": "Contacto",
-
-        "Solicita información":
-            "Solicita información",
-
-        "Preparados para a aventura?":
-            "¿Preparados para la aventura?",
-
-        "Rías Baixas":
-            "Rías Baixas",
-
-        "Costa da Morte":
-            "Costa da Morte",
-
-        "Canóns do Sil":
-            "Cañones del Sil",
-
-        "Explora destinos":
-            "Explora destinos",
-
-        "Kayak pola ría":
-            "Kayak por la ría",
-
-        "Ruta a cabalo":
-            "Ruta a caballo",
-
-        "Explora experiencias":
-            "Explora experiencias",
-
-        "Galicia para vivila.":
-            "Galicia para vivirla.",
-
-        "Contacta con nós":
-            "Contacta con nosotros",
-
-        "Teléfono":
-            "Teléfono",
-
-        "Correo":
-            "Correo",
-
-        "Localización":
-            "Localización",
-
-        "Síguenos":
-            "Síguenos",
-
-        "Aviso legal":
-            "Aviso legal",
-
-        "Privacidade":
-            "Privacidad",
-
-        "Cookies":
-            "Cookies"
-    },
+        const idioma = selectorIdioma.value;
 
 
-    en: {
+        /* MENÚ */
 
-        "Inicio":
-            "Home",
+        const enlacesMenu = document.querySelectorAll(".menu a");
 
-        "Sobre nós":
-            "About us",
+        if (idioma === "gl") {
 
-        "Destinos":
-            "Destinations",
-
-        "Experiencias":
-            "Experiences",
-
-        "Ofertas":
-            "Offers",
-
-        "Contacto":
-            "Contact",
-
-        "Solicita información":
-            "Request information",
-
-        "Preparados para a aventura?":
-            "Ready for the adventure?",
-
-        "Rías Baixas":
-            "Rías Baixas",
-
-        "Costa da Morte":
-            "Costa da Morte",
-
-        "Canóns do Sil":
-            "Sil Canyons",
-
-        "Explora destinos":
-            "Explore destinations",
-
-        "Kayak pola ría":
-            "Kayaking in the estuary",
-
-        "Ruta a cabalo":
-            "Horse riding",
-
-        "Explora experiencias":
-            "Explore experiences",
-
-        "Galicia para vivila.":
-            "Galicia, made to be experienced.",
-
-        "Contacta con nós":
-            "Contact us",
-
-        "Teléfono":
-            "Phone",
-
-        "Correo":
-            "Email",
-
-        "Localización":
-            "Location",
-
-        "Síguenos":
-            "Follow us",
-
-        "Aviso legal":
-            "Legal notice",
-
-        "Privacidade":
-            "Privacy",
-
-        "Cookies":
-            "Cookies"
-    }
-
-};
-
-
-const textosOrixinais = [];
-
-
-function buscarTextos(elemento) {
-
-    elemento.childNodes.forEach(function (nodo) {
-
-        if (nodo.nodeType === 3) {
-
-            const texto = nodo.nodeValue.trim();
-
-            if (texto !== "") {
-
-                textosOrixinais.push({
-                    nodo: nodo,
-                    texto: texto
-                });
-
-            }
+            enlacesMenu[0].textContent = "Inicio";
+            enlacesMenu[1].textContent = "Sobre nós";
+            enlacesMenu[2].textContent = "Destinos";
+            enlacesMenu[3].textContent = "Experiencias";
+            enlacesMenu[4].textContent = "Ofertas";
+            enlacesMenu[5].textContent = "Contacto";
 
         }
 
 
-        if (nodo.nodeType === 1) {
+        if (idioma === "es") {
 
-            if (
-                nodo.tagName !== "SCRIPT" &&
-                nodo.tagName !== "STYLE" &&
-                nodo.tagName !== "SELECT"
-            ) {
-
-                buscarTextos(nodo);
-
-            }
+            enlacesMenu[0].textContent = "Inicio";
+            enlacesMenu[1].textContent = "Sobre nosotros";
+            enlacesMenu[2].textContent = "Destinos";
+            enlacesMenu[3].textContent = "Experiencias";
+            enlacesMenu[4].textContent = "Ofertas";
+            enlacesMenu[5].textContent = "Contacto";
 
         }
 
-    });
 
-}
+        if (idioma === "en") {
+
+            enlacesMenu[0].textContent = "Home";
+            enlacesMenu[1].textContent = "About us";
+            enlacesMenu[2].textContent = "Destinations";
+            enlacesMenu[3].textContent = "Experiences";
+            enlacesMenu[4].textContent = "Offers";
+            enlacesMenu[5].textContent = "Contact";
+
+        }
 
 
-buscarTextos(document.body);
 
+        /* HERO */
 
-function cambiarIdioma(idioma) {
+        const tituloHero =
+            document.querySelector(".hero-content h2");
 
-    textosOrixinais.forEach(function (elemento) {
+        const botonHero =
+            document.querySelector(".hero-cta");
 
-        const textoGalego = elemento.texto;
+        const botonNav =
+            document.querySelector(".nav-cta");
 
 
         if (idioma === "gl") {
 
-            elemento.nodo.nodeValue =
-                textoGalego;
+            tituloHero.textContent =
+                "Preparados para a aventura?";
+
+            botonHero.textContent =
+                "Solicita información";
+
+            botonNav.textContent =
+                "Solicita información";
 
         }
 
 
-        else if (
-            traduccions[idioma] &&
-            traduccions[idioma][textoGalego]
-        ) {
+        if (idioma === "es") {
 
-            elemento.nodo.nodeValue =
-                traduccions[idioma][textoGalego];
+            tituloHero.textContent =
+                "¿Preparados para la aventura?";
+
+            botonHero.textContent =
+                "Solicita información";
+
+            botonNav.textContent =
+                "Solicita información";
+
+        }
+
+
+        if (idioma === "en") {
+
+            tituloHero.textContent =
+                "Ready for the adventure?";
+
+            botonHero.textContent =
+                "Request information";
+
+            botonNav.textContent =
+                "Request information";
 
         }
 
 
-        else {
 
-            elemento.nodo.nodeValue =
-                textoGalego;
+        /* DESTINOS */
 
-        }
-
-    });
-
-
-    document.documentElement.lang = idioma;
-
-}
-
-
-if (selectorIdioma) {
-
-    selectorIdioma.addEventListener(
-        "change",
-        function () {
-
-            cambiarIdioma(
-                selectorIdioma.value
+        const titulosDestinos =
+            document.querySelectorAll(
+                ".destino-card h3"
             );
 
+        const botonesDestinos =
+            document.querySelectorAll(
+                ".destino-card .boton-card"
+            );
+
+
+        if (idioma === "gl") {
+
+            if (titulosDestinos[2]) {
+                titulosDestinos[2].textContent =
+                    "Canóns do Río Sil";
+            }
+
+            botonesDestinos.forEach(function (boton) {
+                boton.textContent =
+                    "Explora destinos";
+            });
+
         }
-    );
+
+
+        if (idioma === "es") {
+
+            if (titulosDestinos[2]) {
+                titulosDestinos[2].textContent =
+                    "Cañones del Río Sil";
+            }
+
+            botonesDestinos.forEach(function (boton) {
+                boton.textContent =
+                    "Explora destinos";
+            });
+
+        }
+
+
+        if (idioma === "en") {
+
+            if (titulosDestinos[2]) {
+                titulosDestinos[2].textContent =
+                    "Sil River Canyons";
+            }
+
+            botonesDestinos.forEach(function (boton) {
+                boton.textContent =
+                    "Explore destinations";
+            });
+
+        }
+
+
+
+        /* EXPERIENCIAS */
+
+        const botonesExperiencias =
+            document.querySelectorAll(
+                ".experiencia-card .boton-card"
+            );
+
+
+        botonesExperiencias.forEach(function (boton) {
+
+            if (idioma === "gl") {
+
+                boton.textContent =
+                    "Explora experiencias";
+
+            }
+
+            if (idioma === "es") {
+
+                boton.textContent =
+                    "Explora experiencias";
+
+            }
+
+            if (idioma === "en") {
+
+                boton.textContent =
+                    "Explore experiences";
+
+            }
+
+        });
+
+
+
+        /* FOOTER */
+
+        const lema =
+            document.querySelector(
+                ".footer-marca p"
+            );
+
+        const tituloContacto =
+            document.querySelector(
+                ".footer-contacto h2"
+            );
+
+        const tituloRedes =
+            document.querySelector(
+                ".footer-redes h2"
+            );
+
+
+        if (idioma === "gl") {
+
+            if (lema) {
+                lema.textContent =
+                    "Galicia para vivila.";
+            }
+
+            if (tituloContacto) {
+                tituloContacto.textContent =
+                    "Contacta con nós";
+            }
+
+            if (tituloRedes) {
+                tituloRedes.textContent =
+                    "Síguenos";
+            }
+
+        }
+
+
+        if (idioma === "es") {
+
+            if (lema) {
+                lema.textContent =
+                    "Galicia para vivirla.";
+            }
+
+            if (tituloContacto) {
+                tituloContacto.textContent =
+                    "Contacta con nosotros";
+            }
+
+            if (tituloRedes) {
+                tituloRedes.textContent =
+                    "Síguenos";
+            }
+
+        }
+
+
+        if (idioma === "en") {
+
+            if (lema) {
+                lema.textContent =
+                    "Galicia, made to be experienced.";
+            }
+
+            if (tituloContacto) {
+                tituloContacto.textContent =
+                    "Contact us";
+            }
+
+            if (tituloRedes) {
+                tituloRedes.textContent =
+                    "Follow us";
+            }
+
+        }
+
+
+        /* CAMBIAMOS O LANG DO HTML */
+
+        document.documentElement.lang = idioma;
+
+    });
 
 }
