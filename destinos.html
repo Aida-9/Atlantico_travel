@@ -4,175 +4,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
+
     <title>Destinos</title>
 </head>
 
 <body>
+
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
+
 
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">
+                        Sobre nós
+                    </a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">
+                        Destinos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">
+                        Experiencias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+
+                Solicita información
+
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
             <button class="menu-toggle" aria-label="Abrir menú">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
         </nav>
 
-
     </header>
+
+
     <main>
+
+
         <section class="destinos-intro">
+
             <div class="destinos-intro-contenido">
-                <h1>Destinos</h1>
-                <p>Cada viaxe, unha historia por descubrir.
+
+                <h1 data-i18n="destinosTitulo">
+                    Destinos
+                </h1>
+
+                <p data-i18n="destinosIntroTexto">
+                    Cada viaxe, unha historia por descubrir.
                 </p>
 
             </div>
 
         </section>
+
+
         <section class="destinos-principais">
+
             <div class="destinos-grid">
+
+
                 <article>
+
                     <header>
-                        <h2>Rías Baixas</h2>
+
+                        <h2 data-i18n="riasTitulo">
+                            Rías Baixas
+                        </h2>
+
                     </header>
-                    <img src="assets/riasbaixas.avif" alt="Paisaxe das Rías Baixas con praia, mar e costa galega">
+
+
+                    <img src="assets/riasbaixas.avif"
+                        alt="Paisaxe das Rías Baixas con praia, mar e costa galega">
+
 
                     <div class="destino-card-contenido">
+
                         <div class="destino-card-info">
-                            <p> Rías Baixas, un rincón onde o Atlántico abraza
+
+                            <p data-i18n="riasTexto">
+                                Rías Baixas, un rincón onde o Atlántico abraza
                                 a terra galega. Praias de area branca, augas
                                 cristalinas, pobos mariñeiros con encanto e
-                                unha gastronomía única.</p>
-                            <p class="destino-prezo"> <strong>30€</strong>/persoa</p>
+                                unha gastronomía única.
+                            </p>
+
+
+                            <p class="destino-prezo">
+
+                                <strong>30€</strong>
+
+                                <span data-i18n="porPersoa">
+                                    / persoa
+                                </span>
+
+                            </p>
+
                         </div>
+
+
                         <div class="destino-card-accion">
-                            <a href="destino1.html" class="boton">Explora destinos</a>
+
+                            <a href="destino1.html"
+                                class="boton"
+                                data-i18n="exploraDestinos">
+
+                                Explora destinos
+
+                            </a>
+
                         </div>
 
                     </div>
+
                 </article>
+
 
                 <article class="destino-card">
+
                     <header class="destino-card-header">
-                        <h2>Costa da Morte</h2>
+
+                        <h2 data-i18n="costaTitulo">
+                            Costa da Morte
+                        </h2>
+
                     </header>
-                    <img src="assets/costamorte.avif" alt="Costa da Morte en Galicia">
+
+
+                    <img src="assets/costamorte.avif"
+                        alt="Costa da Morte en Galicia">
+
+
                     <div class="destino-card-contenido">
+
                         <div class="destino-card-info">
-                            <p> Descobre a Galicia máis salvaxe, entre cantís, faros e praias onde os pobos mariñeiros
-                                conservan a súa esencia máis auténtica.</p>
-                            <p> <strong>Duración:</strong> 3 días/2 noites</p>
-                            <p class="destino-prezo">
-                                <strong>40€</strong>/persoa
+
+                            <p data-i18n="costaTextoDestinos">
+                                Descobre a Galicia máis salvaxe, entre cantís,
+                                faros e praias onde os pobos mariñeiros
+                                conservan a súa esencia máis auténtica.
                             </p>
+
+
+                            <p>
+
+                                <strong data-i18n="duracion">
+                                    Duración:
+                                </strong>
+
+                                <span data-i18n="costaDuracion">
+                                    3 días / 2 noites
+                                </span>
+
+                            </p>
+
+
+                            <p class="destino-prezo">
+
+                                <strong>40€</strong>
+
+                                <span data-i18n="porPersoa">
+                                    / persoa
+                                </span>
+
+                            </p>
+
                         </div>
+
+
                         <div class="destino-card-accion">
-                            <a href="destino2.html" class="boton">Explora destinos</a>
+
+                            <a href="destino2.html"
+                                class="boton"
+                                data-i18n="exploraDestinos">
+
+                                Explora destinos
+
+                            </a>
+
                         </div>
 
                     </div>
+
                 </article>
+
             </div>
+
         </section>
+
 
         <section class="destinos-parallax">
+
             <div class="destinos-parallax-contenido">
-                <p>
+
+                <p data-i18n="destinosFrase">
                     "Onde cada camiño deixa un recordo."
                 </p>
+
             </div>
 
         </section>
+
     </main>
+
 
     <footer>
 
         <div class="footer-contenido">
 
-            <!-- MARCA -->
+
             <div class="footer-marca">
 
                 <a href="index.html">
-                    <img src="assets/logotipo.png" alt="Logotipo de Atlántico Travel">
+
+                    <img src="assets/logotipo.png"
+                        alt="Logotipo de Atlántico Travel">
+
                 </a>
 
-                <p>
+
+                <p data-i18n="lema">
                     Galicia para vivila.
                 </p>
 
             </div>
 
+
             <div class="footer-contacto">
 
-                <h2>Contacta con nós</h2>
+                <h2 data-i18n="contactar">
+                    Contacta con nós
+                </h2>
+
 
                 <div class="footer-contacto-info">
+
                     <p>
-                        <strong>Teléfono:</strong>
+
+                        <strong data-i18n="footerTelefono">
+                            Teléfono:
+                        </strong>
+
                         <a href="tel:+34900000000">
                             +34 900 000 000
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Correo:</strong>
+
+                        <strong data-i18n="footerCorreo">
+                            Correo:
+                        </strong>
+
                         <a href="mailto:info@atlanticotravel.es">
                             info@atlanticotravel.es
                         </a>
+
                     </p>
 
+
                     <p>
-                        <strong>Localización:</strong>
+
+                        <strong data-i18n="footerLocalizacion">
+                            Localización:
+                        </strong>
+
                         Calle doctor flemming, nº71, Carballo, A Coruña
+
                     </p>
 
                 </div>
 
             </div>
 
+
             <div class="footer-redes">
 
-                <h2>Síguenos</h2>
+                <h2 data-i18n="siguenos">
+                    Síguenos
+                </h2>
+
 
                 <div class="redes">
 
-
-                    <a href="ENLACE_FACEBOOK" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_FACEBOOK"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Facebook de Atlántico Travel">
+
                         <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
 
 
-
-                    <a href="ENLACE_INSTAGRAM" target="_blank" rel="noopener noreferrer"
+                    <a href="ENLACE_INSTAGRAM"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Instagram de Atlántico Travel">
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                 </div>
@@ -189,33 +390,51 @@
                 <ul>
 
                     <li>
-                        <a href="aviso-legal.html">
+
+                        <a href="aviso-legal.html"
+                            data-i18n="avisoLegal">
+
                             Aviso legal
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="privacidade.html">
+
+                        <a href="privacidade.html"
+                            data-i18n="privacidade">
+
                             Política de privacidade
+
                         </a>
+
                     </li>
 
+
                     <li>
-                        <a href="cookies.html">
+
+                        <a href="cookies.html"
+                            data-i18n="cookies">
+
                             Política de cookies
+
                         </a>
+
                     </li>
 
                 </ul>
-                <button class="menu-toggle" aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+
             </nav>
 
         </div>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
