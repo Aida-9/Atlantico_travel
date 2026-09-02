@@ -127,4 +127,5 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 22. Creación dunhas ventás modais para as imaxes principais das cards de destinos e experiencias, asi co efecto de zoom que lle proporciona o css fai que parezca clicable, entón o pinchar saltaría unha ventá emerxente para que se poida ver a imaxe a maior tamaño e cerrase a través dunha x.
 
-23. 
+23. Despois considerei útil un botón de cookies xa que fixera a páxina individual e para acceder a ela a traves da pantalla de inicio xa. Despois creei na primeira páxina a modo de exemplo o botón que é unha flecha para indicar que se vai cara o top 0 da pantalla. Proximamente incluirei o mesmo código e dulicareino para as demáis páxinas.
+
