@@ -12,290 +12,171 @@ if (botonMenu && menu) {
 
 }
 
+const traduccions = {
 
+    gl: {
 
-const selectorIdioma = document.querySelector("#idioma");
+        inicio: "Inicio",
+        sobreNos: "Sobre nós",
+        destinos: "Destinos",
+        experiencias: "Experiencias",
+        ofertas: "Ofertas",
+        contacto: "Contacto",
 
+        solicitar: "Solicita información",
 
-if (selectorIdioma) {
+        heroSubtitulo:
+            "Preparados para a aventura?",
 
-    selectorIdioma.addEventListener("change", function () {
+        riasTitulo:
+            "Rías Baixas",
 
-        const idioma = selectorIdioma.value;
+        riasTexto:
+            "Rías Baixas, un rincón onde o Atlántico abraza a terra galega. Praias de area branca, augas cristalinas, pobos mariñeiros con encanto e unha gastronomía única.",
 
+        costaTitulo:
+            "Costa da Morte",
 
-        /* MENÚ */
+        costaTexto:
+            "Unha semana de duración para descubrir a súa beleza natural, a súa historia e a súa cultura.",
 
-        const enlacesMenu = document.querySelectorAll(".menu a");
+        silTitulo:
+            "Canóns do Río Sil",
 
-        if (idioma === "gl") {
+        silTexto:
+            "Descubre a beleza natural dos Canóns do Río Sil, un lugar onde a natureza se mostra en todo o seu esplendor.",
 
-            enlacesMenu[0].textContent = "Inicio";
-            enlacesMenu[1].textContent = "Sobre nós";
-            enlacesMenu[2].textContent = "Destinos";
-            enlacesMenu[3].textContent = "Experiencias";
-            enlacesMenu[4].textContent = "Ofertas";
-            enlacesMenu[5].textContent = "Contacto";
+        silDuracion:
+            "Duración aproximada: 2 horas e cata de viños incluída.",
 
-        }
+        exploraDestinos:
+            "Explora destinos",
 
+        kayakTitulo:
+            "Kayak na Ría de Aldán",
 
-        if (idioma === "es") {
+        kayakSubtitulo:
+            "Aventura pola ría",
 
-            enlacesMenu[0].textContent = "Inicio";
-            enlacesMenu[1].textContent = "Sobre nosotros";
-            enlacesMenu[2].textContent = "Destinos";
-            enlacesMenu[3].textContent = "Experiencias";
-            enlacesMenu[4].textContent = "Ofertas";
-            enlacesMenu[5].textContent = "Contacto";
+        kayakTexto:
+            "A aventura de ir nun kayak río abaixo non se pode perder. Unha experiencia única para grupos.",
 
-        }
+        kayakDuracion:
+            "Duración: 2,5 horas.",
 
+        exploraExperiencias:
+            "Explora experiencias"
+    },
 
-        if (idioma === "en") {
 
-            enlacesMenu[0].textContent = "Home";
-            enlacesMenu[1].textContent = "About us";
-            enlacesMenu[2].textContent = "Destinations";
-            enlacesMenu[3].textContent = "Experiences";
-            enlacesMenu[4].textContent = "Offers";
-            enlacesMenu[5].textContent = "Contact";
+    es: {
 
-        }
+        inicio: "Inicio",
+        sobreNos: "Sobre nosotros",
+        destinos: "Destinos",
+        experiencias: "Experiencias",
+        ofertas: "Ofertas",
+        contacto: "Contacto",
 
+        solicitar: "Solicita información",
 
+        heroSubtitulo:
+            "¿Preparados para la aventura?",
 
-        /* HERO */
+        riasTitulo:
+            "Rías Baixas",
 
-        const tituloHero =
-            document.querySelector(".hero-content h2");
+        riasTexto:
+            "Rías Baixas, un rincón donde el Atlántico abraza la tierra gallega. Playas de arena blanca, aguas cristalinas, pueblos marineros con encanto y una gastronomía única.",
 
-        const botonHero =
-            document.querySelector(".hero-cta");
+        costaTitulo:
+            "Costa da Morte",
 
-        const botonNav =
-            document.querySelector(".nav-cta");
+        costaTexto:
+            "Una semana de duración para descubrir su belleza natural, su historia y su cultura.",
 
+        silTitulo:
+            "Cañones del Río Sil",
 
-        if (idioma === "gl") {
+        silTexto:
+            "Descubre la belleza natural de los Cañones del Río Sil, un lugar donde la naturaleza se muestra en todo su esplendor.",
 
-            tituloHero.textContent =
-                "Preparados para a aventura?";
+        silDuracion:
+            "Duración aproximada: 2 horas y cata de vinos incluida.",
 
-            botonHero.textContent =
-                "Solicita información";
+        exploraDestinos:
+            "Explora destinos",
 
-            botonNav.textContent =
-                "Solicita información";
+        kayakTitulo:
+            "Kayak en la Ría de Aldán",
 
-        }
+        kayakSubtitulo:
+            "Aventura por la ría",
 
+        kayakTexto:
+            "Recorrer la ría en kayak es una aventura que no te puedes perder. Una experiencia única para grupos.",
 
-        if (idioma === "es") {
+        kayakDuracion:
+            "Duración: 2,5 horas.",
 
-            tituloHero.textContent =
-                "¿Preparados para la aventura?";
+        exploraExperiencias:
+            "Explora experiencias"
+    },
 
-            botonHero.textContent =
-                "Solicita información";
 
-            botonNav.textContent =
-                "Solicita información";
+    en: {
 
-        }
+        inicio: "Home",
+        sobreNos: "About us",
+        destinos: "Destinations",
+        experiencias: "Experiences",
+        ofertas: "Offers",
+        contacto: "Contact",
 
+        solicitar:
+            "Request information",
 
-        if (idioma === "en") {
+        heroSubtitulo:
+            "Ready for the adventure?",
 
-            tituloHero.textContent =
-                "Ready for the adventure?";
+        riasTitulo:
+            "Rías Baixas",
 
-            botonHero.textContent =
-                "Request information";
+        riasTexto:
+            "Rías Baixas, where the Atlantic Ocean embraces the Galician coast. White sandy beaches, crystal-clear waters, charming fishing villages and unique gastronomy.",
 
-            botonNav.textContent =
-                "Request information";
+        costaTitulo:
+            "Costa da Morte",
 
-        }
+        costaTexto:
+            "A week-long experience to discover its natural beauty, history and culture.",
 
+        silTitulo:
+            "Sil River Canyons",
 
+        silTexto:
+            "Discover the natural beauty of the Sil River Canyons, a place where nature reveals all its splendour.",
 
-        /* DESTINOS */
+        silDuracion:
+            "Approximate duration: 2 hours, including a wine tasting.",
 
-        const titulosDestinos =
-            document.querySelectorAll(
-                ".destino-card h3"
-            );
+        exploraDestinos:
+            "Explore destinations",
 
-        const botonesDestinos =
-            document.querySelectorAll(
-                ".destino-card .boton-card"
-            );
+        kayakTitulo:
+            "Kayaking in the Ría de Aldán",
 
+        kayakSubtitulo:
+            "Adventure on the estuary",
 
-        if (idioma === "gl") {
+        kayakTexto:
+            "Explore the estuary by kayak and enjoy a unique adventure, perfect for groups.",
 
-            if (titulosDestinos[2]) {
-                titulosDestinos[2].textContent =
-                    "Canóns do Río Sil";
-            }
+        kayakDuracion:
+            "Duration: 2.5 hours.",
 
-            botonesDestinos.forEach(function (boton) {
-                boton.textContent =
-                    "Explora destinos";
-            });
+        exploraExperiencias:
+            "Explore experiences"
+    }
 
-        }
-
-
-        if (idioma === "es") {
-
-            if (titulosDestinos[2]) {
-                titulosDestinos[2].textContent =
-                    "Cañones del Río Sil";
-            }
-
-            botonesDestinos.forEach(function (boton) {
-                boton.textContent =
-                    "Explora destinos";
-            });
-
-        }
-
-
-        if (idioma === "en") {
-
-            if (titulosDestinos[2]) {
-                titulosDestinos[2].textContent =
-                    "Sil River Canyons";
-            }
-
-            botonesDestinos.forEach(function (boton) {
-                boton.textContent =
-                    "Explore destinations";
-            });
-
-        }
-
-
-
-        /* EXPERIENCIAS */
-
-        const botonesExperiencias =
-            document.querySelectorAll(
-                ".experiencia-card .boton-card"
-            );
-
-
-        botonesExperiencias.forEach(function (boton) {
-
-            if (idioma === "gl") {
-
-                boton.textContent =
-                    "Explora experiencias";
-
-            }
-
-            if (idioma === "es") {
-
-                boton.textContent =
-                    "Explora experiencias";
-
-            }
-
-            if (idioma === "en") {
-
-                boton.textContent =
-                    "Explore experiences";
-
-            }
-
-        });
-
-
-
-        /* FOOTER */
-
-        const lema =
-            document.querySelector(
-                ".footer-marca p"
-            );
-
-        const tituloContacto =
-            document.querySelector(
-                ".footer-contacto h2"
-            );
-
-        const tituloRedes =
-            document.querySelector(
-                ".footer-redes h2"
-            );
-
-
-        if (idioma === "gl") {
-
-            if (lema) {
-                lema.textContent =
-                    "Galicia para vivila.";
-            }
-
-            if (tituloContacto) {
-                tituloContacto.textContent =
-                    "Contacta con nós";
-            }
-
-            if (tituloRedes) {
-                tituloRedes.textContent =
-                    "Síguenos";
-            }
-
-        }
-
-
-        if (idioma === "es") {
-
-            if (lema) {
-                lema.textContent =
-                    "Galicia para vivirla.";
-            }
-
-            if (tituloContacto) {
-                tituloContacto.textContent =
-                    "Contacta con nosotros";
-            }
-
-            if (tituloRedes) {
-                tituloRedes.textContent =
-                    "Síguenos";
-            }
-
-        }
-
-
-        if (idioma === "en") {
-
-            if (lema) {
-                lema.textContent =
-                    "Galicia, made to be experienced.";
-            }
-
-            if (tituloContacto) {
-                tituloContacto.textContent =
-                    "Contact us";
-            }
-
-            if (tituloRedes) {
-                tituloRedes.textContent =
-                    "Follow us";
-            }
-
-        }
-
-
-        /* CAMBIAMOS O LANG DO HTML */
-
-        document.documentElement.lang = idioma;
-
-    });
-
-}
+};
