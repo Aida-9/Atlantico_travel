@@ -3661,3 +3661,17 @@ document.addEventListener("keydown", function (evento) {
     }
 
 });
+const avisoCookies = document.querySelector("#aviso-cookies");
+const pecharCookies = document.querySelector("#pechar-cookies");
+const botonCookie = document.querySelector("#boton-cookie");
+
+
+if (avisoCookies && pecharCookies && botonCookie) {
+
+    pecharCookies.addEventListener("click", function () {
+
+        avisoCookies.style.display = "none";
+
+        botonCookie.style.display = "flex";
+
+    });
