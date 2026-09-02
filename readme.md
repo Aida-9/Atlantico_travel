@@ -122,3 +122,4 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 19. Comezamos oficialmente coa funcionalidade JavaScript ainda que xa a usei para o menú hamburguesa do deseño responsive do móvil.
 
 20. A idea que a priori non puxen pero que agora estaría ben implementala sería o cambio de idioma para que a web fose accesible a máis xente.
+21. Empecei co diccionario automático pero está sendo engorroso e laborioso, o código foi xerado por IA e implementado finalmente co diccionario automático, pero hai que cambiarlle a cada texto do contido a clase para que se cambie automáticamente. 

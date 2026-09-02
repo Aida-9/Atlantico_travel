@@ -180,3 +180,70 @@ const traduccions = {
     }
 
 };
+
+function cambiarIdioma(idioma) {
+
+    const elementos =
+        document.querySelectorAll("[data-i18n]");
+
+    elementos.forEach(function (elemento) {
+
+        const clave =
+            elemento.getAttribute("data-i18n");
+
+        if (
+            traduccions[idioma] &&
+            traduccions[idioma][clave]
+        ) {
+
+            elemento.textContent =
+                traduccions[idioma][clave];
+
+        }
+
+    });
+
+
+    document.documentElement.lang = idioma;
+
+
+    localStorage.setItem(
+        "idioma",
+        idioma
+    );
+
+}
+const selectorIdioma =
+    document.querySelector("#idioma");
+
+if (selectorIdioma) {
+
+    selectorIdioma.addEventListener(
+        "change",
+        function () {
+
+            cambiarIdioma(
+                selectorIdioma.value
+            );
+
+        }
+    );
+
+}
+
+const idiomaGardado =
+    localStorage.getItem("idioma");
+
+if (
+    idiomaGardado &&
+    selectorIdioma
+) {
+
+    selectorIdioma.value =
+        idiomaGardado;
+
+    cambiarIdioma(
+        idiomaGardado
+    );
+
+}
