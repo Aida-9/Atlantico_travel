@@ -11,237 +11,266 @@ if (botonMenu && menu) {
     });
 
 }
+const botonMenu = document.querySelector("header .menu-toggle");
+const menu = document.querySelector("header .menu");
 
- const idioma = document.querySelector("#idioma");
+if (botonMenu && menu) {
 
+    botonMenu.addEventListener("click", function () {
 
+        menu.classList.toggle("activo");
+        botonMenu.classList.toggle("activo");
 
+    });
 
-    const traduccions = {
-
-        es: {
-
-            "Inicio":
-                "Inicio",
-
-            "Sobre nós":
-                "Sobre nosotros",
-
-            "Destinos":
-                "Destinos",
-
-            "Experiencias":
-                "Experiencias",
-
-            "Ofertas":
-                "Ofertas",
-
-            "Contacto":
-                "Contacto",
-
-            "Solicita información":
-                "Solicita información",
-
-            "Preparados para a aventura?":
-                "¿Preparados para la aventura?",
-
-            "Atlántico Travel · Viaxes con alma":
-                "Atlántico Travel · Viajes con alma",
-
-            "Rías Baixas":
-                "Rías Baixas",
-
-            "Costa da Morte":
-                "Costa da Morte",
-
-            "Canóns do Río Sil":
-                "Cañones del Río Sil",
-
-            "Explora destinos":
-                "Explora destinos",
-
-            "Kayak pola ría":
-                "Kayak por la ría",
-
-            "Ruta a cabalo":
-                "Ruta a caballo",
-
-            "Explora experiencias":
-                "Explora experiencias",
-
-            "Galicia para vivila.":
-                "Galicia para vivirla.",
-
-            "Contacta con nós":
-                "Contacta con nosotros",
-
-            "Teléfono:":
-                "Teléfono:",
-
-            "Correo:":
-                "Correo:",
-
-            "Localización:":
-                "Localización:",
-
-            "Síguenos":
-                "Síguenos",
-
-            "Aviso legal":
-                "Aviso legal",
-
-            "Política de privacidade":
-                "Política de privacidad",
-
-            "Política de cookies":
-                "Política de cookies"
-        },
+}
 
 
-        en: {
+const selectorIdioma = document.querySelector("#idioma");
 
-            "Inicio":
-                "Home",
 
-            "Sobre nós":
-                "About us",
+const traduccions = {
 
-            "Destinos":
-                "Destinations",
+    es: {
 
-            "Experiencias":
-                "Experiences",
+        "Inicio": "Inicio",
+        "Sobre nós": "Sobre nosotros",
+        "Destinos": "Destinos",
+        "Experiencias": "Experiencias",
+        "Ofertas": "Ofertas",
+        "Contacto": "Contacto",
 
-            "Ofertas":
-                "Offers",
+        "Solicita información":
+            "Solicita información",
 
-            "Contacto":
-                "Contact",
+        "Preparados para a aventura?":
+            "¿Preparados para la aventura?",
 
-            "Solicita información":
-                "Request information",
+        "Rías Baixas":
+            "Rías Baixas",
 
-            "Preparados para a aventura?":
-                "Ready for the adventure?",
+        "Costa da Morte":
+            "Costa da Morte",
 
-            "Atlántico Travel · Viaxes con alma":
-                "Atlántico Travel · Travel with soul",
+        "Canóns do Sil":
+            "Cañones del Sil",
 
-            "Rías Baixas":
-                "Rías Baixas",
+        "Explora destinos":
+            "Explora destinos",
 
-            "Costa da Morte":
-                "Costa da Morte",
+        "Kayak pola ría":
+            "Kayak por la ría",
 
-            "Canóns do Río Sil":
-                "Sil River Canyons",
+        "Ruta a cabalo":
+            "Ruta a caballo",
 
-            "Explora destinos":
-                "Explore destinations",
+        "Explora experiencias":
+            "Explora experiencias",
 
-            "Kayak pola ría":
-                "Kayaking in the estuary",
+        "Galicia para vivila.":
+            "Galicia para vivirla.",
 
-            "Ruta a cabalo":
-                "Horse riding",
+        "Contacta con nós":
+            "Contacta con nosotros",
 
-            "Explora experiencias":
-                "Explore experiences",
+        "Teléfono":
+            "Teléfono",
 
-            "Galicia para vivila.":
-                "Galicia, made to be experienced.",
+        "Correo":
+            "Correo",
 
-            "Contacta con nós":
-                "Contact us",
+        "Localización":
+            "Localización",
 
-            "Teléfono:":
-                "Phone:",
+        "Síguenos":
+            "Síguenos",
 
-            "Correo:":
-                "Email:",
+        "Aviso legal":
+            "Aviso legal",
 
-            "Localización:":
-                "Location:",
+        "Privacidade":
+            "Privacidad",
 
-            "Síguenos":
-                "Follow us",
+        "Cookies":
+            "Cookies"
+    },
 
-            "Aviso legal":
-                "Legal notice",
 
-            "Política de privacidade":
-                "Privacy policy",
+    en: {
 
-            "Política de cookies":
-                "Cookie policy"
+        "Inicio":
+            "Home",
+
+        "Sobre nós":
+            "About us",
+
+        "Destinos":
+            "Destinations",
+
+        "Experiencias":
+            "Experiences",
+
+        "Ofertas":
+            "Offers",
+
+        "Contacto":
+            "Contact",
+
+        "Solicita información":
+            "Request information",
+
+        "Preparados para a aventura?":
+            "Ready for the adventure?",
+
+        "Rías Baixas":
+            "Rías Baixas",
+
+        "Costa da Morte":
+            "Costa da Morte",
+
+        "Canóns do Sil":
+            "Sil Canyons",
+
+        "Explora destinos":
+            "Explore destinations",
+
+        "Kayak pola ría":
+            "Kayaking in the estuary",
+
+        "Ruta a cabalo":
+            "Horse riding",
+
+        "Explora experiencias":
+            "Explore experiences",
+
+        "Galicia para vivila.":
+            "Galicia, made to be experienced.",
+
+        "Contacta con nós":
+            "Contact us",
+
+        "Teléfono":
+            "Phone",
+
+        "Correo":
+            "Email",
+
+        "Localización":
+            "Location",
+
+        "Síguenos":
+            "Follow us",
+
+        "Aviso legal":
+            "Legal notice",
+
+        "Privacidade":
+            "Privacy",
+
+        "Cookies":
+            "Cookies"
+    }
+
+};
+
+
+const textosOrixinais = [];
+
+
+function buscarTextos(elemento) {
+
+    elemento.childNodes.forEach(function (nodo) {
+
+        if (nodo.nodeType === 3) {
+
+            const texto = nodo.nodeValue.trim();
+
+            if (texto !== "") {
+
+                textosOrixinais.push({
+                    nodo: nodo,
+                    texto: texto
+                });
+
+            }
+
         }
 
-    };
+
+        if (nodo.nodeType === 1) {
+
+            if (
+                nodo.tagName !== "SCRIPT" &&
+                nodo.tagName !== "STYLE" &&
+                nodo.tagName !== "SELECT"
+            ) {
+
+                buscarTextos(nodo);
+
+            }
+
+        }
+
+    });
+
+}
 
 
-  
-    const elementos = document.querySelectorAll(
-        "a, h1, h2, h3, h4, p, button"
-    );
+buscarTextos(document.body);
 
 
-    /* Gardamos o texto orixinal en galego */
+function cambiarIdioma(idioma) {
 
-    elementos.forEach(function (elemento) {
+    textosOrixinais.forEach(function (elemento) {
 
-        elemento.dataset.textoOriginal =
-            elemento.textContent.trim();
+        const textoGalego = elemento.texto;
+
+
+        if (idioma === "gl") {
+
+            elemento.nodo.nodeValue =
+                textoGalego;
+
+        }
+
+
+        else if (
+            traduccions[idioma] &&
+            traduccions[idioma][textoGalego]
+        ) {
+
+            elemento.nodo.nodeValue =
+                traduccions[idioma][textoGalego];
+
+        }
+
+
+        else {
+
+            elemento.nodo.nodeValue =
+                textoGalego;
+
+        }
 
     });
 
 
-    function cambiarIdioma(opcion) {
+    document.documentElement.lang = idioma;
 
-        elementos.forEach(function (elemento) {
-
-            const textoOriginal =
-                elemento.dataset.textoOriginal;
+}
 
 
-            /* GALEGO */
+if (selectorIdioma) {
 
-            if (opcion === "gl") {
+    selectorIdioma.addEventListener(
+        "change",
+        function () {
 
-                elemento.textContent =
-                    textoOriginal;
+            cambiarIdioma(
+                selectorIdioma.value
+            );
 
-            }
+        }
+    );
 
-
-            /* CASTELÁN OU INGLÉS */
-
-            else if (
-                traduccions[opcion] &&
-                traduccions[opcion][textoOriginal]
-            ) {
-
-                elemento.textContent =
-                    traduccions[opcion][textoOriginal];
-
-            }
-
-        });
-
-
-        /* Cambiamos tamén o idioma do documento */
-
-        document.documentElement.lang = opcion;
-
-    }
-
-    if (idioma) {
-
-        idioma.addEventListener("change", function () {
-
-            cambiarIdioma(idioma.value);
-
-        });
-
-    }
-
-});
+}
