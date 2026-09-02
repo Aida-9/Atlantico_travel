@@ -2,20 +2,26 @@
 <html lang="gl">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Aviso legal de Atlántico Travel">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="css/estilos.css">
+
     <link rel="stylesheet" href="css/legal.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 
-
     <title>Aviso legal | Atlántico Travel</title>
+
 </head>
 
 
@@ -23,37 +29,89 @@
 
     <!-- HEADER -->
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
 
+
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">
+                        Sobre nós
+                    </a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">
+                        Destinos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">
+                        Experiencias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">
+                        Ofertas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+                Solicita información
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
             <button class="menu-toggle" aria-label="Abrir menú">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
         </nav>
 
-
     </header>
+
 
     <main>
 
@@ -61,9 +119,11 @@
 
             <header>
 
-                <h1>Aviso legal</h1>
+                <h1 data-i18n="avisoLegalTitulo">
+                    Aviso legal
+                </h1>
 
-                <p>
+                <p data-i18n="avisoLegalIntroducion">
                     Información legal relativa ao uso do sitio web de
                     Atlántico Travel.
                 </p>
@@ -74,49 +134,93 @@
             <!-- DATOS IDENTIFICATIVOS -->
             <section>
 
-                <h2>1. Datos identificativos</h2>
+                <h2 data-i18n="avisoDatosTitulo">
+                    1. Datos identificativos
+                </h2>
 
-                <p>
+                <p data-i18n="avisoDatosIntro">
                     En cumprimento da normativa aplicable aos servizos
                     da sociedade da información, infórmase de que este
                     sitio web pertence a:
                 </p>
 
+
                 <ul>
 
                     <li>
-                        <strong>Nome comercial:</strong>
+
+                        <strong data-i18n="avisoNomeComercial">
+                            Nome comercial:
+                        </strong>
+
                         Atlántico Travel
+
                     </li>
 
-                    <li>
-                        <strong>Titular ou razón social:</strong>
-                        [PENDENTE]
-                    </li>
 
                     <li>
-                        <strong>NIF/CIF:</strong>
+
+                        <strong data-i18n="avisoTitular">
+                            Titular ou razón social:
+                        </strong>
+
                         [PENDENTE]
+
                     </li>
 
-                    <li>
-                        <strong>Domicilio:</strong>
-                        [PENDENTE]
-                    </li>
 
                     <li>
-                        <strong>Correo electrónico:</strong>
+
+                        <strong>
+                            NIF/CIF:
+                        </strong>
+
                         [PENDENTE]
+
                     </li>
 
-                    <li>
-                        <strong>Teléfono:</strong>
-                        [PENDENTE]
-                    </li>
 
                     <li>
-                        <strong>Sitio web:</strong>
+
+                        <strong data-i18n="avisoDomicilio">
+                            Domicilio:
+                        </strong>
+
                         [PENDENTE]
+
+                    </li>
+
+
+                    <li>
+
+                        <strong data-i18n="avisoCorreo">
+                            Correo electrónico:
+                        </strong>
+
+                        [PENDENTE]
+
+                    </li>
+
+
+                    <li>
+
+                        <strong data-i18n="avisoTelefono">
+                            Teléfono:
+                        </strong>
+
+                        [PENDENTE]
+
+                    </li>
+
+
+                    <li>
+
+                        <strong data-i18n="avisoSitioWeb">
+                            Sitio web:
+                        </strong>
+
+                        [PENDENTE]
+
                     </li>
 
                 </ul>
@@ -127,21 +231,23 @@
             <!-- OBXECTO -->
             <section>
 
-                <h2>2. Obxecto do sitio web</h2>
+                <h2 data-i18n="avisoObxectoTitulo">
+                    2. Obxecto do sitio web
+                </h2>
 
-                <p>
+                <p data-i18n="avisoObxecto1">
                     Atlántico Travel é unha axencia orientada á promoción
                     de destinos, viaxes e experiencias turísticas,
                     especialmente vinculadas con Galicia.
                 </p>
 
-                <p>
+                <p data-i18n="avisoObxecto2">
                     A través deste sitio web preséntase información sobre
                     destinos, actividades, experiencias, ofertas e outros
                     servizos relacionados co turismo.
                 </p>
 
-                <p>
+                <p data-i18n="avisoObxecto3">
                     O usuario tamén poderá solicitar información mediante
                     os medios de contacto habilitados na web.
                 </p>
@@ -152,14 +258,16 @@
             <!-- CONDICIÓNS DE USO -->
             <section>
 
-                <h2>3. Condicións de acceso e uso</h2>
+                <h2 data-i18n="avisoCondicionsTitulo">
+                    3. Condicións de acceso e uso
+                </h2>
 
-                <p>
+                <p data-i18n="avisoCondicions1">
                     O acceso a este sitio web implica a aceptación das
                     presentes condicións de uso.
                 </p>
 
-                <p>
+                <p data-i18n="avisoCondicions2">
                     O usuario comprométese a facer un uso adecuado dos
                     contidos e servizos ofrecidos e a non empregalos para
                     actividades ilícitas, fraudulentas ou que poidan
@@ -172,22 +280,24 @@
             <!-- INFORMACIÓN COMERCIAL -->
             <section>
 
-                <h2>4. Información sobre destinos, experiencias e prezos</h2>
+                <h2 data-i18n="avisoInformacionTitulo">
+                    4. Información sobre destinos, experiencias e prezos
+                </h2>
 
-                <p>
+                <p data-i18n="avisoInformacion1">
                     Atlántico Travel procura que a información publicada
                     sobre destinos, experiencias, duracións, prezos e
                     dispoñibilidade sexa clara e estea actualizada.
                 </p>
 
-                <p>
+                <p data-i18n="avisoInformacion2">
                     Non obstante, determinados prezos, horarios ou
                     condicións poderán variar segundo a tempada,
                     dispoñibilidade, número de participantes ou condicións
                     establecidas polos provedores dos servizos turísticos.
                 </p>
 
-                <p>
+                <p data-i18n="avisoInformacion3">
                     Antes de realizar unha contratación definitiva,
                     facilitaranse ao cliente as condicións concretas
                     correspondentes ao servizo solicitado.
@@ -199,23 +309,25 @@
             <!-- PROPIEDADE INTELECTUAL -->
             <section>
 
-                <h2>5. Propiedade intelectual e industrial</h2>
+                <h2 data-i18n="avisoPropiedadeTitulo">
+                    5. Propiedade intelectual e industrial
+                </h2>
 
-                <p>
+                <p data-i18n="avisoPropiedade1">
                     Os textos, deseños, logotipos, elementos gráficos,
                     fotografías, vídeos e demais contidos propios presentes
                     neste sitio web están protexidos pola normativa de
                     propiedade intelectual e industrial.
                 </p>
 
-                <p>
+                <p data-i18n="avisoPropiedade2">
                     Non está permitida a súa reprodución, distribución,
                     transformación ou utilización con fins comerciais sen
                     autorización previa do seu titular, salvo nos supostos
                     permitidos pola lexislación.
                 </p>
 
-                <p>
+                <p data-i18n="avisoPropiedade3">
                     As fotografías ou recursos pertencentes a terceiros
                     conservarán os dereitos correspondentes aos seus
                     respectivos titulares.
@@ -227,14 +339,16 @@
             <!-- RESPONSABILIDADE -->
             <section>
 
-                <h2>6. Responsabilidade</h2>
+                <h2 data-i18n="avisoResponsabilidadeTitulo">
+                    6. Responsabilidade
+                </h2>
 
-                <p>
+                <p data-i18n="avisoResponsabilidade1">
                     Atlántico Travel adopta medidas razoables para manter
                     o correcto funcionamento e seguridade deste sitio web.
                 </p>
 
-                <p>
+                <p data-i18n="avisoResponsabilidade2">
                     Con todo, non pode garantir a ausencia absoluta de
                     interrupcións, erros técnicos ou incidencias derivadas
                     de causas alleas ao seu control.
@@ -246,20 +360,22 @@
             <!-- ENLACES EXTERNOS -->
             <section>
 
-                <h2>7. Ligazóns externas</h2>
+                <h2 data-i18n="avisoLigazonsTitulo">
+                    7. Ligazóns externas
+                </h2>
 
-                <p>
+                <p data-i18n="avisoLigazons1">
                     Este sitio web poderá incluír ligazóns a páxinas,
                     plataformas ou servizos de terceiros.
                 </p>
 
-                <p>
+                <p data-i18n="avisoLigazons2">
                     Atlántico Travel non controla necesariamente os
                     contidos, condicións ou políticas de privacidade
                     destes sitios externos.
                 </p>
 
-                <p>
+                <p data-i18n="avisoLigazons3">
                     Recoméndase revisar as condicións legais de cada
                     servizo antes da súa utilización.
                 </p>
@@ -270,17 +386,23 @@
             <!-- PROTECCIÓN DE DATOS -->
             <section>
 
-                <h2>8. Protección de datos persoais</h2>
+                <h2 data-i18n="avisoProteccionTitulo">
+                    8. Protección de datos persoais
+                </h2>
 
-                <p>
+                <p data-i18n="avisoProteccion1">
                     O tratamento dos datos persoais obtidos mediante este
                     sitio web realizarase de acordo coa normativa aplicable
                     en materia de protección de datos.
                 </p>
 
                 <p>
-                    Pode consultar información máis detallada na nosa
-                    <a href="privacidade.html">
+                    <span data-i18n="avisoProteccion2">
+                        Pode consultar información máis detallada na nosa
+                    </span>
+
+                    <a href="privacidade.html"
+                        data-i18n="privacidade">
                         Política de privacidade
                     </a>.
                 </p>
@@ -291,16 +413,22 @@
             <!-- COOKIES -->
             <section>
 
-                <h2>9. Cookies</h2>
+                <h2 data-i18n="avisoCookiesTitulo">
+                    9. Cookies
+                </h2>
 
-                <p>
+                <p data-i18n="avisoCookies1">
                     Este sitio web poderá empregar cookies técnicas e,
                     cando corresponda, outras categorías de cookies.
                 </p>
 
                 <p>
-                    Pode consultar toda a información na nosa
-                    <a href="cookies.html">
+                    <span data-i18n="avisoCookies2">
+                        Pode consultar toda a información na nosa
+                    </span>
+
+                    <a href="cookies.html"
+                        data-i18n="cookies">
                         Política de cookies
                     </a>.
                 </p>
@@ -311,9 +439,11 @@
             <!-- MODIFICACIÓNS -->
             <section>
 
-                <h2>10. Modificacións</h2>
+                <h2 data-i18n="avisoModificacionsTitulo">
+                    10. Modificacións
+                </h2>
 
-                <p>
+                <p data-i18n="avisoModificacionsTexto">
                     Atlántico Travel poderá modificar este Aviso Legal
                     cando resulte necesario para adaptalo a cambios no
                     sitio web, nos servizos ofrecidos ou na normativa
@@ -326,9 +456,11 @@
             <!-- LEXISLACIÓN -->
             <section>
 
-                <h2>11. Lexislación aplicable</h2>
+                <h2 data-i18n="avisoLexislacionTitulo">
+                    11. Lexislación aplicable
+                </h2>
 
-                <p>
+                <p data-i18n="avisoLexislacionTexto">
                     As presentes condicións rexeranse pola lexislación
                     española aplicable.
                 </p>
@@ -337,8 +469,13 @@
 
 
             <p>
-                <strong>Última actualización:</strong>
+
+                <strong data-i18n="ultimaActualizacion">
+                    Última actualización:
+                </strong>
+
                 agosto de 2026.
+
             </p>
 
         </section>
@@ -351,9 +488,10 @@
 
         <div>
 
-            <img src="assets/logotipo.png" alt="Atlántico Travel">
+            <img src="assets/logotipo.png"
+                alt="Atlántico Travel">
 
-            <p>
+            <p data-i18n="lema">
                 Galicia para vivila.
             </p>
 
@@ -365,21 +503,32 @@
             <ul>
 
                 <li>
-                    <a href="aviso-legal.html">
+
+                    <a href="aviso-legal.html"
+                        data-i18n="avisoLegal">
                         Aviso legal
                     </a>
+
                 </li>
 
+
                 <li>
-                    <a href="privacidade.html">
+
+                    <a href="privacidade.html"
+                        data-i18n="privacidade">
                         Política de privacidade
                     </a>
+
                 </li>
 
+
                 <li>
-                    <a href="cookies.html">
+
+                    <a href="cookies.html"
+                        data-i18n="cookies">
                         Política de cookies
                     </a>
+
                 </li>
 
             </ul>
@@ -387,13 +536,15 @@
         </nav>
 
 
-        <p>
-            &copy; 2026 Atlántico Travel.
-            Todos os dereitos reservados.
+        <p data-i18n="dereitosReservados">
+            © 2026 Atlántico Travel. Todos os dereitos reservados.
         </p>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

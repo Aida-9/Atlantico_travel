@@ -8,12 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Política de cookies de Atlántico Travel">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/legal.css">
+
     <title>Política de cookies | Atlántico Travel</title>
 
 </head>
@@ -22,48 +27,87 @@
 <body>
 
     <header>
+
         <nav>
+
             <div class="logo">
+
                 <a href="index.html">
                     <img src="assets/logotipo.png" alt="Logo Axencia">
                 </a>
+
             </div>
 
+
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
 
                 <li>
-                    <a href="destinos.html">Destinos</a>
+                    <a href="index.html" data-i18n="inicio">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="experiencias.html">Experiencias</a>
+                    <a href="sobrenos.html" data-i18n="sobreNos">Sobre nós</a>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="destinos.html" data-i18n="destinos">Destinos</a>
+                </li>
+
+                <li>
+                    <a href="experiencias.html" data-i18n="experiencias">Experiencias</a>
+                </li>
+
+                <li>
+                    <a href="ofertas.html" data-i18n="ofertas">Ofertas</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" data-i18n="contacto">Contacto</a>
+                </li>
+
             </ul>
-            <a href="contacto.html" class="nav-cta">Solicita información</a>
+
+
+            <a href="contacto.html"
+                class="nav-cta"
+                data-i18n="solicitar">
+                Solicita información
+            </a>
+
+
+            <select name="idioma"
+                id="idioma"
+                aria-label="seleccionar idioma">
+
+                <option value="gl">GL</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+
+            </select>
+
+
             <button class="menu-toggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-        </nav>
 
+        </nav>
 
     </header>
 
-    <!-- CONTIDO PRINCIPAL -->
+
     <main>
 
         <section>
 
             <header>
 
-                <h1>Política de cookies</h1>
+                <h1 data-i18n="cookiesTitulo">
+                    Política de cookies
+                </h1>
 
-                <p>
+                <p data-i18n="cookiesIntroducion">
                     Nesta páxina explicámosche que son as cookies,
                     para que se utilizan e como podes xestionar
                     as túas preferencias.
@@ -72,17 +116,18 @@
             </header>
 
 
-            <!-- QUE SON AS COOKIES -->
             <section>
 
-                <h2>1. Que son as cookies?</h2>
+                <h2 data-i18n="cookiesQueSonTitulo">
+                    1. Que son as cookies?
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesQueSon1">
                     As cookies son pequenos ficheiros que poden almacenarse
                     no dispositivo do usuario cando visita unha páxina web.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesQueSon2">
                     Estes ficheiros permiten lembrar determinada información
                     relacionada coa navegación e poden empregarse para
                     garantir o correcto funcionamento da web, recordar
@@ -92,46 +137,51 @@
             </section>
 
 
-            <!-- TIPOS DE COOKIES -->
             <section>
 
-                <h2>2. Que tipos de cookies utilizamos?</h2>
+                <h2 data-i18n="cookiesTiposTitulo">
+                    2. Que tipos de cookies utilizamos?
+                </h2>
 
 
-                <h3>Cookies técnicas ou necesarias</h3>
+                <h3 data-i18n="cookiesTecnicasTitulo">
+                    Cookies técnicas ou necesarias
+                </h3>
 
-                <p>
+                <p data-i18n="cookiesTecnicas1">
                     Son aquelas necesarias para permitir o correcto
                     funcionamento, seguridade e navegación polo sitio web.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesTecnicas2">
                     Estas cookies non se empregan con fins publicitarios
                     nin para analizar o comportamento do usuario.
                 </p>
 
 
-                <h3>Cookies de análise ou medición</h3>
+                <h3 data-i18n="cookiesAnaliseTitulo">
+                    Cookies de análise ou medición
+                </h3>
 
-                <p>
+                <p data-i18n="cookiesAnalise1">
                     Atlántico Travel utiliza Google Analytics 4 como
                     ferramenta de análise e medición.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesAnalise2">
                     Google Analytics permite obter información estatística
                     sobre como interactúan os usuarios coa web, por exemplo,
                     o número de visitas, as páxinas consultadas ou a forma
                     na que os visitantes navegan polo sitio.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesAnalise3">
                     Esta información axúdanos a comprender o funcionamento
                     da web e a mellorar os seus contidos, estrutura e
                     experiencia de usuario.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesAnalise4">
                     As cookies de Google Analytics que requiran
                     consentimento non serán activadas ata que o usuario
                     as acepte.
@@ -140,34 +190,39 @@
             </section>
 
 
-            <!-- COOKIES PROPIAS E DE TERCEIROS -->
             <section>
 
-                <h2>3. Cookies propias e de terceiros</h2>
+                <h2 data-i18n="cookiesPropiasTerceirosTitulo">
+                    3. Cookies propias e de terceiros
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesPropiasTerceirosIntro">
                     Segundo quen sexa responsable da cookie,
                     estas poden clasificarse como propias ou de terceiros.
                 </p>
 
 
-                <h3>Cookies propias</h3>
+                <h3 data-i18n="cookiesPropiasTitulo">
+                    Cookies propias
+                </h3>
 
-                <p>
+                <p data-i18n="cookiesPropiasTexto">
                     Son aquelas enviadas desde o dominio de Atlántico Travel
                     e utilizadas para garantir o correcto funcionamento
                     da web.
                 </p>
 
 
-                <h3>Cookies relacionadas con Google Analytics</h3>
+                <h3 data-i18n="cookiesGoogleTitulo">
+                    Cookies relacionadas con Google Analytics
+                </h3>
 
-                <p>
+                <p data-i18n="cookiesGoogle1">
                     Atlántico Travel utiliza Google Analytics 4,
                     un servizo proporcionado por Google.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesGoogle2">
                     As etiquetas de Google Analytics utilizan cookies
                     propias para distinguir usuarios e sesións e obter
                     estatísticas sobre o uso do sitio web.
@@ -176,10 +231,12 @@
             </section>
 
 
-            <!-- COOKIES UTILIZADAS -->
             <section>
 
-                <h2>4. Cookies utilizadas en Atlántico Travel</h2>
+                <h2 data-i18n="cookiesUtilizadasTitulo">
+                    4. Cookies utilizadas en Atlántico Travel
+                </h2>
+
 
                 <table>
 
@@ -187,23 +244,23 @@
 
                         <tr>
 
-                            <th scope="col">
+                            <th scope="col" data-i18n="cookiesTablaCookie">
                                 Cookie
                             </th>
 
-                            <th scope="col">
+                            <th scope="col" data-i18n="cookiesTablaProvedor">
                                 Provedor
                             </th>
 
-                            <th scope="col">
+                            <th scope="col" data-i18n="cookiesTablaFinalidade">
                                 Finalidade
                             </th>
 
-                            <th scope="col">
+                            <th scope="col" data-i18n="cookiesTablaTipo">
                                 Tipo
                             </th>
 
-                            <th scope="col">
+                            <th scope="col" data-i18n="cookiesTablaDuracion">
                                 Duración
                             </th>
 
@@ -224,15 +281,15 @@
                                 Google Analytics
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesGaFinalidade">
                                 Utilízase para distinguir usuarios.
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesTipoAnalitica">
                                 Analítica
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesDousAnos">
                                 2 anos
                             </td>
 
@@ -242,23 +299,23 @@
                         <tr>
 
                             <td>
-                                _ga_<container-id>
+                                _ga_&lt;container-id&gt;
                             </td>
 
                             <td>
                                 Google Analytics
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesGaContainerFinalidade">
                                 Utilízase para manter o estado
                                 da sesión do usuario.
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesTipoAnalitica">
                                 Analítica
                             </td>
 
-                            <td>
+                            <td data-i18n="cookiesDousAnos">
                                 2 anos
                             </td>
 
@@ -269,7 +326,7 @@
                 </table>
 
 
-                <p>
+                <p data-i18n="cookiesNomeCookie">
                     O nome exacto da segunda cookie dependerá do
                     identificador da propiedade de Google Analytics
                     configurada en Atlántico Travel.
@@ -278,46 +335,49 @@
             </section>
 
 
-            <!-- GOOGLE ANALYTICS -->
             <section>
 
-                <h2>5. Google Analytics 4</h2>
+                <h2 data-i18n="cookiesAnalyticsTitulo">
+                    5. Google Analytics 4
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesAnalytics1">
                     Este sitio web utiliza Google Analytics 4 para medir
                     e analizar de forma estatística a utilización da web.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesAnalytics2">
                     A información obtida mediante esta ferramenta pode
                     axudarnos a coñecer aspectos como:
                 </p>
 
+
                 <ul>
 
-                    <li>
+                    <li data-i18n="cookiesAnalyticsDato1">
                         Número de visitantes.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesAnalyticsDato2">
                         Páxinas máis consultadas.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesAnalyticsDato3">
                         Duración das visitas.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesAnalyticsDato4">
                         Dispositivo ou navegador utilizado.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesAnalyticsDato5">
                         Forma xeral na que os usuarios navegan pola web.
                     </li>
 
                 </ul>
 
-                <p>
+
+                <p data-i18n="cookiesAnalyticsConsentimento">
                     O uso de Google Analytics estará condicionado
                     ás preferencias de consentimento seleccionadas
                     polo usuario.
@@ -326,37 +386,40 @@
             </section>
 
 
-            <!-- CONSENTIMENTO -->
             <section>
 
-                <h2>6. Consentimento para o uso de cookies</h2>
+                <h2 data-i18n="cookiesConsentimentoTitulo">
+                    6. Consentimento para o uso de cookies
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesConsentimento1">
                     Ao acceder por primeira vez ao sitio web,
                     mostrarase un panel de configuración de cookies.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesConsentimento2">
                     Desde este panel o usuario poderá:
                 </p>
 
+
                 <ul>
 
-                    <li>
+                    <li data-i18n="cookiesConsentimentoOpcion1">
                         Aceptar as cookies de análise.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesConsentimentoOpcion2">
                         Rexeitar as cookies de análise.
                     </li>
 
-                    <li>
+                    <li data-i18n="cookiesConsentimentoOpcion3">
                         Configurar as súas preferencias.
                     </li>
 
                 </ul>
 
-                <p>
+
+                <p data-i18n="cookiesConsentimento3">
                     A elección do usuario deberá respectarse e as cookies
                     de análise non deberán activarse antes de obter
                     o consentimento correspondente.
@@ -365,25 +428,26 @@
             </section>
 
 
-            <!-- GOOGLE CONSENT MODE -->
             <section>
 
-                <h2>7. Xestión do consentimento</h2>
+                <h2 data-i18n="cookiesXestionConsentimentoTitulo">
+                    7. Xestión do consentimento
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesXestionConsentimento1">
                     Atlántico Travel poderá utilizar Google Consent Mode
                     para comunicar a Google Analytics as preferencias
                     seleccionadas polo usuario.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesXestionConsentimento2">
                     Cando o usuario non autorice as cookies de análise,
                     o almacenamento relacionado con Analytics permanecerá
                     desactivado segundo a configuración implementada
                     na web.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesXestionConsentimento3">
                     Cando o usuario acepte as cookies de análise,
                     poderá activarse o almacenamento necesario para
                     Google Analytics.
@@ -392,46 +456,50 @@
             </section>
 
 
-            <!-- CONFIGURACIÓN -->
             <section>
 
-                <h2>8. Como cambiar a configuración das cookies?</h2>
+                <h2 data-i18n="cookiesConfiguracionTitulo">
+                    8. Como cambiar a configuración das cookies?
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesConfiguracion1">
                     O usuario poderá modificar posteriormente as súas
                     preferencias relacionadas co uso de cookies.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesConfiguracion2">
                     Para iso poderá utilizar o panel de configuración
                     dispoñible no sitio web.
                 </p>
 
 
-                <button type="button" id="configurar-cookies">
+                <button type="button"
+                    id="configurar-cookies"
+                    data-i18n="configurarCookies">
                     Configurar cookies
                 </button>
 
             </section>
 
 
-            <!-- NAVEGADOR -->
             <section>
 
-                <h2>9. Eliminar ou bloquear cookies desde o navegador</h2>
+                <h2 data-i18n="cookiesNavegadorTitulo">
+                    9. Eliminar ou bloquear cookies desde o navegador
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesNavegador1">
                     Ademais do panel de configuración de Atlántico Travel,
                     o usuario pode permitir, bloquear ou eliminar cookies
                     desde a configuración do seu navegador.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesNavegador2">
                     Estas opcións adoitan atoparse nos apartados de
                     privacidade, seguridade ou configuración.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesNavegador3">
                     O bloqueo de determinadas cookies técnicas poderá
                     afectar ao correcto funcionamento dalgunhas partes
                     do sitio web.
@@ -440,19 +508,20 @@
             </section>
 
 
-            <!-- TRANSFERENCIAS -->
             <section>
 
-                <h2>10. Tratamento de datos por Google</h2>
+                <h2 data-i18n="cookiesGoogleDatosTitulo">
+                    10. Tratamento de datos por Google
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesGoogleDatos1">
                     Google Analytics é un servizo proporcionado por Google.
                     O uso desta ferramenta pode implicar o tratamento
                     de determinada información técnica relacionada
                     coa utilización do sitio web.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesGoogleDatos2">
                     Atlántico Travel revisará a configuración de Google
                     Analytics e aplicará as medidas de privacidade e
                     consentimento que correspondan.
@@ -461,19 +530,20 @@
             </section>
 
 
-            <!-- ACTUALIZACIÓNS -->
             <section>
 
-                <h2>11. Actualización da Política de Cookies</h2>
+                <h2 data-i18n="cookiesActualizacionTitulo">
+                    11. Actualización da Política de Cookies
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesActualizacion1">
                     Atlántico Travel poderá modificar esta Política de
                     Cookies cando cambien as ferramentas utilizadas,
                     a configuración de Google Analytics ou a normativa
                     aplicable.
                 </p>
 
-                <p>
+                <p data-i18n="cookiesActualizacion2">
                     Recoméndase consultar periodicamente esta páxina
                     para coñecer a versión máis recente.
                 </p>
@@ -481,20 +551,24 @@
             </section>
 
 
-            <!-- CONTACTO -->
             <section>
 
-                <h2>12. Contacto</h2>
+                <h2 data-i18n="cookiesContactoTitulo">
+                    12. Contacto
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesContactoTexto">
                     Para calquera dúbida relacionada co uso de cookies
                     neste sitio web podes poñerte en contacto con
                     Atlántico Travel.
                 </p>
 
+
                 <p>
 
-                    <strong>Correo electrónico:</strong>
+                    <strong data-i18n="cookiesCorreoElectronico">
+                        Correo electrónico:
+                    </strong>
 
                     <a href="mailto:[PENDENTE]">
                         [PENDENTE]
@@ -505,21 +579,24 @@
             </section>
 
 
-            <!-- INFORMACIÓN RELACIONADA -->
             <section>
 
-                <h2>13. Información adicional</h2>
+                <h2 data-i18n="cookiesInfoTitulo">
+                    13. Información adicional
+                </h2>
 
-                <p>
+                <p data-i18n="cookiesInfoTexto">
                     Podes consultar máis información relacionada coa
                     privacidade e o funcionamento do sitio web en:
                 </p>
+
 
                 <ul>
 
                     <li>
 
-                        <a href="aviso-legal.html">
+                        <a href="aviso-legal.html"
+                            data-i18n="avisoLegal">
                             Aviso legal
                         </a>
 
@@ -527,7 +604,8 @@
 
                     <li>
 
-                        <a href="privacidade.html">
+                        <a href="privacidade.html"
+                            data-i18n="privacidade">
                             Política de privacidade
                         </a>
 
@@ -539,8 +617,13 @@
 
 
             <p>
-                <strong>Última actualización:</strong>
+
+                <strong data-i18n="ultimaActualizacion">
+                    Última actualización:
+                </strong>
+
                 agosto de 2026.
+
             </p>
 
         </section>
@@ -548,14 +631,14 @@
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
 
         <div>
 
-            <img src="assets/logotipo.png" alt="Atlántico Travel">
+            <img src="assets/logotipo.png"
+                alt="Atlántico Travel">
 
-            <p>
+            <p data-i18n="lema">
                 Galicia para vivila.
             </p>
 
@@ -568,7 +651,8 @@
 
                 <li>
 
-                    <a href="aviso-legal.html">
+                    <a href="aviso-legal.html"
+                        data-i18n="avisoLegal">
                         Aviso legal
                     </a>
 
@@ -576,7 +660,8 @@
 
                 <li>
 
-                    <a href="privacidade.html">
+                    <a href="privacidade.html"
+                        data-i18n="privacidade">
                         Política de privacidade
                     </a>
 
@@ -584,7 +669,8 @@
 
                 <li>
 
-                    <a href="cookies.html">
+                    <a href="cookies.html"
+                        data-i18n="cookies">
                         Política de cookies
                     </a>
 
@@ -595,13 +681,15 @@
         </nav>
 
 
-        <p>
-            &copy; 2026 Atlántico Travel.
-            Todos os dereitos reservados.
+        <p data-i18n="dereitosReservados">
+            © 2026 Atlántico Travel. Todos os dereitos reservados.
         </p>
 
     </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
