@@ -3675,3 +3675,4 @@ if (avisoCookies && pecharCookies && botonCookie) {
         botonCookie.style.display = "flex";
 
     });
+}
