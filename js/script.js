@@ -3580,31 +3580,38 @@ if (formularioContacto) {
 
         if (nome.value.trim().length < 2){
             formularioCorrecto = false;
+            nome.classList.add("erro");
             alert("O nome debe ter polo menos 2 caracteres."); 
             nome.focus();
         }
         else if (apelidos.value.trim().length < 2){
             formularioCorrecto = false; 
+            apelidos.classList.add("erro");
             alert("Os apelidos deben ter polo menos 2 caracteres.");
             apelidos.focus();
         }
         else if (!email.value.includes("@")) {
             formularioCorrecto = false; 
+            email.classList.add("erro");
             alert("Introduce un enderezo de correo electrónico válido.");
             email.focus();
         }
         else if (!/^[0-9]{9}$/.test(telefono.value.trim())){
             formularioCorrecto = false;
+            telefono.classList.add("erro");
             alert("Introduce un número de teléfono válido.");
             telefono.focus();
         } 
+        } 
         else if (mensaxe.value.trim().length < 10){
             formularioCorrecto = false;
+            mensaxe.classList.add("erro");
             alert("A mensaxe debe ter polo menos 10 caracteres.");
             mensaxe.focus();
         }
         else if (!privacidade.checked){
             formularioCorrecto = false;
+            privacidade.classList.add("erro");
             alert("Debes aceptar a política de privacidade.");
             privacidade.focus();
         }
@@ -3615,13 +3622,13 @@ if (formularioContacto) {
 
     const camposFormulario = formularioContacto.querySelectorAll( "input, select, textarea");
 
-camposFormulario.forEach(function (campo) {
-    campo.addEventListener("input", function () {
+    camposFormulario.forEach(function (campo) {
+        campo.addEventListener("input", function () {
         campo.classList.remove("erro");
     });
-    campo.addEventListener("change", function () {
+        campo.addEventListener("change", function () {
         campo.classList.remove("erro");
+        });
     });
-});
 }
 
