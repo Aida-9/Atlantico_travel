@@ -1,32 +1,43 @@
+<div align = "center">
 
-1. Título provisional do proxecto.
+# Atlántico Travel
 
-Atlántico Travel
+### Proxecto de curso de confección e publicación de páxinas web.
 
-2. Tema e breve descrición da proposta.
+**Axencia de viaxes e experiencias personalizadas en Galicia** 
+</div>
+
+---
+## 1. Título provisional do proxecto.
+
+**Atlántico Travel**
+
+
+
+## 2. Tema e breve descrición da proposta.
 
 Axencia especializada en escapadas e viaxes personalizados, viaxes temáticos (despedida, cumpreanos…), viaxes en grupos grandes ( excursións tanto de nenos como adultos, senderismo, guía turística…). Axencia centrada no disfrute das persoas que queiran coñecer todas as posibilidades que ten Galicia, xa que somos un axencia con destinos locales desta comunidade autónoma ao igual que contamos con actividades lúdicas con destinos próximos.
 
 A web busca transmitir proximidade, confianza e un enfoque centrado na experiencia, facilitando que as persoas usuarias descubran, comparen  e soliciten información sobre diferentes actividades e destinos.
 
-3. Problema ou necesidade que pretende resolver.
+## 3. Problema ou necesidade que pretende resolver.
 
 Necesidade de chegar ao maior número de clientes posible, aparte de conseguir que os clientes vexan diferentes destinos e experiencias que xa creamos para outra xente, ou lugares aos que queiran ir por primeira vez e con opción de personalización. Ter un formulario que axude para posibles peticións e aparte unha sección onde poidan ollear as ofertas actualizadas.
 
-Desde a perspectiva da persona usuaria: 
+### Desde a perspectiva da persona usuaria: 
 
-Necesitan un espazo organizado e atractivo onde comparar destinos e experiencias.
-Información fiable, actualizada e accesible sobre actividades e escapadas.
-Un sistema sinxelo para solicitar información ou pedir unha proposta personalizada.
-Unha marca que lles transmita confianza e profesionalidade á hora de contratar unha experiencia
-Queremos resolver estas necesidades mediante unha web clara, intuitiva e centrada na experiencia do usuario.
+- Necesitan un espazo organizado e atractivo onde comparar destinos e experiencias.
+- Información fiable, actualizada e accesible sobre actividades e escapadas.
+- Un sistema sinxelo para solicitar información ou pedir unha proposta personalizada.
+- Unha marca que lles transmita confianza e profesionalidade á hora de contratar unha experiencia
+-Queremos resolver estas necesidades mediante unha web clara, intuitiva e centrada na experiencia do usuario.
 
-4. Público ao que se dirixe.
+## 4. Público ao que se dirixe.
 
 Diríxese a todo tipo de público, esta empresa organiza viaxes e escapadas para todas as persoas que buscan unha aventura e experiencias únicas no seu viaxe. Pódense considerar como público principal a familias, parellas que queiran facer algo divertido e orixinal ou grupos de amigos. 
 O público secundario poden ser os centros educativos que queiran facer excursións, asociacións que queiran vivir unha experiencia común ou grupos grandes organizados, como por exemplo clubes, entidades culturais…
 
-5. Obxectivo principal e obxectivos secundarios.
+## 5. Obxectivo principal e obxectivos secundarios.
 
 
 O obxetivo principal é crear unha plataforma web que permita ás persoas usuarias descubrir e solicitar información sobre experiencias e destinos en Galicia de forma clara, atractiva e intuitiva.
@@ -36,24 +47,28 @@ Incrementar a visibilidade da marca a través dunha identidade visual coherente 
 Ofrecer contidos que fomenten a repetición da experiencia e a recomendación a outras persoas.
 
 
-6. Páxinas ou seccións previstas.
+## 6. Páxinas ou seccións previstas.
 
 Tendo en conta o tempo dispoñible para a creación da plataforma, a seguinte estrutura sería unha proposta simplificada:
-Inicio
-	Presentación da marca, chamadas á acción e exemplos destacados.
-Sobre nós
-	Información da axencia, valores e enfoque.
-Destinos
-		Modelo reutilizable de ficha de destino, por exemplo Rías Baixas.
-		Desenvolver experiencias 2-3 destinos como exemplo.
-Experiencias
-        Modelo reutilizable dunha ficha de experiencias.
-        Desenvolver 2-3 experiencias temáticas como exemplo.
-Ofertas
-        Pequena sección con 1-2 exemplos de promocións.
-Contacto
-        Formulario de solicitude de información. Datos de contacto e ligazóns ás redes sociais.
-7. Funcionalidades principais.
+- **Inicio**
+	- Presentación da marca
+        - Chamadas á acción e exemplos destacados.
+- **Sobre nós**
+	- Información da axencia
+        - Valores e enfoque.
+- **Destinos**
+	- Modelo reutilizable de ficha de destino, por exemplo Rías Baixas.
+	- Desenvolver experiencias 2-3 destinos como exemplo.
+- **Experiencias**
+        - Modelo reutilizable dunha ficha de experiencias.
+        - Desenvolver 2-3 experiencias temáticas como exemplo.
+- **Ofertas**
+        - Pequena sección con 1-2 exemplos de promocións.
+- **Contacto**
+        - Formulario de solicitude de información. 
+        - Datos de contacto e ligazóns ás redes sociais.
+
+## 7. Funcionalidades principais.
  A navegación na páxina ten que ser intuitiva, para que sexa sinxela chegar rápido o que queres buscar, ter as páxinas principais cos contidos principais visibles para que se vexas o instante.
 A interacción cos usuarios da páxina que se veñan inscribir para buscar destinos, a través do formulario da páxina de contacto.
 Fichas de destino e experiencias con estructura reutilizable.
@@ -62,7 +77,7 @@ Manter unha seguridade con políticas de privacidade claras e a implementación 
 Optimización para dispositivos móviles.
 
 
-8. Contidos e recursos necesarios.
+## 8. Contidos e recursos necesarios.
 
 Logotipo como imaxe corporativa e identificativa da empresa.
 Textos descriptivos dos destinos e experiencias
@@ -72,7 +87,7 @@ Exemplos de ofertas ou paquetes promocionais.
 Ferramentas de traballo:
 Visual studio Code, figma para wireframes e prototipado, xampp como servidor local, plesk como servidor virtual, validadores de código e accesibilidade e lighthouse para auditoría de SEO ademaid doutros validadores oficiais para código e para a accesibilidade.
 
-9. Referencias de, polo menos, tres sitios web relacionados.
+## 9. Referencias de, polo menos, tres sitios web relacionados.
 
 https://inspirience.es/  
 
@@ -94,7 +109,7 @@ https://aluz.com/
 Elemento a aplicar: estética moderna, uso equilibrado de espazos en branco.
 Elemento a evitar: navegación demasiado minimalista que pode ocultar contidos importantes.
 
-10. Posibles dificultades, riscos ou dependencias.
+## 10. Posibles dificultades, riscos ou dependencias.
 
 Definir unha identidade visual coherente sen marca previa real.
 Crear contidos suficientes para que a web resulte atractiva
@@ -104,32 +119,46 @@ Dependencia de imaxes de calidade para transmitir profesionalidade.
 
 Tras facer unha guía do proxecto e posteriormente o documento funcional, ter clara a idea comercial que se pedía, realizamos os bocetos de cada unha das páxinas que íamos facer na nosa web, un total de 6 páxinas, e subpáxinas que van surxindo a raíz das necesidades que van aparecendo.
 
-11. Realice o comezo do html, cunha estructura sinxela copiandoa do figma, comprobando que o código quedara claro e ben estructurado paso a paso en cada sección. Debido as correccións do exercicio S09, debo facer correccións do menú principal, xa que o principio da idea tiña submenús pero no prototipado da páxina non, entón para que sexa máis sinxelo tanto para min realizalo como para o usuario velo, teño que crear unhas subpáxinas pero que vaian dende a páxina de destino, oferta e experiencia principais.
+# Desenvolvemento do proxecto
 
-12. Todas as páxinas legais están feitas todas con IA, non sabía o que realmente piden nestos casos e por iso aviso.legal,cookies e privacidade é producto de copia e pegue con opción a sustitución e corrección.
+## 11. Inicio da estructura HTML
+ Realice o comezo do html, cunha estructura sinxela copiandoa do figma, comprobando que o código quedara claro e ben estructurado paso a paso en cada sección. Debido as correccións do exercicio S09, debo facer correccións do menú principal, xa que o principio da idea tiña submenús pero no prototipado da páxina non, entón para que sexa máis sinxelo tanto para min realizalo como para o usuario velo, teño que crear unhas subpáxinas pero que vaian dende a páxina de destino, oferta e experiencia principais.
 
-13. Empezamos coa creación de estilos de cada páxin acorde o deseño plantexado, como elexin a tipografía Lato, hai que importala a todas as páxinas mediante o enlace de google fonts. E indexar todas as páxinas á páxina de estilos que teñamos.
-13. Vou axustando o contido según me vaia mellor para os estilos aplicados. Estou rediseñando os tamaños, xa que no figma están moi grandes todos os elementos para unha web funcional. Estou indo sección por sección e vou dexar só dúas páxinas de exemplo tanto para a experiencia como para o destino. Como referencia destas páxinas, deberían ir todas as ofertas da web, pero por falta de tempo e dos meus coñecementos dunha función que o automatice, mellor deixamos esas catro como exemplos para todas.
-14. Comezamos co estilo de todas as páxinas, pero co index e os elementos que se comparten xa feitos, reutilizaremos o header e o footer para todas as páxinas e o formato de card se é conveniente.
-15. Continuamos coas demais páxinas que son copiar e pegar, xa que se repite o efecto parallax e tamén as cards que comparten estructura. Empezamos co formulario que é o que máis laborioso está sendo. Na xornada da sesion 10 non me dá tempo a continuar creando as páxinas de exemplo de experiencias e destinos.
+## 12. Uso da IA 
+Todas as páxinas legais están feitas todas con IA, non sabía o que realmente piden nestos casos e por iso aviso.legal,cookies e privacidade é producto de copia e pegue con opción a sustitución e corrección.
 
-16. Acabadas as páxinas principais faltaban as de validación que é unha estructura super sencilliña, despois continuo coas de exemplo de destino e de experiencia entón facemos unha estructura como se fose plantilla para calcar as outras e modificar só o contido. Asi tamén vale o mesmo código e clases de estilo para todas.
+## 13. Creación de estilos 
 
-17. Cando se dé por finalizada esta parte comezarei co diseño de móvil e tablet para crear un css responsive que valga para todos os dispositivos.
+Empezamos coa creación de estilos de cada páxin acorde o deseño plantexado, como elexin a tipografía Lato, hai que importala a todas as páxinas mediante o enlace de google fonts. E indexar todas as páxinas á páxina de estilos que teñamos.
+14. Vou axustando o contido según me vaia mellor para os estilos aplicados. Estou rediseñando os tamaños, xa que no figma están moi grandes todos os elementos para unha web funcional. Estou indo sección por sección e vou dexar só dúas páxinas de exemplo tanto para a experiencia como para o destino. Como referencia destas páxinas, deberían ir todas as ofertas da web, pero por falta de tempo e dos meus coñecementos dunha función que o automatice, mellor deixamos esas catro como exemplos para todas.
+15. Comezamos co estilo de todas as páxinas, pero co index e os elementos que se comparten xa feitos, reutilizaremos o header e o footer para todas as páxinas e o formato de card se é conveniente.
+16. Continuamos coas demais páxinas que son copiar e pegar, xa que se repite o efecto parallax e tamén as cards que comparten estructura. Empezamos co formulario que é o que máis laborioso está sendo. Na xornada da sesion 10 non me dá tempo a continuar creando as páxinas de exemplo de experiencias e destinos.
 
-18. Seguinte paso é mirar sección por sección de cada páxina como adaptar o deseño que temos de móvil con css, e tamén a tablet.
+17. Acabadas as páxinas principais faltaban as de validación que é unha estructura super sencilliña, despois continuo coas de exemplo de destino e de experiencia entón facemos unha estructura como se fose plantilla para calcar as outras e modificar só o contido. Asi tamén vale o mesmo código e clases de estilo para todas.
 
-19. Comezamos oficialmente coa funcionalidade JavaScript ainda que xa a usei para o menú hamburguesa do deseño responsive do móvil.
+## 18. Deseño responsive 
+Cando se dé por finalizada esta parte comezarei co diseño de móvil e tablet para crear un css responsive que valga para todos os dispositivos.
 
-20. A idea que a priori non puxen pero que agora estaría ben implementala sería o cambio de idioma para que a web fose accesible a máis xente.
+Seguinte paso é mirar sección por sección de cada páxina como adaptar o deseño que temos de móvil con css, e tamén a tablet.
+
+## 19. Funcionalidades JavaScript
+
+Comezamos oficialmente coa funcionalidade JavaScript ainda que xa a usei para o menú hamburguesa do deseño responsive do móvil.
+
+## 20. Cambio de idioma 
+A idea que a priori non puxen pero que agora estaría ben implementala sería o cambio de idioma para que a web fose accesible a máis xente.
 
 21. Empecei co diccionario automático pero está sendo engorroso e laborioso, o código foi xerado por IA e implementado finalmente co diccionario automático, pero hai que cambiarlle a cada texto do contido a clase para que se cambie automáticamente. 
 
-22. Creación dunhas ventás modais para as imaxes principais das cards de destinos e experiencias, asi co efecto de zoom que lle proporciona o css fai que parezca clicable, entón o pinchar saltaría unha ventá emerxente para que se poida ver a imaxe a maior tamaño e cerrase a través dunha x.
+## 22. Ventás modais
 
-23. Despois considerei útil un botón de cookies xa que fixera a páxina individual e para acceder a ela a traves da pantalla de inicio xa. Despois creei na primeira páxina a modo de exemplo o botón que é unha flecha para indicar que se vai cara o top 0 da pantalla. Proximamente incluirei o mesmo código e dulicareino para as demáis páxinas.
+ Creación dunhas ventás modais para as imaxes principais das cards de destinos e experiencias, asi co efecto de zoom que lle proporciona o css fai que parezca clicable, entón o pinchar saltaría unha ventá emerxente para que se poida ver a imaxe a maior tamaño e cerrase a través dunha x.
 
-24. Aplicarase a validación mediante java do formulario xa creado. Hai que comprobalo no navegar para que se vexa que está ben.
+## 23. Cookies e botón volver arriba
+Despois considerei útil un botón de cookies xa que fixera a páxina individual e para acceder a ela a traves da pantalla de inicio xa. Despois creei na primeira páxina a modo de exemplo o botón que é unha flecha para indicar que se vai cara o top 0 da pantalla. Proximamente incluirei o mesmo código e dulicareino para as demáis páxinas.
+
+## 24. Validación do formulario
+ Aplicarase a validación mediante java do formulario xa creado. Hai que comprobalo no navegar para que se vexa que está ben.
 
 25. Indicacións de que hai que clicar na politica de privacidade para poder enviar o formulario
 ![Indicacións de que hai que clicar na politica de privacidade para poder enviar o formulario](../atlántico_travel/assets/privacidade.jpeg)
@@ -141,4 +170,11 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 27. Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación
 ![Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación](../atlántico_travel/assets/solicitudeEnviada.jpeg)
 
-28. Con estos últimos pasos estaría a validación no propio html e a do js. Teño os campos necesarios do formulario, as etiquetas visibles que van asociadas, os campos obrigatorios tanto no html como señalizado na páxina, mensaxes de erro incluidas no js e poderíase usar o teclado. Falta por poñer un focus visible, para que a xente que o faga por teclado se vexa claro e por último a confirmación de envío que xa se ve clara cando te leva á páxina de validación. 
+## 28. Focus no formulario 
+ Con estos últimos pasos estaría a validación no propio html e a do js. Teño os campos necesarios do formulario, as etiquetas visibles que van asociadas, os campos obrigatorios tanto no html como señalizado na páxina, mensaxes de erro incluidas no js e poderíase usar o teclado. Falta por poñer un focus visible, para que a xente que o faga por teclado se vexa claro e por último a confirmación de envío que xa se ve clara cando te leva á páxina de validación.
+
+29. Despois de correxilas varias veces a validación do formulario, agora ponse en vermello se da erro o enviar, e tamén ten a propiedade de focus para saber en que campo se está a escribir.
+
+## 30. Axustar formato README
+
+Despois de buscar como se fai os separadores e os apartados do readme, cambie o deseño para que pareza máis profesional. 
