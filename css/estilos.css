@@ -2808,21 +2808,21 @@ footer {
         font-size: 14px;
     }
 
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
 
-    .aviso-cookies {
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        max-width: none;
+        .aviso-cookies {
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            max-width: none;
+        }
+
+        .boton-cookie {
+            left: 15px;
+            bottom: 15px;
+        }
+
     }
-
-    .boton-cookie {
-        left: 15px;
-        bottom: 15px;
-    }
-
-}
 }
 
 @media (max-width: 480px) {
@@ -3016,6 +3016,44 @@ footer {
 
     body {
         padding-top: 75px;
+    }
+
+}
+
+/* =========================================================
+   AXUSTES DE SECCIÓNS EN ESCRITORIO
+========================================================= */
+
+@media (min-width: 1025px) {
+
+    #destinos,
+    #experiencias,
+    .destinos-principais,
+    .experiencias-principais,
+    .ofertas-principais {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .destinos-grid,
+    .experiencias-grid,
+    .destinos-lista,
+    .experiencias-lista {
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .destinos-grid,
+    .experiencias-grid {
+        gap: 45px;
+    }
+
+
+    .destinos-lista,
+    .experiencias-lista {
+        gap: 40px;
     }
 
 }

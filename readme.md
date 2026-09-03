@@ -140,3 +140,5 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 27. Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación
 ![Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación](../atlántico_travel/assets/solicitudeEnviada.jpeg)
+
+28. Con estos últimos pasos estaría a validación no propio html e a do js. Teño os campos necesarios do formulario, as etiquetas visibles que van asociadas, os campos obrigatorios tanto no html como señalizado na páxina, mensaxes de erro incluidas no js e poderíase usar o teclado. Falta por poñer un focus visible, para que a xente que o faga por teclado se vexa claro e por último a confirmación de envío que xa se ve clara cando te leva á páxina de validación. 
