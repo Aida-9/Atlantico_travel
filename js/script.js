@@ -3737,3 +3737,8 @@ if (formularioContacto) {
             alert("Debes aceptar a política de privacidade.");
             privacidade.focus();
         }
+        if (!formularioCorrecto) {
+            evento.preventDefault();
+        }
+    };
+}
