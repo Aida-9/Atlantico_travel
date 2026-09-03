@@ -3731,4 +3731,9 @@ if (formularioContacto) {
             formularioCorrecto = false;
             alert("A mensaxe debe ter polo menos 10 caracteres.");
             mensaxe.focus();
-        }si
+        }
+        else if (!privacidade.checked){
+            formularioCorrecto = false;
+            alert("Debes aceptar a política de privacidade.");
+            privacidade.focus();
+        }
