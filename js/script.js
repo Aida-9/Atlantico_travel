@@ -3712,4 +3712,8 @@ if (formularioContacto) {
             alert("O nome debe ter polo menos 2 caracteres."); 
             nome.focus();
         }
-        
+        else if (apelidos.value.trim().length < 2){
+            formularioCorrecto = false; 
+            alert("Os apelidos deben ter polo menos 2 caracteres.");
+            apelidos.focus();
+        }
