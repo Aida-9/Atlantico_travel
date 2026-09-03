@@ -3696,7 +3696,7 @@ const formularioContacto = document.querySelector("#form-contacto");
 
 if (formularioContacto) {
 
-    formularioContacto.addEventListener("submit", function (evento)) {
+    formularioContacto.addEventListener("submit", function (evento) {
         
         const nome = document.querySelector("#nome"); 
         const apelidos = document.querySelector("#apelidos");
@@ -3740,5 +3740,5 @@ if (formularioContacto) {
         if (!formularioCorrecto) {
             evento.preventDefault();
         }
-    };
+    });
 }
