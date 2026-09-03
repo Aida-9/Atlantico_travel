@@ -1628,6 +1628,24 @@ footer {
     box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.15);
 }
 
+/* Cando esté mal algún campo do formulario resaltalo con vermello ó usuario*/
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid var(--complementaria);
+    outline-offset: 2px;
+    border-color: var(--azul-atlantico);
+    box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.15);
+}
+
+.campo-formulario input.erro:focus,
+.campo-formulario select.erro:focus,
+.campo-formulario textarea.erro:focus {
+    border-color: #c62828;
+    outline: 2px solid #ff0000;
+    outline-offset: 2px;
+}
+
 /* Deseño responsive */
 
 .menu-toggle {
