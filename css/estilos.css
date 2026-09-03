@@ -1607,6 +1607,27 @@ footer {
 }
 
 
+/* hover do formulario*/
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.campo-formulario input:hover,
+.campo-formulario select:hover,
+.campo-formulario textarea:hover {
+    border-color: var(--azul-oceanico);
+}
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid var(--complementaria);
+    outline-offset: 2px;
+    border-color: var(--azul-atlantico);
+    box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.15);
+}
+
 /* Deseño responsive */
 
 .menu-toggle {
@@ -3020,9 +3041,6 @@ footer {
 
 }
 
-/* =========================================================
-   AXUSTES DE SECCIÓNS EN ESCRITORIO
-========================================================= */
 
 @media (min-width: 1025px) {
 
