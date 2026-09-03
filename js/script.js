@@ -1,12 +1,3 @@
-/* =========================================================
-   ATLÁNTICO TRAVEL
-   SCRIPT PRINCIPAL
-========================================================= */
-
-
-/* =========================================================
-   1. MENÚ HAMBURGUESA
-========================================================= */
 
 const botonMenu = document.querySelector("header .menu-toggle");
 const menu = document.querySelector("header .menu");
@@ -23,16 +14,8 @@ if (botonMenu && menu) {
 }
 
 
-/* =========================================================
-   2. TRADUCIÓNS
-========================================================= */
-
 const traduccions = {
 
-
-    /* =====================================================
-       GALEGO
-    ===================================================== */
 
     gl: {
 
@@ -64,10 +47,7 @@ const traduccions = {
         detalleParaQuen: "Para quen?",
 
 
-        /* =================================================
-           INDEX
-        ================================================= */
-
+     
         heroSubtitulo: "Preparados para a aventura?",
 
         riasTitulo: "Rías Baixas",
@@ -123,11 +103,6 @@ const traduccions = {
         fraseMarca:
             "Atlántico Travel · Viaxes con alma",
 
-
-        /* =================================================
-           SOBRE NÓS
-        ================================================= */
-
         sobreNosSubtitulo:
             "Galicia non só se visita. Vívese.",
 
@@ -150,10 +125,7 @@ const traduccions = {
             "Non vendemos destinos. Creamos recordos.",
 
 
-        /* =================================================
-           DESTINOS
-        ================================================= */
-
+    
         destinosTitulo:
             "Destinos",
 
@@ -168,11 +140,6 @@ const traduccions = {
 
         destinosFrase:
             "\"Onde cada camiño deixa un recordo.\"",
-
-
-        /* =================================================
-           EXPERIENCIAS
-        ================================================= */
 
         experienciasTitulo:
             "Experiencias",
@@ -201,11 +168,6 @@ const traduccions = {
         experienciasFrase:
             "“Galicia, unha experiencia para sentir.”",
 
-
-        /* =================================================
-           OFERTAS
-        ================================================= */
-
         ofertasTitulo:
             "Ofertas",
 
@@ -224,12 +186,7 @@ const traduccions = {
         ofertasFrase:
             "\"Viaxa · Descobre · Sente\"",
 
-
-        /* =================================================
-           DETALLE KAYAK
-        ================================================= */
-
-        detalleKayakTitulo:
+       detalleKayakTitulo:
             "Kayak na Ría de Aldán",
 
         detalleKayakSubtitulo:
@@ -276,11 +233,6 @@ const traduccions = {
 
         detalleKayakCtaTexto:
             "Cóntanos que estás buscando e axudarémosche a preparar a túa experiencia.",
-
-
-        /* =================================================
-           DETALLE RUTA CABALAR
-        ================================================= */
 
         detalleCabaloTitulo:
             "Ruta Cabalar",
@@ -330,11 +282,6 @@ const traduccions = {
         detalleCabaloCtaTexto:
             "Cóntanos que estás buscando e axudarémosche a preparar a túa experiencia.",
 
-
-        /* =================================================
-           DETALLE COSTA DA MORTE
-        ================================================= */
-
         detalleCostaTitulo:
             "Costa da Morte",
 
@@ -383,11 +330,6 @@ const traduccions = {
         detalleCostaCtaTexto:
             "Cóntanos que estás buscando e crearemos unha experiencia para ti.",
 
-
-        /* =================================================
-           DETALLE RÍAS BAIXAS
-        ================================================= */
-
         detalleRiasTitulo:
             "Rías Baixas",
 
@@ -435,11 +377,6 @@ const traduccions = {
 
         detalleRiasCtaTexto:
             "Cóntanos que estás buscando e crearemos unha experiencia para ti.",
-
-
-        /* =================================================
-           CONTACTO
-        ================================================= */
 
         contactoDatosPersoais:
             "Datos persoais",
@@ -519,10 +456,6 @@ const traduccions = {
         contactoTlf:
             "Tlf.:",
 
-
-        /* =================================================
-           VALIDACIÓN
-        ================================================= */
 
         validacionTitulo:
             "Solicitude enviada",
@@ -778,11 +711,6 @@ const traduccions = {
         privacidadeInfoTexto:
             "Para obter máis información sobre o funcionamento deste sitio web podes consultar:",
 
-
-        /* =================================================
-           COOKIES
-        ================================================= */
-
         cookiesTitulo:
             "Política de cookies",
 
@@ -997,10 +925,7 @@ const traduccions = {
             "Podes consultar máis información relacionada coa privacidade e o funcionamento do sitio web en:",
 
 
-        /* =================================================
-           AVISO LEGAL
-        ================================================= */
-
+    
         avisoLegalTitulo:
             "Aviso legal",
 
@@ -1128,8 +1053,6 @@ const traduccions = {
             "As presentes condicións rexeranse pola lexislación española aplicable.",
 
 
-        /* ---------- FOOTER ---------- */
-
         lema:
             "Galicia para vivila.",
 
@@ -1167,10 +1090,6 @@ const traduccions = {
 
 
 
-    /* =====================================================
-       CASTELÁN
-    ===================================================== */
-
     es: {
 
         /* ---------- NAVEGACIÓN ---------- */
@@ -1198,8 +1117,7 @@ const traduccions = {
         detalleParaQuen: "¿Para quién?",
 
 
-        /* ---------- INDEX ---------- */
-
+    
         heroSubtitulo:
             "¿Preparados para la aventura?",
 
@@ -1267,8 +1185,6 @@ const traduccions = {
             "Atlántico Travel · Viajes con alma",
 
 
-        /* ---------- SOBRE NOSOTROS ---------- */
-
         sobreNosSubtitulo:
             "Galicia no solo se visita. Se vive.",
 
@@ -1290,8 +1206,6 @@ const traduccions = {
         valoresFrase:
             "No vendemos destinos. Creamos recuerdos.",
 
-
-        /* ---------- DESTINOS ---------- */
 
         destinosTitulo:
             "Destinos",
@@ -3402,23 +3316,6 @@ const traduccions = {
 };
 
 
-/* =========================================================
-   3. PREPARAR ELEMENTOS TRADUCIBLES
-========================================================= */
-
-/*
-   Gardamos se o texto orixinal tiña ":" ao final.
-
-   Isto é útil porque nalgunhas páxinas temos:
-
-   Duración:
-
-   e noutras:
-
-   Duración
-
-   pero ambas usan data-i18n="duracion".
-*/
 
 const elementosTraducibles = document.querySelectorAll("[data-i18n]");
 
@@ -3523,44 +3420,20 @@ function cambiarIdioma(idioma) {
     document.documentElement.lang = idioma;
 
 
-    /* -----------------------------------------------------
-       GARDAR IDIOMA
-    ----------------------------------------------------- */
-
     localStorage.setItem("idioma", idioma);
 
 }
 
-
-/* =========================================================
-   5. SELECTOR DE IDIOMA
-========================================================= */
-
 const selectorIdioma =
     document.querySelector("#idioma");
-
-
-/*
-   Se xa se escolleu un idioma anteriormente,
-   recuperámolo.
-
-   Se non hai ningún gardado, usamos galego.
-*/
 
 const idiomaGardado =
     localStorage.getItem("idioma") || "gl";
 
 
-/*
-   Aplicamos o idioma nada máis cargar a páxina.
-*/
-
 cambiarIdioma(idiomaGardado);
 
 
-/*
-   Poñemos o selector na opción correspondente.
-*/
 
 if (selectorIdioma) {
 
@@ -3575,10 +3448,6 @@ if (selectorIdioma) {
 
 }
 
-
-/* =========================================================
-   6. PECHAR MENÚ AO PREMER NUN ENLACE
-========================================================= */
 
 if (menu && botonMenu) {
 
@@ -3633,8 +3502,6 @@ if (botonPecharModal) {
 }
 
 
-/* Pechar facendo clic no fondo */
-
 if (modalImaxe) {
 
     modalImaxe.addEventListener("click", function (evento) {
@@ -3648,9 +3515,6 @@ if (modalImaxe) {
     });
 
 }
-
-
-/* Pechar coa tecla ESC */
 
 document.addEventListener("keydown", function (evento) {
 
@@ -3707,6 +3571,13 @@ if (formularioContacto) {
 
         let formularioCorrecto = true;
 
+        nome.classList.remove("erro");
+        apelidos.classList.remove("erro");
+        email.classList.remove("erro");
+        telefono.classList.remove("erro");
+        mensaxe.classList.remove("erro");
+        privacidade.classList.remove("erro");
+
         if (nome.value.trim().length < 2){
             formularioCorrecto = false;
             alert("O nome debe ter polo menos 2 caracteres."); 
@@ -3741,4 +3612,16 @@ if (formularioContacto) {
             evento.preventDefault();
         }
     });
+
+    const camposFormulario = formularioContacto.querySelectorAll( "input, select, textarea");
+
+camposFormulario.forEach(function (campo) {
+    campo.addEventListener("input", function () {
+        campo.classList.remove("erro");
+    });
+    campo.addEventListener("change", function () {
+        campo.classList.remove("erro");
+    });
+});
 }
+
