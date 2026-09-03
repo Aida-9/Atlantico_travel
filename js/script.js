@@ -3691,3 +3691,12 @@ if (botonArriba) {
 
 }
 }
+
+const formularioContacto = document.querySelector("#form-contacto");
+
+if (formularioContacto) {
+
+    formularioContacto.addEventListener("submit", function (evento)) {
+        
+        const nome = document.querySelector("#nome"); 
+        
