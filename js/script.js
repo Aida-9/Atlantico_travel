@@ -3706,3 +3706,10 @@ if (formularioContacto) {
         const privacidade = document.querySelector("#privacidade");
 
         let formularioCorrecto = true;
+
+        if (nome.value.trim().length < 2){
+            formularioCorrecto = false;
+            alert("O nome debe ter polo menos 2 caracteres."); 
+            nome.focus();
+        }
+        
