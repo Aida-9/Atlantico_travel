@@ -3699,4 +3699,10 @@ if (formularioContacto) {
     formularioContacto.addEventListener("submit", function (evento)) {
         
         const nome = document.querySelector("#nome"); 
-        
+        const apelidos = document.querySelector("#apelidos");
+        const email = document.querySelector("#email");
+        const telefono = document.querySelector("#telefono");   
+        const mensaxe = document.querySelector("#mensaxe");
+        const privacidade = document.querySelector("#privacidade");
+
+        let formularioCorrecto = true;
