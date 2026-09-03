@@ -3727,3 +3727,8 @@ if (formularioContacto) {
             alert("Introduce un número de teléfono válido.");
             telefono.focus();
         } 
+        else if (mensaxe.value.trim().length < 10){
+            formularioCorrecto = false;
+            alert("A mensaxe debe ter polo menos 10 caracteres.");
+            mensaxe.focus();
+        }si
