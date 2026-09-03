@@ -3717,3 +3717,13 @@ if (formularioContacto) {
             alert("Os apelidos deben ter polo menos 2 caracteres.");
             apelidos.focus();
         }
+        else if (!email.value.includes("@")) {
+            formularioCorrecto = false; 
+            alert("Introduce un enderezo de correo electrónico válido.");
+            email.focus();
+        }
+        else if (!/^[0-9]{9}$/.test(telefono.value.trim())){
+            formularioCorrecto = false;
+            alert("Introduce un número de teléfono válido.");
+            telefono.focus();
+        } 
