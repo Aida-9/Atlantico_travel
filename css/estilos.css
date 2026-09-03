@@ -1759,7 +1759,7 @@ footer {
 }
 
 .volver-arriba {
-    display: none;
+    display: block;
     position: fixed;
     right: 25px;
     bottom: 25px;

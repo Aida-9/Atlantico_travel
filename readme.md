@@ -129,3 +129,4 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 23. Despois considerei útil un botón de cookies xa que fixera a páxina individual e para acceder a ela a traves da pantalla de inicio xa. Despois creei na primeira páxina a modo de exemplo o botón que é unha flecha para indicar que se vai cara o top 0 da pantalla. Proximamente incluirei o mesmo código e dulicareino para as demáis páxinas.
 
+24. Aplicarase a validación mediante java do formulario xa creado. 
