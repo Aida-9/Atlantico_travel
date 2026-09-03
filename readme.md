@@ -129,4 +129,14 @@ Tras facer unha guía do proxecto e posteriormente o documento funcional, ter cl
 
 23. Despois considerei útil un botón de cookies xa que fixera a páxina individual e para acceder a ela a traves da pantalla de inicio xa. Despois creei na primeira páxina a modo de exemplo o botón que é unha flecha para indicar que se vai cara o top 0 da pantalla. Proximamente incluirei o mesmo código e dulicareino para as demáis páxinas.
 
-24. Aplicarase a validación mediante java do formulario xa creado. 
+24. Aplicarase a validación mediante java do formulario xa creado. Hai que comprobalo no navegar para que se vexa que está ben.
+
+25. Indicacións de que hai que clicar na politica de privacidade para poder enviar o formulario
+![Indicacións de que hai que clicar na politica de privacidade para poder enviar o formulario](../atlántico_travel/assets/privacidade.jpeg)
+
+
+26. Sae unha mensaxe para saber o longo que ten que ser o teléfono neste caso
+![Sae unha mensaxe para saber o longo que ten que ser o teléfono neste caso](../atlántico_travel/assets/indicacionstlf.jpeg)
+
+27. Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación
+![Cando está sen erros e verifica ben o formulario e se envía, redirixese a páxina de validación](../atlántico_travel/assets/solicitudeEnviada.jpeg)
