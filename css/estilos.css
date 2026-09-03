@@ -1633,6 +1633,8 @@ footer {
 #form-contacto select.erro,
 #form-contacto textarea.erro {
     border: 3px solid red;
+    outline: 2px solid red;
+    outline-offset: 2px;
     background-color: #ffe5e5;
 }
  
