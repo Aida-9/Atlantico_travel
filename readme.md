@@ -185,7 +185,19 @@ Axudada do documento que fixeramos anteriormente do plan de probas imos verifica
  - **Empezamos por o Hero e o CTA:** 
         - Clic botón CTA e mirar para a web en varios dispositivos para comprobar a lexibilidade . Ou facendo comprobacións de accesibilidade no wave.
 
- O CTA funciona tanto en versión escritorio como noutros dispositivos.
-Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto
+                - O CTA funciona tanto en versión escritorio como noutros dispositivos.
+                - Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto
 ![Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto](../atlántico_travel/assets/contrestetitulo.jpeg)
 Aproveitando a corrección dos títulos tamén vou facer modificación nos links do nav que ten tamén contraste baixo, entón cambio o verde polo azul das cores da empresa. 
+
+- **Cards de destino e experiencias:**
+        - Comprobar que o formato sexa lexible e esté ben estructurado. Facer clic no botón para comprobar que vaia á páxina do formulario.
+                - As cards de experiencia e de destino están ben contrastadas cas cores, e os textos alternativos ás imaxes, deixo foto coa evaluación de WAVE.
+![cards con correcto contraste](../atlántico_travel/assets/cards.jpeg)
+                - Fun comprobando facendo clic en cada botón e van para as páxinas correctas, as dúas de exemplo de experiencia e destino van cara a súa páxina de exemplo correcta ampliando a información da viaxe. Despois a dos cañóns do Sil vai redirixida a páxina das ofertas, facendo exemplo de que está rebaixada de prezo actualmente. E por último a experiencia da mariscada non incluida nas outras, vai directamente á páxina de contacto para que se cubra o formulario. 
+- **Textos:**
+        - Que os textos sexas lexibles e que teñan boa accesibilidade e que a imaxe se vexa nítida pero que se corresponda o tamaño.
+                - A maneira de comprobar iso é realizando a auditoría de wave por un lado e tamén podemos facer a de lighthouse para ver os puntos erróneos da accesibilidade. 
+![indicadores wave](../atlántico_travel/assets/waveinicio.jpeg) 
+Como ben aparece na imaxe, na páxina de inicio non hai erros graves de contraste, hai links redundantes, porque parece que van á mesma páxina, comprobeinos e non é así, van a páxina de contacto, e só o de inicio volve a mesma páxina porque ten que ser así. 
+               
