@@ -182,4 +182,9 @@ Despois de buscar como se fai os separadores e os apartados do readme, cambie o 
 ## 31. Plan de probas
 
 Axudada do documento que fixeramos anteriormente do plan de probas imos verificar que a nosa web se comporte acorde o que pensamos. 
-Empezamos por o Hero e o CTA: 
+ - **Empezamos por o Hero e o CTA:** 
+        - Clic botón CTA e mirar para a web en varios dispositivos para comprobar a lexibilidade . Ou facendo comprobacións de accesibilidade no wave.
+
+ O CTA funciona tanto en versión escritorio como noutros dispositivos.
+Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto
+![Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto](../atlántico_travel/assets/contrestetitulo.jpeg)
