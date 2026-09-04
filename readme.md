@@ -199,5 +199,6 @@ Aproveitando a corrección dos títulos tamén vou facer modificación nos links
         - Que os textos sexas lexibles e que teñan boa accesibilidade e que a imaxe se vexa nítida pero que se corresponda o tamaño.
                 - A maneira de comprobar iso é realizando a auditoría de wave por un lado e tamén podemos facer a de lighthouse para ver os puntos erróneos da accesibilidade. 
 ![indicadores wave](../atlántico_travel/assets/waveinicio.jpeg) 
-Como ben aparece na imaxe, na páxina de inicio non hai erros graves de contraste, hai links redundantes, porque parece que van á mesma páxina, comprobeinos e non é así, van a páxina de contacto, e só o de inicio volve a mesma páxina porque ten que ser así. 
-               
+Como ben aparece na imaxe, na páxina de inicio non hai erros graves de contraste, hai links redundantes, porque parece que van á mesma páxina, comprobeinos e non é así, van a páxina de contacto, e só o de inicio volve a mesma páxina porque ten que ser así.               
+![indicadores wave](../atlántico_travel/assets/parallaxerro.jpeg) 
+Teño que arreglar o contraste do parallax porque parece ser que no ten contraste suficiente, malia que na propia páxina se distinga con claridade. 

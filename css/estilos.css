@@ -627,7 +627,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/parallax.avif");
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.55),
+     rgba(0, 0, 0, 0.55)), url("../assets/parallax.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -776,7 +778,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    background-image: url("../assets/paradax.avif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../assets/parallax.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
