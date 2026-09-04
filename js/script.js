@@ -3560,74 +3560,245 @@ const formularioContacto = document.querySelector("#form-contacto");
 
 if (formularioContacto) {
 
+    const nome = document.querySelector("#nome");
+    const apelidos = document.querySelector("#apelidos");
+    const email = document.querySelector("#email");
+    const telefono = document.querySelector("#telefono");
+    const tipoViaxe = document.querySelector("#tipo-viaxe");
+    const mensaxe = document.querySelector("#mensaxe");
+    const privacidade = document.querySelector("#privacidade");
+
+    /* Crear automaticamente unha mensaxe debaixo de cada campo */
+
+    function crearMensaxe(campo) {
+
+        const mensaxeValidacion = document.createElement("small");
+
+        mensaxeValidacion.classList.add("mensaxe-validacion");
+        mensaxeValidacion.setAttribute("aria-live", "polite");
+
+        if (campo.type === "checkbox") {
+
+            const label = campo.closest("label");
+
+            if (label) {
+                label.insertAdjacentElement("afterend", mensaxeValidacion);
+            }
+
+        } else {
+            campo.insertAdjacentElement("afterend", mensaxeValidacion);
+        }
+
+        return mensaxeValidacion;
+    }
+
+
+    const mensaxeNome = crearMensaxe(nome);
+    const mensaxeApelidos = crearMensaxe(apelidos);
+    const mensaxeEmail = crearMensaxe(email);
+    const mensaxeTelefono = crearMensaxe(telefono);
+    const mensaxeTipoViaxe = crearMensaxe(tipoViaxe);
+    const mensaxeTexto = crearMensaxe(mensaxe);
+    const mensaxePrivacidade = crearMensaxe(privacidade);
+
+
+    /* Mostrar erro */
+
+    function mostrarErro(campo, elementoMensaxe, texto) {
+
+        campo.classList.add("erro");
+        campo.classList.remove("correcto");
+
+        elementoMensaxe.textContent = texto;
+        elementoMensaxe.classList.add("erro");
+        elementoMensaxe.classList.remove("correcto");
+    }
+
+
+    /* Mostrar que o campo é correcto */
+
+    function mostrarCorrecto(campo, elementoMensaxe) {
+
+        campo.classList.remove("erro");
+        campo.classList.add("correcto");
+
+        elementoMensaxe.textContent = "✓ Correcto";
+        elementoMensaxe.classList.remove("erro");
+        elementoMensaxe.classList.add("correcto");
+    }
+
+
+    /* Validacións */
+
+    function validarNome() {
+
+        if (nome.value.trim().length < 2) {
+            mostrarErro(
+                nome,
+                mensaxeNome,
+                "O nome debe ter polo menos 2 caracteres."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(nome, mensaxeNome);
+        return true;
+    }
+
+
+    function validarApelidos() {
+
+        if (apelidos.value.trim().length < 2) {
+            mostrarErro(
+                apelidos,
+                mensaxeApelidos,
+                "Os apelidos deben ter polo menos 2 caracteres."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(apelidos, mensaxeApelidos);
+        return true;
+    }
+
+
+    function validarEmail() {
+
+        const expresionEmail =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!expresionEmail.test(email.value.trim())) {
+            mostrarErro(
+                email,
+                mensaxeEmail,
+                "Introduce un correo electrónico válido."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(email, mensaxeEmail);
+        return true;
+    }
+
+
+    function validarTelefono() {
+
+        if (!/^[0-9]{9}$/.test(telefono.value.trim())) {
+            mostrarErro(
+                telefono,
+                mensaxeTelefono,
+                "O teléfono debe ter 9 números."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(telefono, mensaxeTelefono);
+        return true;
+    }
+
+
+    function validarTipoViaxe() {
+
+        if (tipoViaxe.value === "") {
+            mostrarErro(
+                tipoViaxe,
+                mensaxeTipoViaxe,
+                "Selecciona unha opción."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(tipoViaxe, mensaxeTipoViaxe);
+        return true;
+    }
+
+
+    function validarMensaxe() {
+
+        if (mensaxe.value.trim().length < 10) {
+            mostrarErro(
+                mensaxe,
+                mensaxeTexto,
+                "A mensaxe debe ter polo menos 10 caracteres."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(mensaxe, mensaxeTexto);
+        return true;
+    }
+
+
+    function validarPrivacidade() {
+
+        if (!privacidade.checked) {
+            mostrarErro(
+                privacidade,
+                mensaxePrivacidade,
+                "Debes aceptar a política de privacidade."
+            );
+
+            return false;
+        }
+
+        mostrarCorrecto(
+            privacidade,
+            mensaxePrivacidade
+        );
+
+        return true;
+    }
+
+
+    /* Validar mentres o usuario corrixe */
+
+    nome.addEventListener("input", validarNome);
+    apelidos.addEventListener("input", validarApelidos);
+    email.addEventListener("input", validarEmail);
+    telefono.addEventListener("input", validarTelefono);
+    mensaxe.addEventListener("input", validarMensaxe);
+
+    tipoViaxe.addEventListener("change", validarTipoViaxe);
+    privacidade.addEventListener("change", validarPrivacidade);
+
+
+    /* Validar todo ao enviar */
+
     formularioContacto.addEventListener("submit", function (evento) {
-        
-        const nome = document.querySelector("#nome"); 
-        const apelidos = document.querySelector("#apelidos");
-        const email = document.querySelector("#email");
-        const telefono = document.querySelector("#telefono");   
-        const mensaxe = document.querySelector("#mensaxe");
-        const privacidade = document.querySelector("#privacidade");
 
-        let formularioCorrecto = true;
+        const nomeCorrecto = validarNome();
+        const apelidosCorrectos = validarApelidos();
+        const emailCorrecto = validarEmail();
+        const telefonoCorrecto = validarTelefono();
+        const tipoViaxeCorrecto = validarTipoViaxe();
+        const mensaxeCorrecta = validarMensaxe();
+        const privacidadeCorrecta = validarPrivacidade();
 
-        nome.classList.remove("erro");
-        apelidos.classList.remove("erro");
-        email.classList.remove("erro");
-        telefono.classList.remove("erro");
-        mensaxe.classList.remove("erro");
-        privacidade.classList.remove("erro");
-
-        if (nome.value.trim().length < 2){
-            formularioCorrecto = false;
-            nome.classList.add("erro");
-            alert("O nome debe ter polo menos 2 caracteres."); 
-            nome.focus();
-        }
-        else if (apelidos.value.trim().length < 2){
-            formularioCorrecto = false; 
-            apelidos.classList.add("erro");
-            alert("Os apelidos deben ter polo menos 2 caracteres.");
-            apelidos.focus();
-        }
-        else if (!email.value.includes("@")) {
-            formularioCorrecto = false; 
-            email.classList.add("erro");
-            alert("Introduce un enderezo de correo electrónico válido.");
-            email.focus();
-        }
-        else if (!/^[0-9]{9}$/.test(telefono.value.trim())){
-            formularioCorrecto = false;
-            telefono.classList.add("erro");
-            alert("Introduce un número de teléfono válido.");
-            telefono.focus();
-        } 
-        else if (mensaxe.value.trim().length < 10){
-            formularioCorrecto = false;
-            mensaxe.classList.add("erro");
-            alert("A mensaxe debe ter polo menos 10 caracteres.");
-            mensaxe.focus();
-        }
-        else if (!privacidade.checked){
-            formularioCorrecto = false;
-            privacidade.classList.add("erro");
-            alert("Debes aceptar a política de privacidade.");
-            privacidade.focus();
-        }
-        if (!formularioCorrecto) {
+        if (
+            !nomeCorrecto ||
+            !apelidosCorrectos ||
+            !emailCorrecto ||
+            !telefonoCorrecto ||
+            !tipoViaxeCorrecto ||
+            !mensaxeCorrecta ||
+            !privacidadeCorrecta
+        ) {
             evento.preventDefault();
+
+            const primeiroErro =
+                formularioContacto.querySelector(".erro");
+
+            if (primeiroErro) {
+                primeiroErro.focus();
+            }
         }
+
     });
 
-    const camposFormulario = formularioContacto.querySelectorAll( "input, select, textarea");
-
-    camposFormulario.forEach(function (campo) {
-        campo.addEventListener("input", function () {
-        campo.classList.remove("erro");
-    });
-        campo.addEventListener("change", function () {
-        campo.classList.remove("erro");
-        });
-    });
 }
-
