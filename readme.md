@@ -219,3 +219,10 @@ Teño que arreglar o contraste do parallax porque parece ser que no ten contrast
 - **Formulario**
         - Cubrir con datos erróneos. Darlle a enviar. Cubrir con datos correctos. Darlle a enviar.
                 - Estas probas realiceinas onte, funciona coas cores indicadoras, se hai erros ponse en vermello e non deixa enviar, polo contrario para saber onde vas a escribir fas hover nas celdas e iluminanse doutra cor.
+- **Navegación**
+        - Entrar na páxina e observar se se poden ver as fotos ó completo en pouco tempo, mirar na ferramenta litghhouse se o rendemento é o adecuado para cargar a páxina 
+## Informe lighthouse
+El informe está en la carpeta de documentación de este repositorio.
+[Ver informe completo en PDF](documentacion/auditoria.pdf)
+
+                - Como se pode observar no informe hai varios erros que fai que a páxina cargue lenta, entre eles o logo, que ten un peso considerable. 
