@@ -204,3 +204,18 @@ Como ben aparece na imaxe, na páxina de inicio non hai erros graves de contrast
 Teño que arreglar o contraste do parallax porque parece ser que no ten contraste suficiente, malia que na propia páxina se distinga con claridade. 
                 - Revisando o WAVE tamén me poñía a suxerencia dun H1 na páxina de contacto, cambiei e puxen un h1. 
                 
+- **Fichas**
+        - Entrar na web e mirar como está organizado a páxina e se as fichas están visibles e cunha estructura coherente visualmente
+                - Polo que se pode ver visualmente está ordenado e coas marxes suficientes da window, despois de correxila o outro día.
+- **Enlaces**
+        - Ir a web e clicar en cada botón, comprobar que tanto os enlaces ás páxinas como os botóns que se dirixen o formulario cumpran as directrices
+                - Os enlaces do nav funcionan todos.
+                - Os enlaces das fichas funcionan e redirixen as páxinas correctas.
+                - Os enlaces do footer están claros e funcionais.
+                - O que non funciona son os enlaces das redes que se puxeron a modo de exemplo pero non hai redes reais para clicar. 
+- **Ofertas**
+        - Abrir a web, dirixirte a pestaña de Ofertas e poder ver algunha oferta.
+                - Cúmplese isto, hai unha oferta de exemplo
+- **Formulario**
+        - Cubrir con datos erróneos. Darlle a enviar. Cubrir con datos correctos. Darlle a enviar.
+                - Estas probas realiceinas onte, funciona coas cores indicadoras, se hai erros ponse en vermello e non deixa enviar, polo contrario para saber onde vas a escribir fas hover nas celdas e iluminanse doutra cor.
