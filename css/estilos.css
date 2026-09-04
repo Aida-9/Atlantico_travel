@@ -950,7 +950,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/cabazo.avif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../assets/cabazo.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
