@@ -222,7 +222,19 @@ Teño que arreglar o contraste do parallax porque parece ser que no ten contrast
 - **Navegación**
         - Entrar na páxina e observar se se poden ver as fotos ó completo en pouco tempo, mirar na ferramenta litghhouse se o rendemento é o adecuado para cargar a páxina 
 ## Informe lighthouse
-El informe está en la carpeta de documentación de este repositorio.
+O informe está na carpeta de repositorio documentación.
 [Ver informe completo en PDF](documentacion/auditoria.pdf)
 
                 - Como se pode observar no informe hai varios erros que fai que a páxina cargue lenta, entre eles o logo, que ten un peso considerable. 
+                - Cambio de tamaño de imaxes das cards a 756 de ancho, renderizar as imaxes para que pesen menos pero sexan o suficientemente grandes como para poñelas nunha pantalla grande.
+
+## Informe lighthouse II
+O informe está na carpeta de documentación do repositorio. 
+[Ver informe completo en PDF](documentacion/auditoria2.pdf)
+
+                - Cambiar resolución do logotipo que estaba a 1024 por unha resolución máis axeitada, de 150 x 150.
+## Informe lighthouse III
+As melloras son evidentes, pasa case a un 100 por cento en todo, faltaría o SEO que imos intentar melloralo.
+[Ver informe completo en PDF](documentacion/auditoria3.pdf)
+
+                - 
