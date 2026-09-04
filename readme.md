@@ -202,3 +202,5 @@ Aproveitando a corrección dos títulos tamén vou facer modificación nos links
 Como ben aparece na imaxe, na páxina de inicio non hai erros graves de contraste, hai links redundantes, porque parece que van á mesma páxina, comprobeinos e non é así, van a páxina de contacto, e só o de inicio volve a mesma páxina porque ten que ser así.               
 ![indicadores wave](../atlántico_travel/assets/parallaxerro.jpeg) 
 Teño que arreglar o contraste do parallax porque parece ser que no ten contraste suficiente, malia que na propia páxina se distinga con claridade. 
+                - Revisando o WAVE tamén me poñía a suxerencia dun H1 na páxina de contacto, cambiei e puxen un h1. 
+                

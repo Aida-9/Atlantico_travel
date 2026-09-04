@@ -981,6 +981,11 @@ footer {
     padding: 40px 50px 60px;
 }
 
+.titulo-contacto{
+    text-align: center;
+    color: var(--texto-principal);
+    margin-bottom: 40px 0;
+}
 .contacto-formulario {
     width: 100%;
     max-width: 800px;
