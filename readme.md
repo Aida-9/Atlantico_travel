@@ -178,3 +178,8 @@ Despois considerei útil un botón de cookies xa que fixera a páxina individual
 ## 30. Axustar formato README
 
 Despois de buscar como se fai os separadores e os apartados do readme, cambie o deseño para que pareza máis profesional. 
+
+## 31. Plan de probas
+
+Axudada do documento que fixeramos anteriormente do plan de probas imos verificar que a nosa web se comporte acorde o que pensamos. 
+Empezamos por o Hero e o CTA: 
