@@ -221,20 +221,29 @@ Teño que arreglar o contraste do parallax porque parece ser que no ten contrast
                 - Estas probas realiceinas onte, funciona coas cores indicadoras, se hai erros ponse en vermello e non deixa enviar, polo contrario para saber onde vas a escribir fas hover nas celdas e iluminanse doutra cor.
 - **Navegación**
         - Entrar na páxina e observar se se poden ver as fotos ó completo en pouco tempo, mirar na ferramenta litghhouse se o rendemento é o adecuado para cargar a páxina 
-## Informe lighthouse
+### Informe lighthouse
 O informe está na carpeta de repositorio documentación.
 [Ver informe completo en PDF](documentacion/auditoria.pdf)
 
                 - Como se pode observar no informe hai varios erros que fai que a páxina cargue lenta, entre eles o logo, que ten un peso considerable. 
                 - Cambio de tamaño de imaxes das cards a 756 de ancho, renderizar as imaxes para que pesen menos pero sexan o suficientemente grandes como para poñelas nunha pantalla grande.
 
-## Informe lighthouse II
+### Informe lighthouse II
 O informe está na carpeta de documentación do repositorio. 
 [Ver informe completo en PDF](documentacion/auditoria2.pdf)
 
                 - Cambiar resolución do logotipo que estaba a 1024 por unha resolución máis axeitada, de 150 x 150.
-## Informe lighthouse III
+### Informe lighthouse III
 As melloras son evidentes, pasa case a un 100 por cento en todo, faltaría o SEO que imos intentar melloralo.
 [Ver informe completo en PDF](documentacion/auditoria3.pdf)
 
-                - 
+                - Podería estar mellor posicionada por iso intento poñer meta description ás páxinas principais para que teña posibilidades de mellorar iso da páxina. 
+### Informe lighthouse IV (100%)
+[Ver informe completo en PDF](documentacion/auditoria4.pdf)
+
+- **Navegación**
+        -Todas as páxinas cumplen coa carga rápida, o contido aparece protno e á hora de ir de páxina en páxina resulta sinxelo e  cómodo para o usuario.
+-  **Responsive** 
+        -Funciona correctamente, xa que se comproba no inspector, o redimensionar a outros tamaños a páxina responde segundo o deseño prototipado, tanto en tablet como móviles e móviles pequenos.
+- **Contraste**
+        - Conséguese en toda a páxina, correxindo erros que había, anteriormente expostos no apartado textos. 
