@@ -188,3 +188,4 @@ Axudada do documento que fixeramos anteriormente do plan de probas imos verifica
  O CTA funciona tanto en versión escritorio como noutros dispositivos.
 Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto
 ![Dado que mirei en wave e o contraste é moi baixo no título hai que cambiar o fondo, xa que me gustaría quedar coas cores brancas para o texto](../atlántico_travel/assets/contrestetitulo.jpeg)
+Aproveitando a corrección dos títulos tamén vou facer modificación nos links do nav que ten tamén contraste baixo, entón cambio o verde polo azul das cores da empresa. 
