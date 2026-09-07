@@ -275,3 +275,9 @@ Comprobar post publicación se hai algún fallo de java, comprobando manualmente
 Si é certo que partimos dunha base de 100% en todos os apartados anteriormente a ser publicada, problema que da agora son errores de sitemap que vou correxir e a maiores algún tipo de sobrecarga coa tipografía da páxina e o que tarda, malia isto que considero non tan importante pero si cuestión de mellorar, hai bos resultados e todos en verde. 
 
 [Ver informe completo en PDF](documentacion/auditoriapublicada.pdf)
+
+Despois de modificar o robots, porque estaba en liñas separadas, agora comprobei mediante o enlace da miña paxina e /robots.txt e /sitemap.xml haber se había erro ou abrían, e si que abrían entón pasei outra vez auditoría haber se melloramos o porcentaxe en seo.
+
+[Ver informe completo en PDF](documentacion/auditoriapublicada2.pdf)
+
+O SEO, a accesibilidade e as boas prácticas están o 100%, o que falla son pequenas cousas como, o caché do servidor o sea que non ten que ver co html en sí, despois as cards que podríase aforrar peso, pero sinceramente das cambiaría porque a diferencia é mínima e gústanme asi. Logo o de google fonts que tarda uns milisegundos pero e que foi a decisión do deseño colocar esa tipografía e gústame tal e como se ve. Malia poder cambiar pequenos detalles como está nun alto porcentaxe e non hai erros que supoñan que a páxina vai moi mal, deixariao así. 
