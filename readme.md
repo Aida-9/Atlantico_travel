@@ -247,3 +247,31 @@ As melloras son evidentes, pasa case a un 100 por cento en todo, faltaría o SEO
         -Funciona correctamente, xa que se comproba no inspector, o redimensionar a outros tamaños a páxina responde segundo o deseño prototipado, tanto en tablet como móviles e móviles pequenos.
 - **Contraste**
         - Conséguese en toda a páxina, correxindo erros que había, anteriormente expostos no apartado textos. 
+
+## 32. Publicación da páxina
+
+Despois de facer as comprobacións necesarias, pasamos a publicar a páxina no noso servidor. Eu aproveitei o dado polo titor, e subin mediante winscp os archivos ao servidor, o cal tamén ten o git remoto da páxina. Creei o sitemap e o robots, para a mellora de rastrexo da web. E inicio algunhas comprobacións unha vez publicada.
+
+ ### Responsive
+
+Comprobo que hai un bo deseño en tablet e móvil unha vez  publicada: 
+![indicadores wave](../atlántico_travel/assets/responsivemovil.jpeg)
+
+### Accesibilidade
+
+Comprobación mediante WAVE si hai unha boa accesibilidade e contraste na páxina, comprobase que si que hai pequenos fallos de redundancia, nada grave dado que é porque algúns botóns volven a mesma páxina. Pero non hai erros de contraste nin de textos alternativos que non se puxeran. 
+
+![indicadores wave](../atlántico_travel/assets/accesibilidade.jpeg)
+
+### Funcionalidades js 
+
+Comprobar post publicación se hai algún fallo de java, comprobando manualmente non hai nin erro no botón de cara arriba nin no botón de cookies nin no formulario, que vai validando según corresponde ademáis de envialo correctamente despois. 
+
+![indicadores wave](../atlántico_travel/assets/formulariofinal.jpeg)
+![indicadores wave](../atlántico_travel/assets/confirmacionform.jpeg)
+
+### Auditoria lighthouse
+
+Si é certo que partimos dunha base de 100% en todos os apartados anteriormente a ser publicada, problema que da agora son errores de sitemap que vou correxir e a maiores algún tipo de sobrecarga coa tipografía da páxina e o que tarda, malia isto que considero non tan importante pero si cuestión de mellorar, hai bos resultados e todos en verde. 
+
+[Ver informe completo en PDF](documentacion/auditoriapublicada.pdf)

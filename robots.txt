@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap:
-https://sharp-ardinghelli.87-106-228-101.plesk.page/sitemap.xml
+Sitemap:https://sharp-ardinghelli.87-106-228-101.plesk.page/sitemap.xml
