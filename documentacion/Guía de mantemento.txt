@@ -1,0 +1,64 @@
+Unha vez publicada a web de Atlántico Travel, será necesario realizar tarefas de mantemento e actualización para que o seu contido continúe sendo útil e actual. A páxina está pensada para poder incorporar novas ofertas, destinos e experiencias, así como actualizar textos ou engadir novas imaxes das actividades realizadas.
+
+O mantemento non resulta especialmente complexo, xa que a web está organizada en diferentes páxinas segundo o seu contido. Para realizar unha modificación, primeiro débese identificar que se quere cambiar e acceder ao ficheiro HTML correspondente.
+
+Cambiar unha oferta existente
+
+Se queremos substituír unha oferta por outra, debemos acceder ao ficheiro ofertas.html.
+
+Podemos conservar a estrutura HTML da oferta actual e modificar unicamente o seu contido:
+
+Engadir a nova imaxe á carpeta assets.
+Cambiar no HTML o nome ou ruta da imaxe pola nova.
+Substituír os títulos e textos existentes, modificando o contido das etiquetas correspondentes, como <h3> e <p>.
+Comprobar que a nova imaxe se visualiza correctamente e que os textos aparecen como esperamos.
+
+Deste xeito non é necesario crear novamente toda a estrutura da oferta.
+
+Engadir unha nova oferta
+
+Se queremos conservar a oferta existente e engadir outra, podemos acceder igualmente a ofertas.html e duplicar a estrutura HTML dunha oferta xa creada.
+
+Unha vez copiada e pegada dentro da sección correspondente da páxina, modificamos os datos da nova oferta: imaxe, título, descrición, prezo, duración ou calquera outra información necesaria.
+
+Este mesmo procedemento pódese aplicar ás cards de destinos e experiencias, reutilizando as estruturas xa existentes.
+
+Publicar unha versión mellorada
+
+O proxecto conta cun repositorio remoto, o que permite manter un historial das modificacións realizadas e dispoñer dunha copia do código.
+
+Cando se realicen cambios importantes é recomendable crear unha nova versión no repositorio. Isto permite continuar traballando no proxecto desde outros equipos e recuperar versións anteriores se se produce algún problema.
+
+O cliente tamén pode realizar modificacións se dispón do código e dos coñecementos necesarios para facelo, podendo actualizar contidos, modificar seccións ou eliminar aquelas que xa non necesite.
+
+En caso de que o cliente precise realizar modificacións máis complexas, poderá solicitar soporte para o mantemento ou ampliación da web.
+
+Comprobacións antes e despois dunha actualización
+
+Antes de publicar unha nova versión débese comprobar que os cambios realizados non afectan negativamente ao resto da páxina.
+
+É recomendable revisar:
+
+Que as páxinas cargan correctamente.
+Que as imaxes se visualizan e están optimizadas.
+Que os enlaces funcionan.
+Que o menú de navegación funciona tanto en escritorio como en dispositivos móbiles.
+Que o selector de idioma continúa funcionando correctamente.
+Que o formulario e a súa validación JavaScript funcionan.
+Que non aparecen erros na consola do navegador.
+Que o deseño continúa sendo responsive.
+Que se mantén unha boa accesibilidade, rendemento e SEO, podendo realizar novamente unha proba con Lighthouse.
+
+Despois destas comprobacións, os ficheiros modificados poderán subirse ao servidor e realizar unha última revisión sobre a versión publicada.
+
+Limitacións e tarefas pendentes coñecidas
+
+A web desenvolvida funciona como un proxecto de exemplo dunha axencia de viaxes. Debido principalmente ao tempo dispoñible para o seu desenvolvemento, non se incorporou todo o contido que podería ter unha web deste tipo nunha situación real.
+
+Unha versión completa podería incluír un maior número de cards de destinos, ofertas e experiencias. Isto suporía incorporar máis información e material gráfico para representar unha oferta turística moito máis ampla.
+
+Tamén sería interesante incorporar no futuro fotografías reais das persoas que participaron nas experiencias e estudar algún sistema que permitise aos clientes compartir imaxes, opinións ou recomendacións.
+
+Outra posible mellora sería automatizar parte da xestión do contido para evitar ter que modificar directamente os ficheiros HTML cada vez que se queira incorporar unha nova oferta, destino ou experiencia.
+
+A pesar destas limitacións, considero que para o obxectivo deste proxecto o resultado final é satisfactorio. A web presenta unha imaxe profesional e sobria, empregando as cores corporativas para reforzar a identidade de Atlántico Travel, cun deseño visual orientado a transmitir a idea de viaxar, descubrir Galicia e vivir novas experiencias.
